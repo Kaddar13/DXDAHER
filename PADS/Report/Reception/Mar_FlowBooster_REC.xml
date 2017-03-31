@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>NB BR </Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Flowbooster_REC">
+        <Table Name="View_Flowbooster_REC">
+          <Column Name="Doc art   " Aggregate="Count" Alias="NB" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="NB BR ">
+          <View Name="View_Flowbooster_REC">
+            <Field Name="NB" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Flowbooster_REC">
+        <Table Name="View_flowboster_REC_Min">
+          <Column Name="Date_R" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="View_Flowbooster_REC">
+            <Field Name="Date_R" Type="DateTime" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource3">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Flowbooster_REC">
+        <Table Name="View_Flowboster_REC_Top10">
+          <Column Name="Doc art   " />
+          <Column Name="Date_R" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="View_Flowbooster_REC">
+            <Field Name="Doc art   " Type="String" />
+            <Field Name="Date_R" Type="DateTime" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Nombre de BR en statut REC" DataSource="dashboardSqlDataSource1" DataMember="View_Flowbooster_REC">
+      <DataItems>
+        <Measure DataMember="NB" SummaryType="Count" UniqueName="DataItem0" />
+      </DataItems>
+      <GridColumns>
+        <GridMeasureColumn Name="NB">
+          <Measure UniqueName="DataItem0" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="AutoFitToContents" />
+    </Grid>
+    <Grid ComponentName="gridDashboardItem2" Name="Date du plus vieux BR en statut REC" DataSource="dashboardSqlDataSource2" DataMember="View_Flowbooster_REC">
+      <DataItems>
+        <Dimension DataMember="Date_R" Name="Date" DateTimeGroupInterval="DayMonthYear" UniqueName="DataItem0" />
+      </DataItems>
+      <FormatRules>
+        <GridItemFormatRule Name="FormatRule 1" Enabled="false" ApplyToRow="true">
+          <FormatConditionDateOccuring DateType="LaterThisWeek">
+            <IconSettings IconType="ShapeRedCircle" />
+          </FormatConditionDateOccuring>
+        </GridItemFormatRule>
+        <GridItemFormatRule Name="FormatRule 2" Enabled="false" ApplyToRow="true">
+          <FormatConditionDateOccuring DateType="Today, Yesterday">
+            <AppearanceSettings AppearanceType="Green" />
+          </FormatConditionDateOccuring>
+        </GridItemFormatRule>
+      </FormatRules>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+    <Grid ComponentName="gridDashboardItem3" Name="Top 10 des BR en statut REC les plus vieux" DataSource="dashboardSqlDataSource3" DataMember="View_Flowbooster_REC">
+      <DataItems>
+        <Dimension DataMember="Date_R" DateTimeGroupInterval="None" UniqueName="DataItem0" />
+        <Dimension DataMember="Doc art   " UniqueName="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Name="Date" Weight="74.279475982532745">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="BR" Weight="75.720524017467255">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions AllowGridCellMerge="true" ColumnWidthMode="Manual" />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="22.76923076923077">
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="48.845166809238663" />
+        <LayoutItem DashboardItem="gridDashboardItem2" Weight="51.154833190761337" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem3" Weight="77.230769230769226" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

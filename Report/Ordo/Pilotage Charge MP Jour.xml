@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard : Servitude Magasin" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="xfls-daher002_Dashboard_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Dashboard" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="T_Ordo">
+        <Filter>IsOutlookIntervalToday([T_Ordo_Appointments_DragAndDrop.Start]) And [T_Ordo_TypeOrdo.Type_Ordo] = 'MP' And [T_OrdoStatut.ID_Statut] &lt;&gt; 0</Filter>
+        <Table Name="T_Ordo">
+          <Column Name="Numéro de l'ordre de transfert" />
+          <Column Name="Market Place/Zone de Regroup#" />
+          <Column Name="Appareil" />
+          <Column Name="poste" />
+        </Table>
+        <Table Name="T_OrdoStatut">
+          <Column Name="Statut" />
+          <Column Name="ID_Statut" />
+        </Table>
+        <Table Name="T_Ordo_Appointments_DragAndDrop">
+          <Column Name="Start" />
+        </Table>
+        <Table Name="T_Ordo_TypeOrdo">
+          <Column Name="Type_Ordo" />
+        </Table>
+        <Relation Type="Inner" Parent="T_Ordo" Nested="T_OrdoStatut">
+          <KeyColumn Parent="Statut" Nested="ID_Statut" />
+        </Relation>
+        <Relation Type="Inner" Parent="T_Ordo" Nested="T_Ordo_Appointments_DragAndDrop">
+          <KeyColumn Parent="AppointmentID" Nested="AppointmentID" />
+        </Relation>
+        <Relation Type="Inner" Parent="T_Ordo" Nested="T_Ordo_TypeOrdo">
+          <KeyColumn Parent="Clé gare" Nested="Cle_Gare" />
+        </Relation>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="T_Ordo">
+            <Field Name="Numéro de l'ordre de transfert" Type="String" />
+            <Field Name="Market Place/Zone de Regroup#" Type="String" />
+            <Field Name="Appareil" Type="String" />
+            <Field Name="poste" Type="String" />
+            <Field Name="Statut" Type="String" />
+            <Field Name="ID_Statut" Type="Int32" />
+            <Field Name="Start" Type="DateTime" />
+            <Field Name="Type_Ordo" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+      <CalculatedFields>
+        <CalculatedField Name="Termine" Expression="1" DataType="Integer" DataMember="T_Ordo" />
+        <CalculatedField Name="Verrouille" Expression="Iif([Statut] = 'Verrouille', 1, 0) + Iif([Statut] = 'Actif', 1, 0)" DataType="Integer" DataMember="T_Ordo" />
+        <CalculatedField Name="StatutOrder" Expression="Concat(ToStr([ID_Statut]), '-', [Statut])" DataMember="T_Ordo" />
+      </CalculatedFields>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Card ComponentName="cardDashboardItem1" Name="Cards 1" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" ContentLineCount="4">
+      <DataItems>
+        <Dimension DataMember="Market Place/Zone de Regroup#" UniqueName="DataItem0" />
+        <Measure DataMember="Verrouille" UniqueName="DataItem1" />
+        <Measure DataMember="Numéro de l'ordre de transfert" SummaryType="Count" UniqueName="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem0" />
+      </SeriesDimensions>
+      <Card ShowStartEndValues="false">
+        <ActualValue UniqueName="DataItem1" />
+        <TargetValue UniqueName="DataItem2" />
+        <DeltaOptions ValueType="ActualValue" ResultIndicationMode="LessIsGood" ResultIndicationThresholdType="Absolute" />
+      </Card>
+    </Card>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Gauges 1" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" ViewType="LinearVertical" ShowGaugeCaptions="false">
+      <InteractivityOptions IgnoreMasterFilters="true" />
+      <DataItems>
+        <Measure DataMember="Numéro de l'ordre de transfert" SummaryType="Count" UniqueName="DataItem1" />
+      </DataItems>
+      <GaugeElement Name="Avancement Global">
+        <TargetValue UniqueName="DataItem1" />
+        <DeltaOptions ValueType="ActualValue" ResultIndicationMode="LessIsGood" ResultIndicationThresholdType="Absolute" />
+      </GaugeElement>
+    </Gauge>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo">
+      <InteractivityOptions IgnoreMasterFilters="true" />
+      <DataItems>
+        <Dimension DataMember="Market Place/Zone de Regroup#" UniqueName="DataItem0" />
+        <Measure DataMember="Numéro de l'ordre de transfert" SummaryType="Count" UniqueName="DataItem2" />
+        <Dimension DataMember="StatutOrder" UniqueName="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem1" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple SeriesType="FullStackedBar">
+              <Value UniqueName="DataItem2" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <ColorSheme>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-15144601">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Statut" />
+          <Value Type="System.String" Value="Termine             " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-9338427">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Statut" />
+          <Value Type="System.String" Value="Actif               " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-340165">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="Statut" />
+          <Value Type="System.String" Value="Verrouille          " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-10641791">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="StatutOrder" />
+          <Value Type="System.String" Value="4-Termine             " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-9338427">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="StatutOrder" />
+          <Value Type="System.String" Value="3-Actif               " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+    <Entry DataSource="dashboardSqlDataSource1" DataMember="T_Ordo" Color="-1857965">
+      <DimensionKeys>
+        <DimensionKey>
+          <Definition DataMember="StatutOrder" />
+          <Value Type="System.String" Value="2-Verrouille          " />
+        </DimensionKey>
+      </DimensionKeys>
+    </Entry>
+  </ColorSheme>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="61.060329067641682">
+        <LayoutItem DashboardItem="gaugeDashboardItem1" Weight="26.63101604278075" />
+        <LayoutItem DashboardItem="cardDashboardItem1" Weight="73.368983957219257" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="38.939670932358318" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

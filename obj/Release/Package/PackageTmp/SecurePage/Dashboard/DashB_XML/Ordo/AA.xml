@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="DESKTOP-N1I9K33\SQLEXPRESS_Dashboard_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="DESKTOP-N1I9K33\SQLEXPRESS" />
+          <Parameter Name="database" Value="Dashboard" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="T_Ordo">
+        <Table Name="T_Ordo">
+          <Column Name="Numéro de magasin" />
+          <Column Name="Type d'activité" />
+          <Column Name="Groupe" />
+          <Column Name="Numéro de l'ordre de transfert" />
+          <Column Name="Poste de l'ordre de transfert" />
+          <Column Name="Type magasin cédant" />
+          <Column Name="Emplacement cédant" />
+          <Column Name="Emplacement prenant" />
+          <Column Name="Zone de prélèvement" />
+          <Column Name="ilot" />
+          <Column Name="Appareil" />
+          <Column Name="poste" />
+          <Column Name="Clé gare" />
+          <Column Name="Désignation de la Gare" />
+          <Column Name="Market Place/Zone de Regroup#" />
+          <Column Name="Date de création" />
+          <Column Name="File d'attente" />
+          <Column Name="Nom complet" />
+          <Column Name="N° Ordre" />
+          <Column Name="AppointmentID" />
+          <Column Name="Statut" />
+          <Column Name="Passage_Integ" />
+          <Column Name="Clef" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="T_Ordo">
+            <Field Name="Numéro de magasin" Type="String" />
+            <Field Name="Type d'activité" Type="String" />
+            <Field Name="Groupe" Type="String" />
+            <Field Name="Numéro de l'ordre de transfert" Type="String" />
+            <Field Name="Poste de l'ordre de transfert" Type="String" />
+            <Field Name="Type magasin cédant" Type="String" />
+            <Field Name="Emplacement cédant" Type="String" />
+            <Field Name="Emplacement prenant" Type="String" />
+            <Field Name="Zone de prélèvement" Type="String" />
+            <Field Name="ilot" Type="String" />
+            <Field Name="Appareil" Type="String" />
+            <Field Name="poste" Type="String" />
+            <Field Name="Clé gare" Type="String" />
+            <Field Name="Désignation de la Gare" Type="String" />
+            <Field Name="Market Place/Zone de Regroup#" Type="String" />
+            <Field Name="Date de création" Type="DateTime" />
+            <Field Name="File d'attente" Type="String" />
+            <Field Name="Nom complet" Type="String" />
+            <Field Name="N° Ordre" Type="String" />
+            <Field Name="AppointmentID" Type="Int32" />
+            <Field Name="Statut" Type="Int32" />
+            <Field Name="Passage_Integ" Type="DateTime" />
+            <Field Name="Clef" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Card ComponentName="cardDashboardItem1" Name="Cards 1" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo">
+      <DataItems>
+        <Measure DataMember="N° Ordre" SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="Market Place/Zone de Regroup#" UniqueName="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem1" />
+      </SeriesDimensions>
+      <Card>
+        <ActualValue UniqueName="DataItem0" />
+      </Card>
+    </Card>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="cardDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

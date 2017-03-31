@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DX_DAHERCMS.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+              <div style="background-color:#022e5d;color:#fff;padding-bottom:20px;border-bottom:4px solid red; height: 63px;">
+                 <div style="float: left;">
+                     <img src="img/Logo_Daher_white.png" />
+                 </div>
+                  <div> CMS VERSION BETA</div>
+                 <div style="float: right;">
+                     <img src="img/AIRBUS_Helicopters_Flat_RGB.PNG" style="height: 50px; width: 162px"/>
+                 </div>
+             </div>
+             <div>
+                 <dx:ASPxMenu ID="ASPxMenu1" runat="server" EnableTheming="True" Theme="Moderno" >
+                     <Items>
+                         <dx:MenuItem Text="Home">
+                         </dx:MenuItem>
+                         <dx:MenuItem Text="Rechange">
+                             <Items>
+                                 <dx:MenuItem Text="Ecran Prod">
+                                     <Items>
+                                         <dx:MenuItem NavigateUrl="~/REC_ECRAN_PROD_MVTD.aspx" Text="PROD MVTD">
+                                         </dx:MenuItem>
+                                         <dx:MenuItem NavigateUrl="~/REC_ECRAN_PROD_MATRICULE.aspx" Text="PROD MATRICULE">
+                                         </dx:MenuItem>
+                                         <dx:MenuItem NavigateUrl="~/REC_ECRAN_PROD.aspx" Text="PROD ECRAN">
+                                         </dx:MenuItem>
+                                     </Items>
+                                 </dx:MenuItem>
+                             </Items>
+                         </dx:MenuItem>
+                         <dx:MenuItem Text="Etiquette">
+                             <Items>
+                                 <dx:MenuItem NavigateUrl="~/Default.aspx" Text="Edition">
+                                 </dx:MenuItem>
+                             </Items>
+                         </dx:MenuItem>
+                     </Items>
+                 </dx:ASPxMenu>
+             </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DashboardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="T_Speedup_MvtStatut">
+    <Key>
+      <PropertyRef Name="ID_Statut" />
+    </Key>
+    <Property Name="ID_Statut" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MVT_Affecation" Type="nvarchar" MaxLength="50" />
+    <Property Name="MVT_Statut" Type="nvarchar" MaxLength="50" />
+    <Property Name="Type_Blocage" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VBSP_TB_Article">
+    <Key>
+      <PropertyRef Name="IDPartNumber" />
+    </Key>
+    <Property Name="IDPartNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartNumber" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="MassZ" Type="int" />
+    <Property Name="Lenght" Type="int" />
+    <Property Name="Width" Type="int" />
+    <Property Name="Height" Type="int" />
+    <Property Name="Surface" Type="float" />
+    <Property Name="Volume" Type="float" />
+    <Property Name="Materiel" Type="nchar" MaxLength="10" />
+    <Property Name="img1" Type="nvarchar(max)" />
+    <Property Name="img2" Type="nvarchar(max)" />
+    <Property Name="img3" Type="nvarchar(max)" />
+    <Property Name="img4" Type="nvarchar(max)" />
+    <Property Name="FINO" Type="nchar" MaxLength="10" />
+    <Property Name="imgbi1" Type="image" />
+    <Property Name="imgbi2" Type="image" />
+    <Property Name="imgbi3" Type="image" />
+    <Property Name="imgbi4" Type="image" />
+    <Property Name="DatePicture" Type="date" />
+    <Property Name="UserPicture" Type="nchar" MaxLength="10" />
+    <Property Name="DateData" Type="date" />
+    <Property Name="UserData" Type="nchar" MaxLength="10" />
+    <Property Name="Commentaires" Type="varchar(max)" />
+    <Property Name="Type" Type="nchar" MaxLength="20" />
+    <Property Name="Litige" Type="nchar" MaxLength="10" />
+    <Property Name="Mass" Type="float" />
+  </EntityType>
+  <EntityContainer Name="DashboardModelStoreContainer">
+    <EntitySet Name="T_Speedup_MvtStatut" EntityType="Self.T_Speedup_MvtStatut" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VBSP_TB_Article" EntityType="Self.VBSP_TB_Article" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

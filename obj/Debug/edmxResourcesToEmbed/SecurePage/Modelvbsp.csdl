@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DashboardModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="VBSP_TB_Article">
+    <Key>
+      <PropertyRef Name="IDPartNumber" />
+    </Key>
+    <Property Name="IDPartNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PartNumber" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Mass" Type="Double" />
+    <Property Name="Lenght" Type="Int32" />
+    <Property Name="Width" Type="Int32" />
+    <Property Name="Height" Type="Int32" />
+    <Property Name="Surface" Type="Double" />
+    <Property Name="Volume" Type="Double" />
+    <Property Name="Materiel" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="img1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="img2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="img3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="img4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FINO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="imgbi1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="imgbi2" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="imgbi3" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="imgbi4" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="DatePicture" Type="DateTime" Precision="0" />
+    <Property Name="UserPicture" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="DateData" Type="DateTime" Precision="0" />
+    <Property Name="UserData" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Commentaires" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Litige" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="MassZ" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="DashboardEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="VBSP_TB_Article" EntityType="Self.VBSP_TB_Article" />
+    <EntitySet Name="T_Speedup_MvtStatut" EntityType="DashboardModel.T_Speedup_MvtStatut" />
+  </EntityContainer>
+  <EntityType Name="T_Speedup_MvtStatut">
+    <Key>
+      <PropertyRef Name="ID_Statut" />
+    </Key>
+    <Property Name="ID_Statut" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MVT_Affecation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MVT_Statut" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Type_Blocage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

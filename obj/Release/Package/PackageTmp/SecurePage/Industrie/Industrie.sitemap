@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+
+
+    <siteMapNode url="~/SecurePage/Industrie/" title="Industrie">
+      <siteMapNode url="~/SecurePage/Industrie/GestionMatricule.aspx" title="GestionMatricule.aspx" />
+      <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/" title="Ordo_Tools">
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_GARE.aspx" title="ORDO_EDITION_GARE.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_MAGASIN.aspx" title="ORDO_EDITION_MAGASIN.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_MP.aspx" title="ORDO_EDITION_MP.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_Import.aspx" title="ORDO_Import.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_MAG_5AU.aspx" title="ORDO_MAG_5AU.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_MAG_RF.aspx" title="ORDO_MAG_RF.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_MAGASIN_PILOTAGE.aspx" title="ORDO_MAGASIN_PILOTAGE.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_MP_PILOTAGE.aspx" title="ORDO_MP_PILOTAGE.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_PLANIF.aspx" title="ORDO_PLANIF.aspx" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/WebForm2.aspx" title="WebForm2.aspx" />
+      </siteMapNode>
+    </siteMapNode>
+   
+</siteMap>

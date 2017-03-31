@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DashboardModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="VBSP_TB_Article">
+          <Key>
+            <PropertyRef Name="IDPartNumber" />
+          </Key>
+          <Property Name="IDPartNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartNumber" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="MassZ" Type="int" />
+          <Property Name="Lenght" Type="int" />
+          <Property Name="Width" Type="int" />
+          <Property Name="Height" Type="int" />
+          <Property Name="Surface" Type="float" />
+          <Property Name="Volume" Type="float" />
+          <Property Name="Materiel" Type="nchar" MaxLength="10" />
+          <Property Name="img1" Type="nvarchar(max)" />
+          <Property Name="img2" Type="nvarchar(max)" />
+          <Property Name="img3" Type="nvarchar(max)" />
+          <Property Name="img4" Type="nvarchar(max)" />
+          <Property Name="FINO" Type="nchar" MaxLength="10" />
+          <Property Name="imgbi1" Type="image" />
+          <Property Name="imgbi2" Type="image" />
+          <Property Name="imgbi3" Type="image" />
+          <Property Name="imgbi4" Type="image" />
+          <Property Name="DatePicture" Type="date" />
+          <Property Name="UserPicture" Type="nchar" MaxLength="10" />
+          <Property Name="DateData" Type="date" />
+          <Property Name="UserData" Type="nchar" MaxLength="10" />
+          <Property Name="Commentaires" Type="varchar(max)" />
+          <Property Name="Type" Type="nchar" MaxLength="20" />
+          <Property Name="Litige" Type="nchar" MaxLength="10" />
+          <Property Name="Mass" Type="float" />
+          <Property Name="MOP" Type="int" />
+        </EntityType>
+        <EntityType Name="VBSP_TB_material">
+          <Key>
+            <PropertyRef Name="ID_MATERIAL" />
+          </Key>
+          <Property Name="ID_MATERIAL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MATERIAL" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="VBSP_TB_MOP">
+          <Key>
+            <PropertyRef Name="ID_MOP" />
+          </Key>
+          <Property Name="ID_MOP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MOP" Type="nchar" MaxLength="10" />
+          <Property Name="LIBELLE_MOP" Type="nchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="DashboardModelStoreContainer">
+          <EntitySet Name="VBSP_TB_Article" EntityType="Self.VBSP_TB_Article" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VBSP_TB_material" EntityType="Self.VBSP_TB_material" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VBSP_TB_MOP" EntityType="Self.VBSP_TB_MOP" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DashboardModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="VBSP_TB_Article">
+          <Key>
+            <PropertyRef Name="IDPartNumber" />
+          </Key>
+          <Property Name="IDPartNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartNumber" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="MassZ" Type="Int32" />
+          <Property Name="Lenght" Type="Int32" />
+          <Property Name="Width" Type="Int32" />
+          <Property Name="Height" Type="Int32" />
+          <Property Name="Surface" Type="Double" />
+          <Property Name="Volume" Type="Double" />
+          <Property Name="Materiel" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="img1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="img4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="FINO" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="imgbi1" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="imgbi2" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="imgbi3" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="imgbi4" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="DatePicture" Type="DateTime" Precision="0" />
+          <Property Name="UserPicture" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DateData" Type="DateTime" Precision="0" />
+          <Property Name="UserData" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Commentaires" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Litige" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Mass" Type="Double" />
+          <Property Name="MOP" Type="Int32" />
+        </EntityType>
+        <EntityType Name="VBSP_TB_material">
+          <Key>
+            <PropertyRef Name="ID_MATERIAL" />
+          </Key>
+          <Property Name="ID_MATERIAL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MATERIAL" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VBSP_TB_MOP">
+          <Key>
+            <PropertyRef Name="ID_MOP" />
+          </Key>
+          <Property Name="ID_MOP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MOP" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="LIBELLE_MOP" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="DashboardEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="VBSP_TB_Article" EntityType="Self.VBSP_TB_Article" />
+          <EntitySet Name="VBSP_TB_material" EntityType="Self.VBSP_TB_material" />
+          <EntitySet Name="VBSP_TB_MOP" EntityType="Self.VBSP_TB_MOP" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DashboardModelStoreContainer" CdmEntityContainer="DashboardEntities">
+          <EntitySetMapping Name="VBSP_TB_Article">
+            <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_Article">
+              <MappingFragment StoreEntitySet="VBSP_TB_Article">
+                <ScalarProperty Name="IDPartNumber" ColumnName="IDPartNumber" />
+                <ScalarProperty Name="PartNumber" ColumnName="PartNumber" />
+                <ScalarProperty Name="MassZ" ColumnName="MassZ" />
+                <ScalarProperty Name="Lenght" ColumnName="Lenght" />
+                <ScalarProperty Name="Width" ColumnName="Width" />
+                <ScalarProperty Name="Height" ColumnName="Height" />
+                <ScalarProperty Name="Surface" ColumnName="Surface" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Materiel" ColumnName="Materiel" />
+                <ScalarProperty Name="img1" ColumnName="img1" />
+                <ScalarProperty Name="img2" ColumnName="img2" />
+                <ScalarProperty Name="img3" ColumnName="img3" />
+                <ScalarProperty Name="img4" ColumnName="img4" />
+                <ScalarProperty Name="FINO" ColumnName="FINO" />
+                <ScalarProperty Name="imgbi1" ColumnName="imgbi1" />
+                <ScalarProperty Name="imgbi2" ColumnName="imgbi2" />
+                <ScalarProperty Name="imgbi3" ColumnName="imgbi3" />
+                <ScalarProperty Name="imgbi4" ColumnName="imgbi4" />
+                <ScalarProperty Name="DatePicture" ColumnName="DatePicture" />
+                <ScalarProperty Name="UserPicture" ColumnName="UserPicture" />
+                <ScalarProperty Name="DateData" ColumnName="DateData" />
+                <ScalarProperty Name="UserData" ColumnName="UserData" />
+                <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Litige" ColumnName="Litige" />
+                <ScalarProperty Name="Mass" ColumnName="Mass" />
+                <ScalarProperty Name="MOP" ColumnName="MOP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VBSP_TB_material">
+            <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_material">
+              <MappingFragment StoreEntitySet="VBSP_TB_material">
+                <ScalarProperty Name="ID_MATERIAL" ColumnName="ID_MATERIAL" />
+                <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VBSP_TB_MOP">
+            <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_MOP">
+              <MappingFragment StoreEntitySet="VBSP_TB_MOP">
+                <ScalarProperty Name="ID_MOP" ColumnName="ID_MOP" />
+                <ScalarProperty Name="MOP" ColumnName="MOP" />
+                <ScalarProperty Name="LIBELLE_MOP" ColumnName="LIBELLE_MOP" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

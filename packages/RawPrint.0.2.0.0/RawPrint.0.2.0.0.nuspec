@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>RawPrint</id>
+    <version>0.2.0.0</version>
+    <title>Raw Print</title>
+    <authors>Tony Edgecombe</authors>
+    <owners>Tony Edgecombe</owners>
+    <licenseUrl>https://github.com/tonyedgecombe/RawPrint/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tonyedgecombe/RawPrint</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.Net library to send files directly to a Windows printer bypassing the printer driver.</description>
+    <summary>Send PostScript, PCL or other print file types directly to a printer. Supports printers using v4 drivers.</summary>
+    <releaseNotes>Static methods are now obsolete. 
+Introduced IPrinter interface to make mocking easier. 
+Support for spooling a paused print job.</releaseNotes>
+    <copyright>Copyright 2016 Frogmore Computer Services Ltd</copyright>
+    <tags>RawPrint Raw Print PCL PostScript</tags>
+  </metadata>
+</package>

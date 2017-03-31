@@ -1,0 +1,2920 @@
+<?xml version="1.0" standalone="yes"?>
+<HtmlScanResultsCache xmlns="http://tempuri.org/HtmlScanResults.xsd">
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Update Your Settings</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx.SettingsUpdatedMessage.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Your settings have been updated.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx.BoundFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>HomeTown</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx.BoundFieldResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>HomepageUrl</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>AdditionnalUserInfo.aspx.BoundFieldResource2.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Signature</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ContreReception.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ContreReceptionDashboard.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ContreReceptionDashboard_bis.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreateUserWizardWithRoles.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreateUserWizardWithRoles.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create a User Account (with Roles!)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreateUserWizardWithRoles.aspx.SpecifyRolesStep.Title</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Specify Roles</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create a New User Account</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Enter a username:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Choose a password:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Enter your email address:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>CreatingUserAccounts.aspx.CreateAccountButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create the User Account</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>DASHBOARDVIEWER.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>DB_ViewerPublic.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Distribution.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>EASA_POKAYOKE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>EditAccount.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>EnhancedCreateUserWizard.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>EnhancedCreateUserWizard.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create a New User Account (and a Record in &lt;code&gt;UserProfiles&lt;/code&gt;)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>EnhancedCreateUserWizard.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>This CreateUserWizard control not only adds the new user account to the
+        Membership framework, but also adds a corresponding record to the
+        &lt;code&gt;UserProfiles&lt;/code&gt; table.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Etiquette_PTCD.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ExportToolBar.ascx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ExportToolBar.ascx.labelCaption.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Export type:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GenCAB.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GenCAB.aspx.LabelResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Ref. à code-barrer :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GenCAB.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Generer</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource0.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>XA</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource1.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nom</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource2.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Prénom</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource3.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Périmètre</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource4.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Activité</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewColumnLayoutItemResource5.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Actif</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataTextColumnResource0.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataTextColumnResource1.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataTextColumnResource2.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>a2</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>a1</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataComboBoxColumnResource0.PropertiesComboBox.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataComboBoxColumnResource1.PropertiesComboBox.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OUI</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.GridViewDataComboBoxColumnResource2.PropertiesComboBox.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Rechange</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource5.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Industrie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>GestionMatricule.aspx.ListEditItemResource6.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Donauwörth</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>The Guestbook</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Leave a Comment</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Subject:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.SubjectReqValidator.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You must provide a value for Subject</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Body:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.BodyReqValidator.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You must provide a value for Body</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.PostCommentButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Post Your Comment</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Guestbook Comments</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource5.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>---</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource6.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>My Home Town:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource7.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>My Homepage:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource8.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Posted by</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Guestbook.aspx.LiteralResource9.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>on</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IMPORT_ACTIVTYTYPE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IMPORT_ACTIVTYTYPE.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Import XML</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IMPORT_ACTIVTYTYPE.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Import TXT</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IMPORT_ACTIVTYTYPE.aspx.ASPxButtonResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Suivant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Import_CSV.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Import_CSV.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Etape 1 : Import des données</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Import_CSV.aspx.ASPxButtonResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Suivant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Creation d'une SpeedUp</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Accéleration etc etc ...</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Kit de communication</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Kit de communication</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Kit Utilisateur</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Index_SpeedUp.aspx.LiteralResource5.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Kit Utilisateur</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IndicateurDivision.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IndicateurDivision.aspx.ASPxLabel1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>S32</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IndicateurDivision.aspx.ASPxLabel2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>S21</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IndicateurDivision.aspx.ASPxLabel3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>S11</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>IndicateurDivision.aspx.ASPxLabel4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>S31</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>LLP_DON_EXCLU.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>LLP_DON_EXCLU.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Exclusions for KPI 10.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>LLP_DON_EXCLU.aspx.ASPxButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Export</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.myLogin.CreateUserText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Not registered yet? Create an account!</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.myLogin.UserNameLabelText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Username:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.UserNameLabel.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Username:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.UserNameRequired.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>User Name is required.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.UserNameRequired.ToolTip</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>User Name is required.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.UserNameRequired.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>*</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.PasswordLabel.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Password:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.PasswordRequired.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Password is required.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.PasswordRequired.ToolTip</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Password is required.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.PasswordRequired.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>*</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.RememberMe.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Remember me next time.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.LoginButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Log In</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Login.aspx.CreateUserLink.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Not registered yet? 
+                                        Create an account!</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Logout.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Logout.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Logout</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Logout.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You have been logged out of the system. To log in, please return to the</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Logout.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>login page</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Logout.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Magasin.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Manage Roles</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create a New Role:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.RoleNameReqField.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You must enter a role name.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.CreateRoleButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Create Role</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.CommandFieldResource0.DeleteText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Delete Role</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ManageRoles.aspx.TemplateFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Role</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_CONFNONP_TYPO.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_GARE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_MAGASIN.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_MAGASIN.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Edition Perimetre Magasin</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_MP.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_MP.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Edition Ordo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_EDITION_POSTE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.serchpane.Title</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Search</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_Appareil.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_Appareil.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_PosteAppareil.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_PosteAppareil.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_MagasinCedant.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin Cedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.txt_MagasinCedant.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CALENDAR_APP.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Actualiser</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_CHARIOT.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.ASPxButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Export</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewColumnLayoutItemResource0.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Typologie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewColumnLayoutItemResource1.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>MagCedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewColumnLayoutItemResource2.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Commentaires</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewDataDateColumnResource0.PropertiesDateEdit.DisplayFormatString</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>&amp;quot;d/m/y&amp;quot;</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewDataDateColumnResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date de Planif</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.GridViewDataDateColumnResource1.PropertiesDateEdit.DisplayFormatString</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>dd/MM/yy</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_GESTION_MP_CONFNONPOINTE.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>s</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_Import.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_Import.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Import SAP</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_Import.aspx.ASPxButtonResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Importer</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Panel_Graph.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Graph</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.WebChartControlPie.legend.alignmenthorizontal</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Left</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.WebChartControlPie.legend.alignmentvertical</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>TopOutside</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.SeriesResource0.Name</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Plannifié</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.SeriesResource1.Name</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Actif</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.SeriesResource2.Name</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Verrouillé</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.SeriesResource3.Name</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Traite</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ChartTitleResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Avancement 5AU</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Panel_Grid.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Donnees</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.PressePapier.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Presse Papier</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Btn_copy.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Copier</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.DP_MagicMix.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>MagicMix !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.btShowModal.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Figer la demande</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxLabelResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nom Gare :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Txt_NomGare.ValidationSettings.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Text</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Txt_NomGare.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Selectionner une gare !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxLabelResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Total Ligne :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.cb_ligne.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Ligne</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.cb_app.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil/Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxLabelResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nb de Ligne à Generer:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxLabelResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Listes des Appareils Postes :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Txt_NbGeneration.ValidationSettings.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Text</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.Txt_NbGeneration.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxGridLookup1.TextFormatString</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>{1};{2}</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.btn_Generateur.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Ajouter Groupes</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.ASPxPopupControl1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Figer les Demandes</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Etes vous sur de vouloir figer les demandes ? :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.bnt_Lock.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Oui</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_5AU.aspx.btn_Cancel.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Annuler</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_RF.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_RF.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin RF</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAG_RF.aspx.ASPxButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Generer les OT</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MAGASIN_PILOTAGE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Ordo_MP_Dashboard.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MP_PILOTAGE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MP_PILOTAGE.aspx.Panel_Graph.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Dashboard - Market Place</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_MP_PILOTAGE.aspx.ASPxDockPanel1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Dashboard - Market Place Appareil / Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Plannification</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.txtTypo.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ASPxLabel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.txtCompteur.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ASPxLabel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.btn_MP.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Filtrer</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>/</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.UnscheduleAppointment.ToolTip</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Unschedule this appointment</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Resa</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource0.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>RESA</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>AppointmentID</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource1.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>AppointmentID</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource2.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Market_Place</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource2.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Market_Place</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource3.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource3.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource4.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste_Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource4.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste_Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource5.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Prenant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource5.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Prenant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource6.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Cedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource6.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Cedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource7.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT_CREEE_LE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource7.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT_CREEE_LE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource8.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke_Date</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource8.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke_Date</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource9.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource9.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridTemplateColumnResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Priority</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridTemplateColumnResource0.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Priority</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource0.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Medium</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource1.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Low</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.RadComboBoxItemResource2.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource10.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Due</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource10.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Due</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource11.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>End</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource11.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>End</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource12.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Start</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource12.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Start</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource13.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Subject</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource13.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Subject</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource14.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_LIGNE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource14.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_LIGNE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource14.FooterText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Total Total :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource15.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Cellule</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource15.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Cellule</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource16.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nb_Traite</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource16.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nb_Traite</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource17.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Statut</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource17.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Statut</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource18.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type_Ordo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF.aspx.GridBoundColumnResource18.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type_Ordo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.serchpane.Title</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Search</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_OT.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Num OT</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_OT.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_OF.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Num OF</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_OF.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MP.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Market</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MP.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_Appareil.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_Appareil.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_PosteAppareil.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_PosteAppareil.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MagasinPrenant.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin Prenant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MagasinPrenant.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MagasinCedant.Label</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin Cedabt</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.txt_MagasinCedant.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>%</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Actualiser</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>/</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.UnscheduleAppointment.ToolTip</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Unschedule this appointment</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadSplitBar1.CollapseExpandPaneText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Resultat</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>AppointmentID</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource0.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>AppointmentID</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Market_Place</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource1.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Market_Place</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource2.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource2.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource3.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste_Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource3.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste_Appareil</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource4.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Prenant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource4.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Prenant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource5.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Cedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource5.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Magasin_Cedant</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource6.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT_CREEE_LE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource6.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT_CREEE_LE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource7.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke_Date</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource7.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke_Date</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource8.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource8.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Locke</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridTemplateColumnResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Priority</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridTemplateColumnResource0.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Priority</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource0.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Medium</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource1.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Low</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.RadComboBoxItemResource2.Value</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>High</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource9.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Due</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource9.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Due</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource10.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>End</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource10.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>End</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource11.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Start</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource11.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Start</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource12.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Subject</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource12.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Subject</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource13.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_LIGNE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource13.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_LIGNE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource13.FooterText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Total Total :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource14.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Cellule</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource14.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Cellule</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource15.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nb_Traite</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource15.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nb_Traite</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource16.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Statut</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource16.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Statut</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource17.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type_Ordo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_PLANIF_RECHER.aspx.GridBoundColumnResource17.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type_Ordo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR.aspx.Label1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Label</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_LIST.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_LIST.aspx.Label1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Listes des Requetes</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_LIST.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Open Query</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_LIST.aspx.Button2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Edit Query</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_RESULT.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_RESULT.aspx.Label1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Result</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ORDO_REQUESTOR_RESULT.aspx.ASPxButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Export</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>PADS.Master</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>PADS\Image\Reception\ReceptionDashboard.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>PADS\Report\Reception\ReceptionDashboard.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Indicateur AOG</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.BoundFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Fichier</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.BoundFieldResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date Extract</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.GridViewColumnLayoutItemResource0.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Commentaires</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.GridViewDataTextColumnResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date Creation</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_AOG_INDICATEUR.aspx.GridViewDataTextColumnResource2.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date Objectif</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabelResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Ecran de pilotage</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Status global</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>6h - 13h</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>13h - 20h</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Postes Realisés</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel8.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Postes Realisés</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.Ecart1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>1234</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.Ecart2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>1234</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel9.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Objectif Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.ASPxLabel10.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Objectif Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.Txt_Objectif1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>0</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD.aspx.Txt_Objectif2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>0</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD_MATRICULE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD_MATRICULE.aspx.ASPxLabelResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Table des matricules</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD_MVTD.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>REC_ECRAN_PROD_MVTD.aspx.ASPxLabelResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Table des MVT &amp; D</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Reception.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportDesigner.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Etape 2 : Selection du Rapport</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Report Catalog</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Use the form below to manage reports in the catalog.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.openButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Open</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.editButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Edit</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.deleteButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Delete</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportList.aspx.newReportButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>New Report</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportViewer.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ReportViewer.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Print on Server</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Role-Based Authorization Demo</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>As an Administrator, you may edit and delete user accounts. Remember: With great 
+                        power comes great responsibility!</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>As a Supervisor, you may edit users&amp;#39; Email and Comment information. Simply click 
+                        the Edit button, make your changes, and then click Update.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You are not a member of the Supervisors or Administrators roles. Therefore you 
+                cannot edit or delete any user information.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You are not logged into the system. Therefore you cannot edit or delete any user 
+                information.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LinkButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Update</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.LinkButton2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Cancel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.EditButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Edit</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.DeleteButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Delete</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.BoundFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>UserName</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.BoundFieldResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Last Login</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.TemplateFieldResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Email</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.RequiredFieldValidator1.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You must provide an email address.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.RequiredFieldValidator1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>*</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.RegularExpressionValidator1.ErrorMessage</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>The email address you have entered is not valid. Please fix this and try again.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.RegularExpressionValidator1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>*</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>RoleBasedAuthorization.aspx.TemplateFieldResource2.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Comment</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Admin\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Admin\Membership\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Dashboard\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Industrie\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Industrie\Ordo_Tools\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Industrie\Ordo_Tools\Gestion\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Industrie\Ordo_Tools\Parametrage\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Industrie\Ordo_Tools\Pilotage\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Rechange\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Rechange\ECRANPROD\Parametrage\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SecurePage\Rechange\Volumetrie\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Site.Master</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.ASPxLabel1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Gestion SpeedUp </OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.GridViewColumnLayoutItemResource0.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Dagedim_LCS</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.GridViewColumnLayoutItemResource1.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Dagedim_Gare</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.GridViewDataDateColumnResource0.PropertiesDateEdit.DisplayFormatString</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>dd/MM/yyyy hh:mm:ss</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.ListEditItemResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SPEED-UP RECEPTION</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.ListEditItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SPEED-UP EXPEDITION</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.ListEditItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SPEED-UP DISTRIBUTION</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.ListEditItemResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SPEED-UP MAGASIN</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.GridViewDataTextColumnResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Print</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.TabPageResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>En Reception</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.TabPageResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>En Distribution</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.TabPageResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>En Magasin</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.TabPageResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Entree sur Dossier</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_Gestion.aspx.TabPageResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>En Expedition</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_IMPORT.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_IMPORT.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Import Dagedim</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx</NodeName>
+    <Expanded>true</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ASPxLabelResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Speed Up : 8,91€ / demande</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Creation Speed Up</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type Speed Up</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SpeedUp Interne (In-Situ)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>SpeedUp Externe (inter-site et fournisseur externe)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.Rbl_SU_Type.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource2.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>EOTP</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_SU_EOTP.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource3.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Telephone du demandeur :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_telephone.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource4.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Email du demandeur :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_demandeur.ValidationSettings.RegularExpression.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Invalid e-mail</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_demandeur.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource5.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Commentaire :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource6.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Site</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>MAR</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>DON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource5.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ALB</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource6.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>LCN</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_SiteDepart.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource7.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Destinataire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource7.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>DON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource8.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Externe</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_su_destinataire.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource8.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Localisation</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource9.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>MAR</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource10.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>DON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource11.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ALB</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource12.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>LCN</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource3.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Reception Fournisseur</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource4.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Données Transport</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource10.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Numéro de Tracking :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_reception_track.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource11.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Fournisseur :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource12.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Transporteur :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_reception_transporteur.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource13.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date de Livraison</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource14.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Numéro BR :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource15.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ZLECI :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource16.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Origine :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource13.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>France</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource14.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>International</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource5.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Données matériel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource17.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Numéro commande :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource18.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste commande :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource19.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Reference :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_reference3.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource20.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Quantité :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource6.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Autres renseignements</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource21.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Je souhaite venir chercher le matérielen zone litige R7:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource15.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OUI</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource16.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource22.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Commentaires :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource23.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Livraison sous PVL :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource17.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OUI</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ListEditItemResource18.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource7.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Distribution inter-usine</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource24.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Gare départ</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_distribution_garedepart.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource25.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Gare arrivée :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_distribution_garearrivee.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource26.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>N° Doc Libre / Liste de colisage :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_doclibre2.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource8.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Stock</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource27.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Numéro de Magasin :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource28.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT / Resa :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_ot.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource29.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_ot_poste.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource30.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Reference :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_reference.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource9.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Entrees sur dossier</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource31.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Demandeur :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource32.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Numéro OF :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutGroupResource10.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Expedition</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource33.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OT / Resa :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_ot2.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource34.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poste</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_otposte2.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource35.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Appareil :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource36.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>BE :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource37.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>FAL :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource38.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Doc libre :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource39.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Reference :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.txt_reference2.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire !</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.LayoutItemResource40.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Quantite :</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.updateButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Insert Speed Up</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>SU_NEW.aspx.ASPxPopupControl1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Speed-Up</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.Button1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Refresh</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.Button2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Importer</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>DateSaisie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource0.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>DateSaisie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volumetrie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource1.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volumetrie</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource2.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nom de l'utilisateur</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource2.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Nom de l'utilisateur</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource3.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_Article</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>Synthese_MagVolumetrie.aspx.GridBoundColumnResource3.SortExpression</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NB_Article</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>ToolBox\default.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UnauthorizedAccess.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UnauthorizedAccess.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Unauthorized Access</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UnauthorizedAccess.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>You have attempted to access a page that you are not authorized to view.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UnauthorizedAccess.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>If you have any questions, please contact the site administrator.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UserBasedAuthorization.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UserBasedAuthorization.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>User-Based Authorization</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UserBasedAuthorization.aspx.LinkButton1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>View</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UserBasedAuthorization.aspx.BoundFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Name</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UserBasedAuthorization.aspx.BoundFieldResource1.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Size in Bytes</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>User Role Management</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Manage Roles By User</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Select a User:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Manage Users By Role</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Select a Role:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.RolesUserList.EmptyDataText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>No users belong to this role.</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.CommandFieldResource0.DeleteText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Remove</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.TemplateFieldResource0.HeaderText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Users</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.LiteralResource5.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>UserName:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>UsersAndRoles.aspx.AddUserToRoleButton.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Add User to Role</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_DEPART.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_DEPART.aspx.ASPxLabel1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Scan Part Number</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_DEPART.aspx.ASPxLabel.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>ASPxLabel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Gallery VBSP</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx.LiteralResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>PartNumber:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx.LiteralResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Material:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx.LiteralResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volume:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Gallery.aspx.LiteralResource4.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Surface:</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_ImageEditor.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Import.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Import.aspx.LiteralResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Import SAP</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Material.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.ddlExportMode.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Details Export Mode</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.btnXlsxExport.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Export to XLSX</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource0.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>PartNumber</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource1.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>FINO</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource2.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource3.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Litige</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource4.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Mass</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource4.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poids(gr)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource5.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Lenght</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource5.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Longueur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource6.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Width</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource6.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Largeur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource7.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Height</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource7.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Hauteur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource8.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Surface</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource8.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Surface(mm2)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource9.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volume</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource9.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volume(mm3)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource10.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Materiel</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource11.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Commentaires</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewLayoutGroupResource0.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Image</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource12.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>imgbi1</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource13.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>imgbi2</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource14.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>img1</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource15.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>img2</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource16.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>imgbi3</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource17.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>imgbi4</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource18.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>img3</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource19.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>img4</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource20.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Date Data</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewColumnLayoutItemResource21.ColumnName</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>User Data</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource1.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Gallery</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource2.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Poids(gr)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource2.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource3.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Longueur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource3.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource4.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Largeur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource4.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource5.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Hauteur(mm)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource5.PropertiesTextEdit.ValidationSettings.RequiredField.ErrorText</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Champs Obligatoire</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource6.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Surface(mm2)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataTextColumnResource7.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Volume(mm3)</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.ListEditItemResource0.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>NON</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.ListEditItemResource1.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>OUI</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.GridViewDataComboBoxColumnResource2.Caption</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>Type</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.ListEditItemResource2.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>AUTRES</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_NEW_ARTICLE.aspx.ListEditItemResource3.Text</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText>VIS/ECROU/TUBE</OriginalText>
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_Popup.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+  <HtmlScanResults>
+    <NodeName>VBSP_WEBCAM.aspx</NodeName>
+    <Expanded>false</Expanded>
+    <OriginalText />
+  </HtmlScanResults>
+</HtmlScanResultsCache>

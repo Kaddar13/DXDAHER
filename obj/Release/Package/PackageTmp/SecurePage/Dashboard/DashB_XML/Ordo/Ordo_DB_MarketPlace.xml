@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="Dashboard_ConnectionString" FromAppConfig="true" />
+      <Query Type="CustomSqlQuery" Name="T_Ordo">
+        <Sql>SELECT     T_Ordo.[Market Place/Zone de Regroup#], T_Ordo.[Numéro de l'ordre de transfert], T_Ordo_TypeOrdo.Type_Ordo, CONVERT(VARCHAR(10), T_Ordo_Appointments_DragAndDrop.Start, 103) AS Start, 
+                      T_Ordo_Appointments_DragAndDrop.Appareil, T_Ordo_Appointments_DragAndDrop.Poste_Appareil, dbo.T_OrdoStatut.Statut
+FROM         dbo.T_Ordo AS T_Ordo INNER JOIN
+                      dbo.T_Ordo_TypeOrdo AS T_Ordo_TypeOrdo ON T_Ordo_TypeOrdo.Cle_Gare = T_Ordo.[Clé gare] INNER JOIN
+                      dbo.T_Ordo_Appointments_DragAndDrop AS T_Ordo_Appointments_DragAndDrop ON T_Ordo_Appointments_DragAndDrop.AppointmentID = T_Ordo.AppointmentID INNER JOIN
+                      dbo.T_OrdoStatut ON T_Ordo.Statut = dbo.T_OrdoStatut.ID_Statut
+WHERE     (T_Ordo_TypeOrdo.Type_Ordo LIKE 'MP') AND (T_Ordo_Appointments_DragAndDrop.Start &gt;= CONVERT(VARCHAR(10),GETDATE(),103))</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="T_Ordo">
+            <Field Name="Market Place/Zone de Regroup#" Type="String" />
+            <Field Name="Numéro de l'ordre de transfert" Type="String" />
+            <Field Name="Type_Ordo" Type="String" />
+            <Field Name="Start" Type="String" />
+            <Field Name="Appareil" Type="String" />
+            <Field Name="Poste_Appareil" Type="String" />
+            <Field Name="Statut" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Nb OT par Market et par date de Planification" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo">
+      <DataItems>
+        <Dimension DataMember="Market Place/Zone de Regroup#" UniqueName="DataItem1" />
+        <Dimension DataMember="Start" DateTimeGroupInterval="None" UniqueName="DataItem2" />
+        <Measure DataMember="Numéro de l'ordre de transfert" SummaryType="Count" UniqueName="DataItem0" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="StackedBar">
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <ComboBox ComponentName="comboBoxDashboardItem1" Name="Date Planification" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo">
+      <DataItems>
+        <Dimension DataMember="Start" DateTimeGroupInterval="None" UniqueName="DataItem0" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+      </FilterDimensions>
+    </ComboBox>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="comboBoxDashboardItem1" Weight="15.538847117794486" />
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="42.230576441102755" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

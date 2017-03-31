@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="DX_DAHERCMS.Global_asax" Language="C#" %>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mkadd\\Documents\\Visual\ Studio\ 2013\\Projects\\DX_DAHERCMS\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\mkadd\\Documents\\Visual\ Studio\ 2013\\Projects\\DX_DAHERCMS\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ApplicationServices-Web.config Connection String" description="" value="Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\aspnetdb.mdf;Integrated Security=True;User Instance=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mkadd\\Documents\\Visual\ Studio\ 2013\\Projects\\DX_DAHERCMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+  <parameter name="Con_IndusMag-Web.config Connection String" description="" value="Data Source=DESKTOP-N1I9K33\SQLEXPRESS;Initial Catalog=Dashboard;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mkadd\\Documents\\Visual\ Studio\ 2013\\Projects\\DX_DAHERCMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Con_IndusMag']/@connectionString" />
+  </parameter>
+  <parameter name="laboConnectionString-Web.config Connection String" description="" value="Data Source=DESKTOP-N1I9K33\SQLEXPRESS;Initial Catalog=Dashboard;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mkadd\\Documents\\Visual\ Studio\ 2013\\Projects\\DX_DAHERCMS\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='laboConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

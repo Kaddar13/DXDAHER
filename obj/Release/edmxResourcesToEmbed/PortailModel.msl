@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DashboardModelStoreContainer" CdmEntityContainer="DashboardEntities">
+    <EntitySetMapping Name="VBSP_TB_Article">
+      <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_Article">
+        <MappingFragment StoreEntitySet="VBSP_TB_Article">
+          <ScalarProperty Name="IDPartNumber" ColumnName="IDPartNumber" />
+          <ScalarProperty Name="PartNumber" ColumnName="PartNumber" />
+          <ScalarProperty Name="MassZ" ColumnName="MassZ" />
+          <ScalarProperty Name="Lenght" ColumnName="Lenght" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Surface" ColumnName="Surface" />
+          <ScalarProperty Name="Volume" ColumnName="Volume" />
+          <ScalarProperty Name="Materiel" ColumnName="Materiel" />
+          <ScalarProperty Name="img1" ColumnName="img1" />
+          <ScalarProperty Name="img2" ColumnName="img2" />
+          <ScalarProperty Name="img3" ColumnName="img3" />
+          <ScalarProperty Name="img4" ColumnName="img4" />
+          <ScalarProperty Name="FINO" ColumnName="FINO" />
+          <ScalarProperty Name="imgbi1" ColumnName="imgbi1" />
+          <ScalarProperty Name="imgbi2" ColumnName="imgbi2" />
+          <ScalarProperty Name="imgbi3" ColumnName="imgbi3" />
+          <ScalarProperty Name="imgbi4" ColumnName="imgbi4" />
+          <ScalarProperty Name="DatePicture" ColumnName="DatePicture" />
+          <ScalarProperty Name="UserPicture" ColumnName="UserPicture" />
+          <ScalarProperty Name="DateData" ColumnName="DateData" />
+          <ScalarProperty Name="UserData" ColumnName="UserData" />
+          <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Litige" ColumnName="Litige" />
+          <ScalarProperty Name="Mass" ColumnName="Mass" />
+          <ScalarProperty Name="MOP" ColumnName="MOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VBSP_TB_material">
+      <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_material">
+        <MappingFragment StoreEntitySet="VBSP_TB_material">
+          <ScalarProperty Name="ID_MATERIAL" ColumnName="ID_MATERIAL" />
+          <ScalarProperty Name="MATERIAL" ColumnName="MATERIAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VBSP_TB_MOP">
+      <EntityTypeMapping TypeName="DashboardModel.VBSP_TB_MOP">
+        <MappingFragment StoreEntitySet="VBSP_TB_MOP">
+          <ScalarProperty Name="ID_MOP" ColumnName="ID_MOP" />
+          <ScalarProperty Name="MOP" ColumnName="MOP" />
+          <ScalarProperty Name="LIBELLE_MOP" ColumnName="LIBELLE_MOP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

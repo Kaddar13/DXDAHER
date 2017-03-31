@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/" title="Ordo_Tools" description="">
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Gestion/" title="Gestion" description="">
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Gestion/default.aspx" title="default.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_MAG_5AU.aspx" title="ORDO_MAG_5AU.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_MAG_RF.aspx" title="ORDO_MAG_RF.aspx" description="" />
+    </siteMapNode>
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Parametrage/" title="Parametrage" description="">
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Parametrage/default.aspx" title="default.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_GARE.aspx" title="ORDO_EDITION_GARE.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_MAGASIN.aspx" title="ORDO_EDITION_MAGASIN.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_MP.aspx" title="ORDO_EDITION_MP.aspx" description="" />
+    </siteMapNode>
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Pilotage/" title="Pilotage" description="">
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Pilotage/default.aspx" title="default.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Pilotage/ORDO_MAGASIN_PILOTAGE.aspx" title="ORDO_MAGASIN_PILOTAGE.aspx" description="" />
+      <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/Pilotage/ORDO_MP_PILOTAGE.aspx" title="ORDO_MP_PILOTAGE.aspx" description="" />
+    </siteMapNode>
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/ORDO_Import.aspx" title="ORDO_Import.aspx" description="" />
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/ORDO_PLANIF.aspx" title="ORDO_PLANIF.aspx" description="" />
+    <siteMapNode url="~/obj/Release/Package/PackageTmp/SecurePage/Industrie/Ordo_Tools/WebForm2.aspx" title="WebForm2.aspx" description="" />
+  </siteMapNode>
+</siteMap>

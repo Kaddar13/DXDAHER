@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Flowbooster_STD_Top10">
+        <Filter>StartsWith([View_Flowbooster_STD_Top10.Stat], 'BS') Or StartsWith([View_Flowbooster_STD_Top10.Stat], 'EQ') Or StartsWith([View_Flowbooster_STD_Top10.Stat], 'CQ') Or StartsWith([View_Flowbooster_STD_Top10.Stat], 'DQ')</Filter>
+        <Top>10</Top>
+        <Table Name="View_Flowbooster_STD_Top10">
+          <Column Name="Date_R" Aggregate="Min" Alias="Min_Date_R" />
+          <Column Name="Stat" />
+        </Table>
+        <GroupBy Table="View_Flowbooster_STD_Top10" Column="Stat" />
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="View_Flowbooster_STD_Top10">
+            <Field Name="Min_Date_R" Type="DateTime" />
+            <Field Name="Stat" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>SQL Data Source 2</Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Flowbooster_STD_min">
+        <Filter>StartsWith([View_Flowbooster_STD_min.Stat], 'BS') Or StartsWith([View_Flowbooster_STD_min.Stat], 'EQ') Or StartsWith([View_Flowbooster_STD_min.Stat], 'CQ') Or StartsWith([View_Flowbooster_STD_min.Stat], 'DQ')</Filter>
+        <Table Name="View_Flowbooster_STD_min">
+          <Column Name="min" />
+          <Column Name="Stat" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 2">
+          <View Name="View_Flowbooster_STD_min">
+            <Field Name="min" Type="DateTime" />
+            <Field Name="Stat" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource3">
+      <Name>SQL Data Source 3</Name>
+      <Connection Name="xfls-daher002_Industrie_Magasin_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="xfls-daher002" />
+          <Parameter Name="database" Value="Industrie_Magasin" />
+          <Parameter Name="useIntegratedSecurity" Value="False" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="Dashboard" />
+          <Parameter Name="password" Value="Daher2016" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_Floowbooster_STD">
+        <Filter>StartsWith([View_Floowbooster_STD.Stat], 'BS') Or StartsWith([View_Floowbooster_STD.Stat], 'EQ') Or StartsWith([View_Floowbooster_STD.Stat], 'CQ')</Filter>
+        <Top>10</Top>
+        <Table Name="View_Floowbooster_STD">
+          <Column Name="Doc art   " />
+          <Column Name="Date_R" />
+          <Column Name="Stat" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 3">
+          <View Name="View_Floowbooster_STD">
+            <Field Name="Doc art   " Type="String" />
+            <Field Name="Date_R" Type="DateTime" />
+            <Field Name="Stat" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem2" Name="Liste des BR en statut BS/EQ/CQ les plus vieux" DataSource="dashboardSqlDataSource3" DataMember="View_Floowbooster_STD">
+      <DataItems>
+        <Dimension DataMember="Date_R" DateTimeGroupInterval="DayMonthYear" UniqueName="DataItem0" />
+        <Dimension DataMember="Stat" UniqueName="DataItem1" />
+        <Dimension DataMember="Doc art   " UniqueName="DataItem2" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Name="Date">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Statut">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="BR">
+          <Dimension UniqueName="DataItem2" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+    <Grid ComponentName="gridDashboardItem1" Name="Date des BR les plus vieux en statut BS/EQ/CQ" DataSource="dashboardSqlDataSource1" DataMember="View_Flowbooster_STD_Top10">
+      <DataItems>
+        <Dimension DataMember="Stat" UniqueName="DataItem0" />
+        <Dimension DataMember="Min_Date_R" DateTimeGroupInterval="DayMonthYear" UniqueName="DataItem1" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn Name="Statut" Weight="72.79029462738302">
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn Name="Date" Weight="77.20970537261698">
+          <Dimension UniqueName="DataItem1" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions ColumnWidthMode="Manual" />
+    </Grid>
+    <Grid ComponentName="gridDashboardItem3" Name="Nombre de BR en statut BS/EQ/CQ" DataSource="dashboardSqlDataSource3" DataMember="View_Floowbooster_STD">
+      <DataItems>
+        <Measure DataMember="Doc art   " SummaryType="Count" UniqueName="DataItem0" />
+      </DataItems>
+      <GridColumns>
+        <GridMeasureColumn Name="Nombre">
+          <Measure UniqueName="DataItem0" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="34">
+        <LayoutItem DashboardItem="gridDashboardItem3" Weight="49.957228400342174" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="50.042771599657826" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem2" Weight="66" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

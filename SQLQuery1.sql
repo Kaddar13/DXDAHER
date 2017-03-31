@@ -1,0 +1,1 @@
+﻿SELECT Appareil, Poste ,Appareil as ParentID FROM ORDO_ZWMQ WHERE Appareil NOT LIKE '' ORDER BY Appareil,Poste 

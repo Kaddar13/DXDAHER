@@ -1,0 +1,92 @@
+﻿#unassignedTasksPane .header,
+#myTasksPane .header {
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
+
+#myTasksPane .header {
+    left: 203px;
+}
+
+#unassignedTasksPane,
+#myTasksPane {
+    margin-top: 56px;
+}
+
+#unassignedTasksPane {
+    float: left;
+    width: 160px;
+    padding: 16px 0 0 10px;
+    margin-left: 5px;
+}
+
+* html #unassignedTasksPane {
+    margin-left: 6px;
+}
+
+#myTasksPane {
+    float: left;
+    width: 512px;
+    margin-left: 20px;
+}
+
+#scheduledTasksPane {
+    height: 465px;
+}
+
+#unscheduledTasksPane .container {
+    padding: 12px 0 7px;
+}
+
+#RadScheduler1 .rsTopWrap {
+    border: 0;
+}
+
+#RadScheduler1 .rsAllDayHeader {
+    text-align: center;
+}
+
+.rsAptContent {
+    text-indent: 5px;
+}
+
+input.simpleButton {
+    border: 1px solid #5B7AA2;
+    background: #EEF3F9 url('/IMG/unlink.png') no-repeat 50% 50%;
+    margin: 2px 0 3px 3px;
+    width: 37px;
+    height: 15px;
+    outline: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.simpleButton:hover {
+    background-color: #D0D7E5;
+    cursor: pointer;
+}
+
+#RadScheduler1Panel {
+    height: 100%;
+}
+
+.Disabled {
+   
+    background-color: red ; 
+   
+}
+
+.Disabled.rsAptCreate {
+        background: silver !important;
+}
+.rsCategoryBlue{
+    background: #D1EBC3;
+
+}
+.alex
+{
+    border: solid 1px #93c2db; 
+    background: #C3DDEB url('/img/Weather.png') repeat-x !important;
+    margin-bottom:5px;
+}

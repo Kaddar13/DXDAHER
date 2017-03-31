@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ce fichier est utilisé par le processus de publication/package de votre projet Web. Vous pouvez personnaliser le comportement de ce processus
+en modifiant ce fichier MSBuild. Pour en savoir plus à ce sujet, consultez la page http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\temp</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/CreatingUserAccounts.aspx">
+      <publishTime>04/07/2016 16:09:53</publishTime>
+    </File>
+    <File Include="Account/EditAccount.aspx">
+      <publishTime>05/23/2016 09:33:59</publishTime>
+    </File>
+    <File Include="Account/EditProfile.aspx">
+      <publishTime>04/07/2016 10:01:26</publishTime>
+    </File>
+    <File Include="Account/EnhancedCreateUserWizard.aspx">
+      <publishTime>04/27/2016 16:58:42</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>04/27/2016 17:03:35</publishTime>
+    </File>
+    <File Include="Account/Logout.aspx">
+      <publishTime>04/07/2016 16:13:28</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>04/07/2016 10:06:08</publishTime>
+    </File>
+    <File Include="Admin/EditProfile.aspx">
+      <publishTime>04/07/2016 10:01:26</publishTime>
+    </File>
+    <File Include="Admin/Web.config">
+      <publishTime>04/07/2016 10:06:08</publishTime>
+    </File>
+    <File Include="App_Code/ChartUtils.cs">
+      <publishTime>03/30/2016 10:12:55</publishTime>
+    </File>
+    <File Include="App_Code/CustomIdentity.cs">
+      <publishTime>04/07/2016 11:50:00</publishTime>
+    </File>
+    <File Include="App_Code/CustomPrincipal.cs">
+      <publishTime>04/07/2016 11:50:00</publishTime>
+    </File>
+    <File Include="App_Code/MarkerKindUtils.cs">
+      <publishTime>02/04/2016 12:54:59</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/AAA.txt">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/export.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/ggg.csv">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/Test Ordo Pierre-Yves.csv">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/test.csv">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/test.txt">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/test.xls">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/test.xlsx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/ZWMSRFP008.csv">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/ZWMSRFP008.XML">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/ZWMSRFP009.XLS">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="App_GlobalResources/Resource1.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>09/05/2016 15:32:16</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/CameraControl.Core.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/CameraControl.Devices.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Canon.Eos.Framework.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>10/04/2016 21:13:08</publishTime>
+    </File>
+    <File Include="bin/DX_DAHERCMS.dll">
+      <publishTime>03/31/2017 11:07:27</publishTime>
+    </File>
+    <File Include="bin/DX_DAHERCMS.dll.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/DX_DAHERCMS.pdb">
+      <publishTime>02/01/2016 09:05:36</publishTime>
+    </File>
+    <File Include="bin/Eagle.dll">
+      <publishTime>02/10/2015 22:00:02</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/07/2016 14:43:46</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>12/07/2016 14:43:46</publishTime>
+    </File>
+    <File Include="bin/EPPlus.dll">
+      <publishTime>12/14/2016 09:37:05</publishTime>
+    </File>
+    <File Include="bin/fr/EntityFramework.resources.dll">
+      <publishTime>12/07/2016 14:44:03</publishTime>
+    </File>
+    <File Include="bin/fr/EntityFramework.SqlServer.resources.dll">
+      <publishTime>12/07/2016 14:44:03</publishTime>
+    </File>
+    <File Include="bin/Griffin.Networking.Protocol.Http.dll">
+      <publishTime>03/06/2014 19:19:26</publishTime>
+    </File>
+    <File Include="bin/Griffin.WebServer.dll">
+      <publishTime>03/06/2014 19:19:26</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.AvalonEdit.dll">
+      <publishTime>12/02/2015 23:07:44</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Magick.NET-x86.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Magick.NET.Core.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Magick.NET.Wrapper-x86.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/MahApps.Metro.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/MeasurementProtocolClient.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.EntityDataSource.dll">
+      <publishTime>11/07/2016 15:25:41</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/NetSqlAzMan.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/30/2016 10:00:53</publishTime>
+    </File>
+    <File Include="bin/nikoncswrapper.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/PortableDeviceLib.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/RawPrint.dll">
+      <publishTime>07/12/2016 16:55:35</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>03/30/2016 10:00:53</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>03/30/2016 10:00:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>03/30/2016 10:00:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Windows.Interactivity.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>07/28/2015 20:48:56</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>07/28/2015 20:48:56</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Maths.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Windows.Maths.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/WriteableBitmapEx.Wpf.dll">
+      <publishTime>06/04/2015 17:52:10</publishTime>
+    </File>
+    <File Include="CatalogReport.Designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="CatalogReport.xsc">
+      <publishTime>12/07/2016 13:56:01</publishTime>
+    </File>
+    <File Include="CatalogReport.xsd">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="CatalogReport.xss">
+      <publishTime>12/07/2016 13:56:01</publishTime>
+    </File>
+    <File Include="ChartUtils.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ClassGlobal.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/themes/base/accordion.css">
+      <publishTime>01/12/2016 15:53:54</publishTime>
+    </File>
+    <File Include="Content/themes/base/all.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/autocomplete.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/base.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/button.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/core.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/datepicker.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/dialog.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/draggable.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/menu.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/progressbar.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/resizable.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectable.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/selectmenu.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/slider.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/sortable.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/spinner.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/tabs.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/theme.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Content/themes/base/tooltip.css">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="CSVREPORT.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="CustomReportStorageWebExtension.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Dashboard/DASHBOARDVIEWER.aspx">
+      <publishTime>04/01/2016 16:07:35</publishTime>
+    </File>
+    <File Include="Dashboard/DashB_XML/Ordo_DB_Magasin.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Dashboard/DashB_XML/Ordo_DB_MarketPlace.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Dashboard/DashB_XML/Ordo_DB_MarketPlace_AppPoste.xml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Dashboard/DashB_XML/Test_Ludo.xml">
+      <publishTime>03/08/2016 17:09:56</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>07/26/2016 12:10:31</publishTime>
+    </File>
+    <File Include="Default.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Default.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DS_ACTIVTYTYPE.Designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DS_ACTIVTYTYPE.xsc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DS_ACTIVTYTYPE.xsd">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DS_ACTIVTYTYPE.xss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DX_DAHERCMS.csproj">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DX_DAHERCMS.csproj.user">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DX_DAHERCMS.sln">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DX_DAHERCMS.v12.suo">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/12/2016 14:19:21</publishTime>
+    </File>
+    <File Include="Global.asax.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="HtmlPage1.html">
+      <publishTime>07/12/2016 14:08:14</publishTime>
+    </File>
+    <File Include="img/AIRBUS_Helicopters_Flat_RGB.PNG">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/Calendar.png">
+      <publishTime>02/08/2016 14:45:58</publishTime>
+    </File>
+    <File Include="img/daher_logo.png">
+      <publishTime>01/14/2016 12:50:37</publishTime>
+    </File>
+    <File Include="img/directory.png">
+      <publishTime>05/04/2016 11:13:25</publishTime>
+    </File>
+    <File Include="img/EC175.png">
+      <publishTime>02/08/2016 14:45:52</publishTime>
+    </File>
+    <File Include="img/file.png">
+      <publishTime>05/04/2016 11:13:25</publishTime>
+    </File>
+    <File Include="img/France-icon.png">
+      <publishTime>12/15/2016 10:29:28</publishTime>
+    </File>
+    <File Include="img/Germany-icon.png">
+      <publishTime>12/15/2016 10:29:42</publishTime>
+    </File>
+    <File Include="img/Graph5AU.png">
+      <publishTime>02/08/2016 14:45:17</publishTime>
+    </File>
+    <File Include="img/GreenLight.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/GreenLight100x106.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/IconDaher2.png">
+      <publishTime>07/18/2016 18:38:17</publishTime>
+    </File>
+    <File Include="img/login.png">
+      <publishTime>05/19/2016 10:10:49</publishTime>
+    </File>
+    <File Include="img/logout.png">
+      <publishTime>05/19/2016 10:10:49</publishTime>
+    </File>
+    <File Include="img/Logo_AH.jpg">
+      <publishTime>01/14/2016 12:54:24</publishTime>
+    </File>
+    <File Include="img/Logo_Daher_white.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/Mail.png">
+      <publishTime>02/08/2016 14:45:26</publishTime>
+    </File>
+    <File Include="img/News.png">
+      <publishTime>02/08/2016 14:45:36</publishTime>
+    </File>
+    <File Include="img/OffLight.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/Ordo.png">
+      <publishTime>01/21/2016 13:59:03</publishTime>
+    </File>
+    <File Include="img/Ordos.gif">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="img/RedLight.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/RedLight100x106.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/SmileyRouge.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/SmileyVert.png">
+      <publishTime>01/12/2016 14:24:43</publishTime>
+    </File>
+    <File Include="img/speedup.png">
+      <publishTime>07/12/2016 12:07:18</publishTime>
+    </File>
+    <File Include="img/Tiles/easyvista.jpg">
+      <publishTime>05/20/2016 10:20:57</publishTime>
+    </File>
+    <File Include="img/Tiles/notilus.png">
+      <publishTime>05/20/2016 10:20:57</publishTime>
+    </File>
+    <File Include="img/Tiles/sharepoint.png">
+      <publishTime>05/20/2016 10:20:57</publishTime>
+    </File>
+    <File Include="img/Tiles/talentsoft.jpeg">
+      <publishTime>05/20/2016 10:20:57</publishTime>
+    </File>
+    <File Include="img/Trading.png">
+      <publishTime>02/08/2016 14:45:43</publishTime>
+    </File>
+    <File Include="img/UK-icon.png">
+      <publishTime>12/15/2016 10:32:15</publishTime>
+    </File>
+    <File Include="img/unlink.png">
+      <publishTime>01/21/2016 13:53:06</publishTime>
+    </File>
+    <File Include="img/Weather.png">
+      <publishTime>02/08/2016 14:45:52</publishTime>
+    </File>
+    <File Include="IMPORT_ACTIVTYTYPE.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="IMPORT_ACTIVTYTYPE.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="IMPORT_ACTIVTYTYPE.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Index_SpeedUp.aspx">
+      <publishTime>09/01/2016 14:11:55</publishTime>
+    </File>
+    <File Include="JavaScript1.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Label_Tools/IMPORT_ACTIVTYTYPE.aspx">
+      <publishTime>04/05/2016 09:12:54</publishTime>
+    </File>
+    <File Include="Label_Tools/Import_CSV.aspx">
+      <publishTime>04/05/2016 09:12:53</publishTime>
+    </File>
+    <File Include="Label_Tools/ReportDesigner.aspx">
+      <publishTime>03/07/2016 16:02:28</publishTime>
+    </File>
+    <File Include="Label_Tools/ReportList.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Label_Tools/ReportViewer.aspx">
+      <publishTime>04/07/2016 09:02:18</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="MarkerKindUtils.cs">
+      <publishTime>02/04/2016 12:54:59</publishTime>
+    </File>
+    <File Include="metro_speedup.css">
+      <publishTime>09/01/2016 14:01:37</publishTime>
+    </File>
+    <File Include="ORDMDataModel.xpo">
+      <publishTime>12/07/2016 14:20:11</publishTime>
+    </File>
+    <File Include="ORDMDataModel.xpo.diagram">
+      <publishTime>12/07/2016 14:20:11</publishTime>
+    </File>
+    <File Include="ORDO_CSS.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_EDITION_MP.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_MAGASIN.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_PLANIF_MP.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_PLANIF_MP.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_PLANIF_MP.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ORDO_SCRIPT.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_CSS.css">
+      <publishTime>03/03/2016 12:13:59</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_EDITION_GARE.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_EDITION_MAGASIN.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_EDITION_MP.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_Import.aspx">
+      <publishTime>04/01/2016 16:06:33</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_MAGASIN_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_MAG_5AU.aspx">
+      <publishTime>04/01/2016 16:06:32</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_MAG_RF.aspx">
+      <publishTime>04/01/2016 16:05:46</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_MP_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_PLANIF.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_PLANIF_FLORIDES.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_PLANIF_MAGASIN.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_PLANIF_MP.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Ordo_Tools/ORDO_SCRIPT.js">
+      <publishTime>03/01/2016 15:47:58</publishTime>
+    </File>
+    <File Include="Ordo_Tools/WebForm1.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Ordo_Tools/WebForm2.aspx">
+      <publishTime>04/01/2016 16:08:21</publishTime>
+    </File>
+    <File Include="Ordo_Tools/WidgetGraph5AU.ascx">
+      <publishTime>02/08/2016 15:15:27</publishTime>
+    </File>
+    <File Include="Ordo_Tools/WidgetGrid5AU.ascx">
+      <publishTime>02/08/2016 15:10:47</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/14/2016 09:37:07</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Content/Scripts/jquery-1.6.4-vsdoc.js">
+      <publishTime>01/12/2016 15:53:46</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Content/Scripts/jquery-1.6.4.js">
+      <publishTime>01/12/2016 15:53:46</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Content/Scripts/jquery-1.6.4.min.js">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/jQuery.1.6.4.nupkg">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/jQuery.1.6.4.nuspec">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Tools/install.ps1">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Tools/jquery-1.6.4-vsdoc-para.js">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.1.6.4/Tools/uninstall.ps1">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/accordion.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/all.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/autocomplete.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/base.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/button.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/core.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/datepicker.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/dialog.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/draggable.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-icons_222222_256x240.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-icons_2e83ff_256x240.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-icons_454545_256x240.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-icons_888888_256x240.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/images/ui-icons_cd0a0a_256x240.png">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/menu.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/progressbar.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/resizable.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/selectable.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/selectmenu.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/slider.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/sortable.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/spinner.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/tabs.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/theme.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Content/themes/base/tooltip.css">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Scripts/jquery-ui-1.11.4.js">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Content/Scripts/jquery-ui-1.11.4.min.js">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/jQuery.UI.Combined.1.11.4.nupkg">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/jQuery.UI.Combined.1.11.4.nuspec">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Tools/common.ps1">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Tools/install.ps1">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/jQuery.UI.Combined.1.11.4/Tools/uninstall.ps1">
+      <publishTime>01/12/2016 15:53:47</publishTime>
+    </File>
+    <File Include="packages/repositories.config">
+      <publishTime>01/12/2016 15:53:48</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/0_LLP.bmp">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/1_Volume_Activite.bmp">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/2_Amont_BR.bmp">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/3_5S.bmp">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/ContreReception.aspx">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/ContreReception/Thumbs.db">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/Distribution/0_LLP.bmp">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Distribution/1_LLP_FL3.bmp">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Distribution/2_5S.bmp">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Distribution/Distribution.aspx">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Distribution/Thumbs.db">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/0_LLP.bmp">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/Magasin.aspx">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/MP.bmp">
+      <publishTime>05/18/2016 17:09:17</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/OT CONFIRMES.bmp">
+      <publishTime>05/18/2016 17:09:18</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/OT MACS AV.bmp">
+      <publishTime>05/18/2016 17:09:18</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/OT MACS.bmp">
+      <publishTime>05/18/2016 17:09:18</publishTime>
+    </File>
+    <File Include="PADS/Image/Magasin/Thumbs.db">
+      <publishTime>05/18/2016 17:09:18</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/0_LLP.bmp">
+      <publishTime>05/18/2016 17:09:19</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/1_LLP_Incoming.bmp">
+      <publishTime>05/18/2016 17:09:19</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/2_Monthly_report.bmp">
+      <publishTime>05/18/2016 17:09:19</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/3_5S.bmp">
+      <publishTime>05/18/2016 17:09:19</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/plan-maison-3D.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/Reception.aspx">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/ReceptionDashboard.aspx">
+      <publishTime>05/02/2016 16:51:15</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/Sans titre-1.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="PADS/Image/Reception/Thumbs.db">
+      <publishTime>05/18/2016 17:09:20</publishTime>
+    </File>
+    <File Include="PADS/PADS.Master">
+      <publishTime>05/18/2016 16:43:36</publishTime>
+    </File>
+    <File Include="PADS/Report/ContreReception/ContreReceptionDashboard.aspx">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/ContreReception/ContreReceptionDashboard_bis.aspx">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/ContreReception/Mar_FlowBooster_STD_BS_EQ_CQ_DQ.xml">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/ContreReception/Mar_FlowBooster_STD_TL_BL.xml">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/Ordo/Ordo_MP_Dashboard.aspx">
+      <publishTime>05/20/2016 13:07:38</publishTime>
+    </File>
+    <File Include="PADS/Report/Ordo/Pilotage Charge MP Jour.xml">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/Ordo/Pilotage Nb OT Planif.xml">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/Reception/Mar_FlowBooster_REC.xml">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/Reception/ReceptionDashboard.aspx">
+      <publishTime>05/18/2016 17:08:58</publishTime>
+    </File>
+    <File Include="PADS/Report/Rechange/Rechange_SWITCH.aspx">
+      <publishTime>07/20/2016 17:44:39</publishTime>
+    </File>
+    <File Include="PADS/Slide.css">
+      <publishTime>05/18/2016 16:43:37</publishTime>
+    </File>
+    <File Include="Photo/WebForm1.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="PortailModel.edmx.diagram">
+      <publishTime>12/07/2016 14:39:28</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Properties/AssemblyInfo.cs">
+      <publishTime>01/12/2016 14:19:22</publishTime>
+    </File>
+    <File Include="Properties/licenses.licx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/AA.pubxml">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Properties/PublishProfiles/AA.pubxml.user">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Query_Creation.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="RapportList.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="RDLC.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Rechange/REC_AOG_INDICATEUR.aspx">
+      <publishTime>04/01/2016 16:07:35</publishTime>
+    </File>
+    <File Include="Rechange/REC_ECRAN_PROD.aspx">
+      <publishTime>04/01/2016 16:07:35</publishTime>
+    </File>
+    <File Include="Rechange/REC_ECRAN_PROD_MATRICULE.aspx">
+      <publishTime>04/01/2016 16:07:35</publishTime>
+    </File>
+    <File Include="Rechange/REC_ECRAN_PROD_MVTD.aspx">
+      <publishTime>04/01/2016 16:07:28</publishTime>
+    </File>
+    <File Include="REC_AOG_INDICATEUR.aspx">
+      <publishTime>01/12/2016 15:55:18</publishTime>
+    </File>
+    <File Include="REC_AOG_INDICATEUR.aspx.cs">
+      <publishTime>01/12/2016 15:47:30</publishTime>
+    </File>
+    <File Include="REC_AOG_INDICATEUR.aspx.designer.cs">
+      <publishTime>01/12/2016 15:53:08</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD.aspx">
+      <publishTime>01/12/2016 16:55:41</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD.aspx.cs">
+      <publishTime>01/12/2016 16:55:47</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD.aspx.designer.cs">
+      <publishTime>01/12/2016 14:39:52</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MATRICULE.aspx">
+      <publishTime>01/12/2016 14:43:14</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MATRICULE.aspx.cs">
+      <publishTime>01/12/2016 14:42:32</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MATRICULE.aspx.designer.cs">
+      <publishTime>01/12/2016 14:42:44</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MVTD.aspx">
+      <publishTime>01/12/2016 14:42:10</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MVTD.aspx.cs">
+      <publishTime>01/12/2016 14:41:56</publishTime>
+    </File>
+    <File Include="REC_ECRAN_PROD_MVTD.aspx.designer.cs">
+      <publishTime>01/12/2016 14:42:10</publishTime>
+    </File>
+    <File Include="ReportDesigner.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportDesigner.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportDesigner.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportDesignerTask.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportList.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportList.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportList.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportViewer.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportViewer.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ReportViewer.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Report_ActivityType.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Report_ActivityType.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4-vsdoc.js">
+      <publishTime>01/12/2016 15:53:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4.js">
+      <publishTime>01/12/2016 15:53:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.6.4.min.js">
+      <publishTime>01/12/2016 15:53:48</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.11.4.js">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.11.4.min.js">
+      <publishTime>01/12/2016 15:53:53</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/default.aspx">
+      <publishTime>04/27/2016 11:46:57</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Industrie/DemandeLogistic/SpeedUp/SU_Admin_Mvt.aspx">
+      <publishTime>11/03/2016 10:14:50</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/AdditionnalUserInfo.aspx">
+      <publishTime>04/07/2016 14:19:06</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/CreatingUserAccounts.aspx">
+      <publishTime>04/07/2016 16:09:53</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/default.aspx">
+      <publishTime>04/27/2016 11:47:24</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/EnhancedCreateUserWizard.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/Guestbook.aspx">
+      <publishTime>04/07/2016 14:57:28</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/UserBasedAuthorization.aspx">
+      <publishTime>04/07/2016 14:10:19</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Membership/Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Role/CreateUserWizardWithRoles.aspx">
+      <publishTime>04/07/2016 16:02:02</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Role/ManageRoles.aspx">
+      <publishTime>04/07/2016 14:14:45</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Role/RoleBasedAuthorization.aspx">
+      <publishTime>04/07/2016 16:05:31</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Role/UsersAndRoles.aspx">
+      <publishTime>12/06/2016 13:18:05</publishTime>
+    </File>
+    <File Include="SecurePage/Admin/Role/Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashboardGetItem.js">
+      <publishTime>06/06/2016 09:25:04</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DASHBOARDVIEWER.aspx">
+      <publishTime>06/06/2016 11:12:48</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo/AA.xml">
+      <publishTime>05/31/2016 13:50:51</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo/Ordo_DB_Magasin.xml">
+      <publishTime>05/02/2016 14:42:53</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo/Ordo_DB_MarketPlace.xml">
+      <publishTime>05/02/2016 14:45:27</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo/Ordo_DB_MarketPlace_AppPoste.xml">
+      <publishTime>05/02/2016 14:45:25</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo_DB_Magasin.xml">
+      <publishTime>05/02/2016 14:42:53</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo_DB_MarketPlace.xml">
+      <publishTime>05/02/2016 14:45:27</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Ordo_DB_MarketPlace_AppPoste.xml">
+      <publishTime>05/02/2016 14:45:25</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/DashB_XML/Test_Ludo.xml">
+      <publishTime>03/08/2016 17:09:56</publishTime>
+    </File>
+    <File Include="SecurePage/Dashboard/default.aspx">
+      <publishTime>04/29/2016 16:35:58</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/default.aspx">
+      <publishTime>04/27/2016 14:10:54</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/DemandeLogistic/SpeedUp/SU_Regul.aspx">
+      <publishTime>11/24/2016 11:27:13</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/DS_ACTIVTYTYPE.xsc">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/DS_ACTIVTYTYPE.xss">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/GestionMatricule.aspx">
+      <publishTime>04/28/2016 13:38:02</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/GUICHET/GUICHET_Gestion.aspx">
+      <publishTime>10/25/2016 09:43:51</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Helibras/Helibras.aspx">
+      <publishTime>09/11/2016 15:29:49</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Helibras/JJ_pokayoke.aspx">
+      <publishTime>01/18/2017 10:38:22</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Helibras/jj_pokayoke_import.aspx">
+      <publishTime>12/14/2016 10:19:54</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Industrie.sitemap">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/default.aspx">
+      <publishTime>05/20/2016 11:01:10</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/default.aspx">
+      <publishTime>04/28/2016 11:35:27</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_GESTION_CALENDAR_APP.aspx">
+      <publishTime>07/06/2016 17:33:47</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_GESTION_CHARIOT.aspx">
+      <publishTime>06/30/2016 11:48:29</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_GESTION_MP_CONFNONPOINTE.aspx">
+      <publishTime>03/31/2017 11:05:40</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_MAG_5AU.aspx">
+      <publishTime>06/01/2016 11:27:40</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_MAG_RF.aspx">
+      <publishTime>09/09/2016 09:47:53</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_REQUESTOR.aspx">
+      <publishTime>06/29/2016 18:27:11</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_REQUESTOR_LIST.aspx">
+      <publishTime>06/30/2016 09:23:34</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_REQUESTOR_RESULT.aspx">
+      <publishTime>07/01/2016 10:15:58</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/JavaScript1.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_CSS.css">
+      <publishTime>03/03/2016 12:13:59</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_GARE.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_MAGASIN.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_EDITION_MP.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_Import.aspx">
+      <publishTime>05/02/2016 12:11:02</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_MAGASIN_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_MAG_5AU.aspx">
+      <publishTime>04/01/2016 16:06:32</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_MAG_RF.aspx">
+      <publishTime>04/01/2016 16:05:46</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_MP_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_PLANIF.aspx">
+      <publishTime>07/04/2016 16:59:46</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_PLANIF_RECHER.aspx">
+      <publishTime>06/02/2016 11:35:43</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/ORDO_SCRIPT.js">
+      <publishTime>03/01/2016 15:47:58</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/default.aspx">
+      <publishTime>04/28/2016 11:36:35</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_CONFNONP_TYPO.aspx">
+      <publishTime>07/01/2016 09:41:58</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_GARE.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_MAGASIN.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_MP.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Parametrage/ORDO_EDITION_POSTE.aspx">
+      <publishTime>06/20/2016 09:15:47</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Pilotage/default.aspx">
+      <publishTime>04/28/2016 11:36:20</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Pilotage/ORDO_MAGASIN_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/Pilotage/ORDO_MP_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/WebForm2.aspx">
+      <publishTime>01/04/2016 16:08:21</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/WidgetGraph5AU.ascx">
+      <publishTime>02/08/2016 15:15:27</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/Ordo_Tools/WidgetGrid5AU.ascx">
+      <publishTime>02/08/2016 15:10:47</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/SLA_GUICHET/SLA_GUICHET_GESTION.aspx">
+      <publishTime>02/02/2017 10:57:17</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx">
+      <publishTime>03/31/2017 10:25:40</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/SPEEDUP/SU_IMPORT.aspx">
+      <publishTime>03/29/2017 09:53:03</publishTime>
+    </File>
+    <File Include="SecurePage/Industrie/SPEEDUP/SU_RECHERCHE_AVANCEE.aspx">
+      <publishTime>12/12/2016 10:03:59</publishTime>
+    </File>
+    <File Include="SecurePage/Modelvbsp.edmx.diagram">
+      <publishTime>07/11/2016 15:20:48</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_CSS.css">
+      <publishTime>03/03/2016 12:13:59</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_EDITION_GARE.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_EDITION_MAGASIN.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_EDITION_MP.aspx">
+      <publishTime>04/01/2016 16:04:55</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_Import.aspx">
+      <publishTime>04/01/2016 16:06:33</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_MAGASIN_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_MAG_5AU.aspx">
+      <publishTime>04/01/2016 16:06:32</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_MAG_RF.aspx">
+      <publishTime>04/01/2016 16:05:46</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_MP_PILOTAGE.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_PLANIF.aspx">
+      <publishTime>04/01/2016 16:08:25</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/ORDO_SCRIPT.js">
+      <publishTime>03/01/2016 15:47:58</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/WebForm2.aspx">
+      <publishTime>04/01/2016 16:08:21</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/WidgetGraph5AU.ascx">
+      <publishTime>02/08/2016 15:15:27</publishTime>
+    </File>
+    <File Include="SecurePage/Ordo_Tools/WidgetGrid5AU.ascx">
+      <publishTime>02/08/2016 15:10:47</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/AOG/REC_AOG_INDICATEUR.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/B1/B1_GestionQuincaillerie.aspx">
+      <publishTime>09/12/2016 17:26:34</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/B1/B1_Import.aspx">
+      <publishTime>07/26/2016 14:48:22</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/default.aspx">
+      <publishTime>04/27/2016 14:08:46</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/Parametrage/default.aspx">
+      <publishTime>04/28/2016 13:15:56</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/Parametrage/REC_ECRAN_PROD_MATRICULE.aspx">
+      <publishTime>04/28/2016 13:17:04</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/Parametrage/REC_ECRAN_PROD_MVTD.aspx">
+      <publishTime>04/28/2016 13:17:13</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD.aspx">
+      <publishTime>04/28/2016 13:10:53</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD_MATRICULE.aspx">
+      <publishTime>04/01/2016 16:07:35</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD_MVTD.aspx">
+      <publishTime>04/01/2016 16:07:28</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/Rechange.sitemap">
+      <publishTime>04/27/2016 14:05:21</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_DON_ARTICLE.aspx.de.resx">
+      <publishTime>12/09/2016 12:32:39</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_DON_ARTICLE.aspx.resx">
+      <publishTime>12/09/2016 12:27:17</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_NEW_ARTICLE.aspx.de.resx">
+      <publishTime>12/09/2016 11:32:36</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_NEW_ARTICLE.aspx.en.resx">
+      <publishTime>11/28/2016 16:18:17</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_NEW_ARTICLE.aspx.fr.resx">
+      <publishTime>11/28/2016 16:18:31</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/App_LocalResources/VBSP_NEW_ARTICLE.aspx.resx">
+      <publishTime>11/28/2016 16:17:45</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/Handler1.ashx">
+      <publishTime>12/05/2016 09:25:28</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/Modelvbsp.edmx.diagram">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/News.png">
+      <publishTime>12/09/2016 13:01:37</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_DEPART.aspx">
+      <publishTime>07/04/2016 15:23:48</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_DON_ARTICLE.aspx">
+      <publishTime>12/16/2016 08:40:52</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_Gallery.aspx">
+      <publishTime>05/13/2016 11:42:22</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_ImageEditor.aspx">
+      <publishTime>07/13/2016 16:20:47</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_Import.aspx">
+      <publishTime>05/19/2016 10:33:16</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_ImportImage.aspx">
+      <publishTime>12/07/2016 15:19:08</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_Material.aspx">
+      <publishTime>04/28/2016 13:14:03</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_MOP.aspx">
+      <publishTime>12/05/2016 11:57:12</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_NEW_ARTICLE.aspx">
+      <publishTime>12/15/2016 17:07:12</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_Popup.aspx">
+      <publishTime>12/09/2016 08:27:31</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_Popup_DON.aspx">
+      <publishTime>12/15/2016 17:19:45</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/VBSP/VBSP_WEBCAM.aspx">
+      <publishTime>04/20/2016 16:04:30</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/Volumetrie/default.aspx">
+      <publishTime>07/04/2016 09:29:51</publishTime>
+    </File>
+    <File Include="SecurePage/Rechange/Volumetrie/Synthese_MagVolumetrie.aspx">
+      <publishTime>04/27/2016 15:35:29</publishTime>
+    </File>
+    <File Include="SecurePage/VBSP/VBSP_Gallery.aspx">
+      <publishTime>04/05/2016 13:30:44</publishTime>
+    </File>
+    <File Include="SecurePage/VBSP/VBSP_Material.aspx">
+      <publishTime>04/04/2016 16:44:52</publishTime>
+    </File>
+    <File Include="SecurePage/VBSP/VBSP_NEW_ARTICLE.aspx">
+      <publishTime>04/06/2016 15:07:27</publishTime>
+    </File>
+    <File Include="SecurePage/VBSP/VBSP_Popup.aspx">
+      <publishTime>04/05/2016 13:27:17</publishTime>
+    </File>
+    <File Include="SecurePage/WebForm1.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Site.css">
+      <publishTime>04/08/2016 11:44:02</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>07/15/2016 15:14:43</publishTime>
+    </File>
+    <File Include="Site.Master.cs">
+      <publishTime>01/12/2016 14:21:12</publishTime>
+    </File>
+    <File Include="Site.Master.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sounds/Error.wav">
+      <publishTime>12/01/2016 13:06:25</publishTime>
+    </File>
+    <File Include="SQLQuery1.sql">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ToolBox/AOG/REC_AOG_INDICATEUR.aspx">
+      <publishTime>10/10/2016 10:23:49</publishTime>
+    </File>
+    <File Include="ToolBox/DashboardPublic/DB_ViewerPublic.aspx">
+      <publishTime>05/24/2016 13:16:13</publishTime>
+    </File>
+    <File Include="ToolBox/default.aspx">
+      <publishTime>04/28/2016 14:38:19</publishTime>
+    </File>
+    <File Include="ToolBox/EASA_POKAYOKE.aspx">
+      <publishTime>11/24/2016 15:13:46</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Etiquette_PTCD.aspx">
+      <publishTime>04/28/2016 13:56:28</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Etiquette_PTCD/acetone.pdf">
+      <publishTime>04/28/2016 13:53:35</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Etiquette_PTCD/bouchon.pdf">
+      <publishTime>04/28/2016 13:53:35</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Etiquette_PTCD/date.pdf">
+      <publishTime>04/28/2016 13:53:35</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Etiquette_PTCD/pneu.pdf">
+      <publishTime>04/28/2016 13:53:35</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/IMPORT_ACTIVTYTYPE.aspx">
+      <publishTime>04/05/2016 09:12:54</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/Import_CSV.aspx">
+      <publishTime>04/05/2016 09:12:53</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/ReportDesigner.aspx">
+      <publishTime>05/25/2016 09:34:43</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/ReportList.aspx">
+      <publishTime>06/28/2016 16:18:31</publishTime>
+    </File>
+    <File Include="ToolBox/Etiquette/ReportViewer.aspx">
+      <publishTime>07/12/2016 15:54:22</publishTime>
+    </File>
+    <File Include="ToolBox/GenCAB.aspx">
+      <publishTime>04/28/2016 13:43:50</publishTime>
+    </File>
+    <File Include="ToolBox/IndicateurDivision.aspx">
+      <publishTime>05/02/2016 15:15:20</publishTime>
+    </File>
+    <File Include="ToolBox/Industrie/Expedition/Kit/Kit_DoubleControl.aspx">
+      <publishTime>10/21/2016 14:10:13</publishTime>
+    </File>
+    <File Include="ToolBox/Industrie/JJ_pokayoke.aspx">
+      <publishTime>12/01/2016 15:43:38</publishTime>
+    </File>
+    <File Include="ToolBox/LLP/LLP_DON_EXCLU.aspx">
+      <publishTime>07/05/2016 14:47:49</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/App_LocalResources/SU_NEW.aspx.en.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/App_LocalResources/SU_NEW.aspx.fr-FR.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/App_LocalResources/SU_NEW.aspx.resx">
+      <publishTime>11/28/2016 14:47:55</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/GUICHETSLA_NEW.aspx">
+      <publishTime>02/02/2017 10:41:47</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/GUICHET_NEW.aspx">
+      <publishTime>10/24/2016 09:33:34</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/SU_CONSULTATION.aspx">
+      <publishTime>10/28/2016 16:47:26</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/SU_Gestion.aspx">
+      <publishTime>07/12/2016 13:29:24</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/SU_IMPORT.aspx">
+      <publishTime>07/11/2016 18:53:23</publishTime>
+    </File>
+    <File Include="ToolBox/SPEEDUP/SU_NEW.aspx">
+      <publishTime>12/09/2016 15:15:25</publishTime>
+    </File>
+    <File Include="UnauthorizedAccess.aspx">
+      <publishTime>04/07/2016 16:11:45</publishTime>
+    </File>
+    <File Include="UserControl/ExportToolBar.ascx">
+      <publishTime>04/04/2016 20:50:37</publishTime>
+    </File>
+    <File Include="VBSP/VBSP_Gallery.aspx">
+      <publishTime>04/05/2016 13:30:44</publishTime>
+    </File>
+    <File Include="VBSP/VBSP_Material.aspx">
+      <publishTime>04/04/2016 16:44:52</publishTime>
+    </File>
+    <File Include="VBSP/VBSP_NEW_ARTICLE.aspx">
+      <publishTime>04/06/2016 15:07:27</publishTime>
+    </File>
+    <File Include="VBSP/VBSP_Popup.aspx">
+      <publishTime>04/05/2016 13:27:17</publishTime>
+    </File>
+    <File Include="VBSP/WebForm1.aspx">
+      <publishTime>04/05/2016 00:20:26</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>11/28/2016 08:49:19</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/31/2017 10:45:06</publishTime>
+    </File>
+    <File Include="Web.Debug.config">
+      <publishTime>01/12/2016 14:19:22</publishTime>
+    </File>
+    <File Include="Web.Release.config">
+      <publishTime>01/12/2016 14:19:22</publishTime>
+    </File>
+    <File Include="web.sitemap">
+      <publishTime>09/06/2016 16:30:19</publishTime>
+    </File>
+    <File Include="WebForm1.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="WebForm2.aspx">
+      <publishTime>03/07/2016 16:10:07</publishTime>
+    </File>
+    <File Include="WebForm2.aspx.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="WebForm2.aspx.designer.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="XLSXLMDS.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="XtraReport1.cs">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="XtraReport1.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="XtraReport2.resx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

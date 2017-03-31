@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="Dashboard_ConnectionString" FromAppConfig="true" />
+      <Query Type="CustomSqlQuery" Name="T_Ordo_Appointments_DragAndDrop">
+        <Sql>select "T_Ordo_Appointments_DragAndDrop"."Market_Place",
+       "T_Ordo_Appointments_DragAndDrop"."Appareil",
+       "T_Ordo_Appointments_DragAndDrop"."Poste_Appareil",
+       "T_Ordo_Appointments_DragAndDrop"."Start",
+       "T_Ordo"."Numéro de l'ordre de transfert",
+       "T_Ordo_TypeOrdo"."Type_Ordo",
+       "T_OrdoStatut"."Statut" as "T_OrdoStatut_Statut"
+  from ((("dbo"."T_Ordo_Appointments_DragAndDrop"
+       "T_Ordo_Appointments_DragAndDrop"
+  inner join "dbo"."T_Ordo" "T_Ordo"
+       on ("T_Ordo"."AppointmentID" = "T_Ordo_Appointments_DragAndDrop"."AppointmentID"))
+  inner join "dbo"."T_Ordo_TypeOrdo"
+       "T_Ordo_TypeOrdo"
+       on ("T_Ordo_TypeOrdo"."Cle_Gare" = "T_Ordo"."Clé gare"))
+  inner join "dbo"."T_OrdoStatut" "T_OrdoStatut"
+       on ("T_OrdoStatut"."ID_Statut" = "T_Ordo"."Statut"))
+ where "T_Ordo_TypeOrdo"."Type_Ordo" like 'mp' and ("T_Ordo_Appointments_DragAndDrop"."Start" &gt;= convert
+       (Varchar(10), Getdate(), 103))</Sql>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="T_Ordo_Appointments_DragAndDrop">
+            <Field Name="Market_Place" Type="String" />
+            <Field Name="Appareil" Type="String" />
+            <Field Name="Poste_Appareil" Type="String" />
+            <Field Name="Start" Type="DateTime" />
+            <Field Name="Numéro de l'ordre de transfert" Type="String" />
+            <Field Name="Type_Ordo" Type="String" />
+            <Field Name="T_OrdoStatut_Statut" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Graphique" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo_Appointments_DragAndDrop">
+      <DataItems>
+        <Dimension DataMember="Appareil" UniqueName="DataItem1" />
+        <Dimension DataMember="Poste_Appareil" SortOrder="Descending" UniqueName="DataItem2" />
+        <Measure DataMember="Numéro de l'ordre de transfert" SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="T_OrdoStatut_Statut" UniqueName="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="StackedBar">
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <TreeView ComponentName="treeViewDashboardItem1" Name="Date Plannification / Appareil" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo_Appointments_DragAndDrop">
+      <DataItems>
+        <Dimension DataMember="Start" DateTimeGroupInterval="None" UniqueName="DataItem0" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+      </FilterDimensions>
+    </TreeView>
+    <ListBox ComponentName="listBoxDashboardItem1" Name="Statut" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo_Appointments_DragAndDrop">
+      <DataItems>
+        <Dimension DataMember="T_OrdoStatut_Statut" UniqueName="DataItem0" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+      </FilterDimensions>
+    </ListBox>
+    <TreeView ComponentName="treeViewDashboardItem2" Name="MP / Appareil" DataSource="dashboardSqlDataSource1" DataMember="T_Ordo_Appointments_DragAndDrop">
+      <DataItems>
+        <Dimension DataMember="Market_Place" UniqueName="DataItem0" />
+        <Dimension DataMember="Appareil" SortOrder="Descending" UniqueName="DataItem1" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+        <Dimension UniqueName="DataItem1" />
+      </FilterDimensions>
+    </TreeView>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical" Weight="23.015165031222121">
+        <LayoutItem DashboardItem="listBoxDashboardItem1" Weight="17.004680187207487" />
+        <LayoutItem DashboardItem="treeViewDashboardItem2" Weight="42.277691107644308" />
+        <LayoutItem DashboardItem="treeViewDashboardItem1" Weight="40.717628705148208" />
+      </LayoutGroup>
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="76.984834968777875" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

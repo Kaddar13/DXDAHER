@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DX_DAHERCMS.Site" %>
+
+<%--<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>--%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Site.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+        <div style="background-color: #022e5d; color: #fff; padding-bottom: 20px; border-bottom: 4px solid red; height: 63px;">
+            <div style="float: left;">
+                <div style="margin-bottom:5px">
+                    <img src="/img/Logo_Daher_white.png" />
+                </div>
+               
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+                
+            </div>
+            <div style="float:right;margin-top:20px;margin-right:20px"> 
+                <div>
+                    <asp:Panel runat="server">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server"  LogoutPageUrl="~/Default.aspx" />
+                    </asp:Panel>
+                    
+                </div>
+               
+                
+                
+                </div>
+            </div>
+    
+      
+        <div>
+            <div style="float:left">
+                <dx:ASPxMenu ID="ASPxMenu1" runat="server" DataSourceID="ASPxSiteMapDataSource1" Theme="Moderno"></dx:ASPxMenu>
+            </div>
+            <div style="float:right">
+               
+            </div>            
+        </div>
+  
+            <dx:ASPxSiteMapDataSource ID="ASPxSiteMapDataSource1" runat="server" SiteMapFileName="~/web.sitemap" EnableRoles="True" />
+
+            <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+        <div style="margin-bottom:50px">
+           
+
+              </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+     
+    </form>
+</body>
+</html>

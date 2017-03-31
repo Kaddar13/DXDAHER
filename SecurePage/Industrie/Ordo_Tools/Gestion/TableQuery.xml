@@ -1,0 +1,8 @@
+﻿UPDATE [T_Ordo_confnonpointe] 
+SET [MarketPlace] = @MarketPlace, 
+[Appareil] = @Appareil, 
+[PosApp] = @PosApp, 
+[Ty] = @Ty, 
+[N°Ordre] = @column1, 
+[NumeroOT] = @NumeroOT, [PosOT] = @PosOT, [Clegare] = @Clegare, [DateimpO] = @DateimpO, [DateImpression] = @DateImpression, [Dconf] = @Dconf, [Daterecep] = @Daterecep, [DateLivra] = @DateLivra, [MPXP_Statut] = @MPXP_Statut, [start] = @start, [OtSupprime] = @OtSupprime 
+WHERE [OT-POSTE] = @original_column1 

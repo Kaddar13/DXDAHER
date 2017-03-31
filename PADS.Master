@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PADS.master.cs" Inherits="DX_DAHERCMS.PADS.PADS" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Site.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+        <div style="background-color: #022e5d; color: #fff; padding-bottom: 5px; border-bottom: 4px solid red; height: 50px;">
+            <div style="float: left;">
+                <div style="margin-bottom:5px">
+                    <img src="/img/Logo_Daher_white.png" />
+                </div>
+                        
+            </div>
+            <div> 
+            </div>
+    
+        </div>   
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+     
+    </form>
+</body>
+</html>

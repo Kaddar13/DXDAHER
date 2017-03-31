@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/Default.aspx" title="Daher CMS">
+    <siteMapNode url="~/SecurePage/Rechange/" title="Rechange">
+      <siteMapNode url="~/SecurePage/Rechange/AOG/" title="AOG">
+        <siteMapNode url="~/SecurePage/Rechange/AOG/REC_AOG_INDICATEUR.aspx" title="REC_AOG_INDICATEUR.aspx" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Rechange/ECRANPROD/" title="ECRANPROD">
+        <siteMapNode url="~/SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD.aspx" title="REC_ECRAN_PROD.aspx" />
+        <siteMapNode url="~/SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD_MATRICULE.aspx" title="REC_ECRAN_PROD_MATRICULE.aspx" />
+        <siteMapNode url="~/SecurePage/Rechange/ECRANPROD/REC_ECRAN_PROD_MVTD.aspx" title="REC_ECRAN_PROD_MVTD.aspx" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Rechange/VBSP/" title="VBSP">
+        <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_Gallery.aspx" title="VBSP Gallery" />
+        <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_Material.aspx" title="VBSP Material" />
+        <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_NEW_ARTICLE.aspx" title="VBSP New article" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

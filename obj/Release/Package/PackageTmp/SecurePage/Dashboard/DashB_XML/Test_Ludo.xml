@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="fr-FR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="DESKTOP-N1I9K33\SQLEXPRESS_labo_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="DESKTOP-N1I9K33\SQLEXPRESS" />
+          <Parameter Name="database" Value="labo" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="View_MP-DEMONT">
+        <Table Name="View_MP-DEMONT">
+          <Column Name="Market Place" />
+          <Column Name="Appareil" />
+          <Column Name="PosApp" />
+          <Column Name="Numéro OT " />
+          <Column Name="Pos OT" />
+        </Table>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="View_MP-DEMONT">
+            <Field Name="Market Place" Type="String" />
+            <Field Name="Appareil" Type="String" />
+            <Field Name="PosApp" Type="String" />
+            <Field Name="Numéro OT " Type="String" />
+            <Field Name="Pos OT" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="dashboardSqlDataSource1" DataMember="View_MP-DEMONT">
+      <DataItems>
+        <Measure DataMember="Numéro OT " SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="Market Place" UniqueName="DataItem1" />
+        <Dimension DataMember="Appareil" TopNEnabled="true" TopNShowOthers="true" TopNCount="10" TopNMeasure="DataItem0" UniqueName="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem1" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <ListBox ComponentName="listBoxDashboardItem1" Name="Appareil" DataSource="dashboardSqlDataSource1" DataMember="View_MP-DEMONT">
+      <DataItems>
+        <Dimension DataMember="Appareil" UniqueName="DataItem0" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+      </FilterDimensions>
+    </ListBox>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="listBoxDashboardItem1" Weight="25.407166123778502" />
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="74.5928338762215" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
