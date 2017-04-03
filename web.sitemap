@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
-  <siteMapNode url="~/Default.aspx" title="Daher CMS Version Beta">
+  <siteMapNode url="~/Default.aspx" title="Daher CMS AH">
     <siteMapNode url="~/ToolBox/" title="ToolBox">
       <siteMapNode url="~/ToolBox/SPEEDUP/" title="Speed Up">
         <siteMapNode url="~/ToolBox/SPEEDUP/SU_NEW.aspx?" title="Creation Speed Up" />
