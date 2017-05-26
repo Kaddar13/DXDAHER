@@ -101,6 +101,7 @@
           <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnEntreesurdossier" title="Gestion SU Dossier" />
           <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnGarededistribution" title="Gestion SU Distribution" />
           <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnExpedition" title="Gestion SU Expedition" />
+        <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnExpedition&#38;SU_Magasin=6ES" title="Gestion SU 6ES" />
         </siteMapNode>
         <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Import.aspx" title="Import Dagedim" />
       </siteMapNode>

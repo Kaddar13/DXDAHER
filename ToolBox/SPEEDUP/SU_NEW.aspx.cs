@@ -51,10 +51,13 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 SqlDataSource1.InsertParameters["Distribtuion_GareArrivee"].DefaultValue = txt_distribution_garearrivee.Text;
                 SqlDataSource1.InsertParameters["Distribtuion_GareDepart"].DefaultValue = txt_distribution_garedepart.Text;
 
-                SqlDataSource1.InsertParameters["Distribution_Poids"].DefaultValue = txt_distribution_poids.Text.Replace(".",",");
-                SqlDataSource1.InsertParameters["Distribution_Longeur"].DefaultValue = txt_distribution_longueur.Text.Replace(".", ",");
-                SqlDataSource1.InsertParameters["Distribution_Largeur"].DefaultValue = txt_distribution_largeur.Text.Replace(".", ",");
-                SqlDataSource1.InsertParameters["Distribution_Hauteur"].DefaultValue = txt_distribution_Hauteur.Text.Replace(".",",");
+                SqlDataSource1.InsertParameters["Distribution_Poids"].DefaultValue = txt_distribution_poids.Text.Replace(".", ",");
+                SqlDataSource1.InsertParameters["Distribution_Longeur"].DefaultValue = Spin_Longueur.Value.ToString();
+                    //txt_distribution_longueur.Text.Replace(".", ",");
+                SqlDataSource1.InsertParameters["Distribution_Largeur"].DefaultValue = SpinLargeur.Value.ToString(); 
+                //txt_distribution_largeur.Text.Replace(".", ",");
+                SqlDataSource1.InsertParameters["Distribution_Hauteur"].DefaultValue = SpinHauteur.Value.ToString();
+                    //txt_distribution_Hauteur.Text.Replace(".", ",");
 
 
                 SqlDataSource1.InsertParameters["Autre_Commentaire"].DefaultValue = txt_autre_commentaire.Text;
@@ -62,7 +65,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 SqlDataSource1.InsertParameters["Autre_Litige"].DefaultValue = txt_autre_litige.Text + txt_autre_litige2.Text;
 
                 SqlDataSource1.InsertParameters["BL"].DefaultValue = txt_BL1.Text + ASPxTextBox1.Text;
-                SqlDataSource1.InsertParameters["SU_TrpDediee"].DefaultValue = txt_trpDediee.Text;
+                SqlDataSource1.InsertParameters["SU_TrpDediee"].DefaultValue = txt_trpDediee.Text + txt_trpDedieeMag.Text ;
                     //Convert.ToString(txt_trpDediee.SelectedItem.GetValue("txt_trpDediee"));
                 SqlDataSource1.InsertParameters["AOG"].DefaultValue = txt_AOG.Text;
 
@@ -129,19 +132,24 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             DS_Mouvement.Insert();
 
 
-            using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand("sp_SU_Update", sqlConnection))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.Add("@IDSPEEDUP", SqlDbType.VarChar).Value = sID.ToString();
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString);
+            string commandText = "DECLARE	@return_value int EXEC	@return_value = [dbo].[sp_SU_Update] @IDSPEEDUP= '" + sID.ToString() + "'SELECT	'Return Value' = @return_value";
+            RunCommandAsynchronously(commandText, sqlConn);
+
+            //using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString))
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("sp_SU_Update", sqlConnection))
+            //    {
+            //        cmd.CommandType = CommandType.StoredProcedure;
+
+            //        cmd.Parameters.Add("@IDSPEEDUP", SqlDbType.VarChar).Value = sID.ToString();
 
 
-                    sqlConnection.Open();
-                    cmd.ExecuteNonQuery();
-                }
-            }
+            //        sqlConnection.Open();
+            //        cmd.ExecuteNonQuery();
+            //    }
+            //}
 
             PopupWindow pcWindow = new PopupWindow(lbl_numspeed.Text);
             pcWindow.FooterText = DateTime.Now.ToString("MM/dd/yyyy HH:mm");
@@ -159,7 +167,49 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
         {
             
         }
+        private static void RunCommandAsynchronously(string commandText, SqlConnection connectionString)
+        {
+            // Given command text and connection string, asynchronously execute
+            // the specified command against the connection. For this example,
+            // the code displays an indicator as it is working, verifying the 
+            // asynchronous behavior. 
+            using (SqlConnection connection = connectionString)
+            {
+                try
+                {
+                    int count = 0;
+                    SqlCommand command = new SqlCommand(commandText, connection);
+                    connection.Open();
 
+                    IAsyncResult result = command.BeginExecuteNonQuery();
+                    while (!result.IsCompleted)
+                    {
+
+                        Console.WriteLine("Waiting ({0}", count++);
+                        // Wait for 1/10 second, so the counter
+                        // does not consume all available resources 
+                        // on the main thread.
+                        System.Threading.Thread.Sleep(100);
+                    }
+                    Console.WriteLine("Command complete. Affected {0} rows.",
+                        command.EndExecuteNonQuery(result));
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine("Error ({0}): {1}", ex.Number, ex.Message);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine("Error: {0}", ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    // You might want to pass these errors
+                    // back out to the caller.
+                    Console.WriteLine("Error: {0}", ex.Message);
+                }
+            }
+        }
        
         }
       

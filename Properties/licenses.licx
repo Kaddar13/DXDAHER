@@ -1,4 +1,5 @@
 DevExpress.Patch.InMemoryPatch, DevExpress.Patch.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7fc7bfca2443de66
+DevExpress.Web.ASPxDropDownEdit, DevExpress.Web.v15.2, Version=15.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.Web.ASPxFilterControl, DevExpress.Web.v15.2, Version=15.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 Telerik.Web.UI.RadImageTile, Telerik.Web.UI, Version=2015.2.729.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4
 Telerik.Web.UI.RadSlider, Telerik.Web.UI, Version=2015.2.729.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4

@@ -7,63 +7,72 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace DX_DAHERCMS.Ordo_Tools {
+namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle {
     
     
-    public partial class ORDO_Import {
+    public partial class Shuttle_Gestion {
         
         /// <summary>
-        /// Contrôle ASPxSplitter1.
+        /// Contrôle grid.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxSplitter ASPxSplitter1;
+        protected global::DevExpress.Web.ASPxGridView grid;
         
         /// <summary>
-        /// Contrôle Text1.
+        /// Contrôle DS_Grid.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Grid;
         
         /// <summary>
-        /// Contrôle UP_XML.
+        /// Contrôle DS_Detail.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxUploadControl UP_XML;
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Detail;
         
         /// <summary>
-        /// Contrôle Param_RetourProc.
+        /// Contrôle DS_Transporteur.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden Param_RetourProc;
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Transporteur;
         
         /// <summary>
-        /// Contrôle ASPxTextBox1.
+        /// Contrôle DS_Type.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox1;
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Type;
         
         /// <summary>
-        /// Contrôle RadNotification1.
+        /// Contrôle DS_Metre.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNotification RadNotification1;
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Metre;
+        
+        /// <summary>
+        /// Contrôle Ds_Arrivee.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource Ds_Arrivee;
     }
 }

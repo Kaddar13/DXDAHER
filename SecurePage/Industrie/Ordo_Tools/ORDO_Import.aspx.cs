@@ -15,7 +15,8 @@ using System.Xml;
 using System.Data.SqlClient;
 using System.Configuration;
 using DevExpress.DataAccess.Sql;
-using DevExpress.DataAccess.ConnectionParameters; 
+using DevExpress.DataAccess.ConnectionParameters;
+using System.Diagnostics; 
 
 
 namespace DX_DAHERCMS.Ordo_Tools
@@ -89,6 +90,7 @@ namespace DX_DAHERCMS.Ordo_Tools
 
             return isSuccuss;
         }
+
         public void Update_Data()
         {
             MsSqlConnectionParameters connectionParameters = new MsSqlConnectionParameters("DESKTOP-N1I9K33/SQLEXPRESS", "Dashboard", "sa", "%d@her!1120", MsSqlAuthorizationType.SqlServer);
@@ -118,34 +120,82 @@ namespace DX_DAHERCMS.Ordo_Tools
 
         protected void Import_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand();
-            SqlParameter returnParameter = cmd.Parameters.Add("@return_value", SqlDbType.Int);
-            returnParameter.Direction = ParameterDirection.ReturnValue;
-            cmd.CommandText = "DECLARE	@return_value int EXEC	@return_value = [dbo].[sp_OrdoTraitement] @Fichier= '" + ClassGlobal.FichierNomXML + "'SELECT	'Return Value' = @return_value";
-            cmd.Connection = sqlConn;
-            cmd.ExecuteNonQuery();
-            int id = (int)returnParameter.Value;
-            Console.WriteLine(id.ToString());
-            if (id == 0)
-            {
+            //SqlCommand cmd = new SqlCommand();
+            //SqlParameter returnParameter = cmd.Parameters.Add("@return_value", SqlDbType.Int);
+            //returnParameter.Direction = ParameterDirection.ReturnValue;
+            //cmd.CommandText = "DECLARE	@return_value int EXEC	@return_value = [dbo].[sp_OrdoTraitement] @Fichier= '" + ClassGlobal.FichierNomXML + "'SELECT	'Return Value' = @return_value";
+            
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString);
+            string commandText = "DECLARE	@return_value int EXEC	@return_value = [dbo].[sp_OrdoTraitement] @Fichier = N'" + ClassGlobal.FichierNomXML + "'";
+            ASPxTextBox1.Text = ClassGlobal.FichierNomXML;
 
-                RadNotification1.Title = "Execution Package.";
-                RadNotification1.Text = "The package executed successfully.";
-                RadNotification1.TitleIcon = "info";
-                RadNotification1.ContentIcon = "info";
-                RadNotification1.Show();
-                Param_RetourProc.Value = "The package executed successfully.";
-            }
-            else
+
+            using (SqlConnection connection = con)
             {
-                RadNotification1.Title = "Execution Package.";
-                RadNotification1.Text = "The package failed.";
-                RadNotification1.TitleIcon = "warning";
-                RadNotification1.ContentIcon = "warning";
-                RadNotification1.Show();
-                Param_RetourProc.Value = "The package failed.";
+                try
+                {
+                    int count = 0;
+                    SqlCommand command = new SqlCommand(commandText, connection);
+                    connection.Open();
+
+                    IAsyncResult result = command.BeginExecuteNonQuery();
+                    while (!result.IsCompleted)
+                    {
+
+                        Console.WriteLine("Waiting ({0}", count++);
+                        // Wait for 1/10 second, so the counter
+                        // does not consume all available resources 
+                        // on the main thread.
+                        System.Threading.Thread.Sleep(100);
+                    }
+                    ASPxTextBox1.Text =command.EndExecuteNonQuery(result).ToString();
+                    //Console.WriteLine("Command complete. Affected {0} rows.",
+                    //    command.EndExecuteNonQuery(result));
+                }
+                catch (SqlException ex)
+                {
+                    ASPxTextBox1.Text = ex.Message;
+                    //Console.WriteLine("Error ({0}): {1}", ex.Number, ex.Message);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    ASPxTextBox1.Text = ex.Message;
+                    //Console.WriteLine("Error: {0}", ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    // You might want to pass these errors
+                    // back out to the caller.
+                    ASPxTextBox1.Text = ex.Message;
+                    //Console.WriteLine("Error: {0}", ex.Message);
+                }
             }
+
+
+            //int id = (int)returnParameter.Value;
+            //Console.WriteLine(id.ToString());
+            //if (id == 0)
+            //{
+
+            //    RadNotification1.Title = "Execution Package.";
+            //    RadNotification1.Text = "The package executed successfully.";
+            //    RadNotification1.TitleIcon = "info";
+            //    RadNotification1.ContentIcon = "info";
+            //    RadNotification1.Show();
+            //    Param_RetourProc.Value = "The package executed successfully.";
+            //}
+            //else
+            //{
+            //    RadNotification1.Title = "Execution Package.";
+            //    RadNotification1.Text = "The package failed.";
+            //    RadNotification1.TitleIcon = "warning";
+            //    RadNotification1.ContentIcon = "warning";
+            //    RadNotification1.Show();
+            //    Param_RetourProc.Value = "The package failed.";
+            //}
 
         }
+
+      
     }
 }

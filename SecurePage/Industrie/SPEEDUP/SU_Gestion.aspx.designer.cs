@@ -67,15 +67,6 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox myID;
         
         /// <summary>
-        /// Contrôle LanguageComboBox.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxComboBox LanguageComboBox;
-        
-        /// <summary>
         /// Contrôle grid.
         /// </summary>
         /// <remarks>
@@ -164,14 +155,5 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::DevExpress.Web.ASPxTextBox IdReport;
-        
-        /// <summary>
-        /// Contrôle LoginName1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginName LoginName1;
     }
 }

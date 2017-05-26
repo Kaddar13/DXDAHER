@@ -14,6 +14,8 @@ using System.Web.UI.WebControls;
 using System.Text; 
 
 using Microsoft.VisualBasic.FileIO;
+using System.Net;
+using System.Net.Mail;
 
 namespace DX_DAHERCMS.ToolBox.SPEEDUP
 {
@@ -256,10 +258,9 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                     sqlConnection.Close();
                 }
                 #endregion
-                string commandText =
-            "sp_SU_Update_Download";
+                string commandText ="sp_SU_Update_Download";
 
-                //RunCommandAsynchronously(commandText, new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString));
+                RunCommandAsynchronously(commandText, new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString));
             }
         }
 
@@ -307,7 +308,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             }
         }
 
-        
+
        
 
     }

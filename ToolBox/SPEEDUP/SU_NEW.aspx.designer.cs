@@ -310,6 +310,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_distribution_poids;
         
         /// <summary>
+        /// Contrôle Spin_Longueur.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxSpinEdit Spin_Longueur;
+        
+        /// <summary>
         /// Contrôle txt_distribution_longueur.
         /// </summary>
         /// <remarks>
@@ -319,6 +328,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_distribution_longueur;
         
         /// <summary>
+        /// Contrôle SpinLargeur.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxSpinEdit SpinLargeur;
+        
+        /// <summary>
         /// Contrôle txt_distribution_largeur.
         /// </summary>
         /// <remarks>
@@ -326,6 +344,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::DevExpress.Web.ASPxTextBox txt_distribution_largeur;
+        
+        /// <summary>
+        /// Contrôle SpinHauteur.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxSpinEdit SpinHauteur;
         
         /// <summary>
         /// Contrôle txt_distribution_Hauteur.
@@ -353,6 +380,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::DevExpress.Web.ASPxTextBox txt_stock_mag;
+        
+        /// <summary>
+        /// Contrôle txt_trpDedieeMag.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox txt_trpDedieeMag;
         
         /// <summary>
         /// Contrôle txt_ot.

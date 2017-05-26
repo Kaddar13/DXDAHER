@@ -7,63 +7,81 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace DX_DAHERCMS.Ordo_Tools {
+namespace DX_DAHERCMS.SecurePage.Rechange.GTI {
     
     
-    public partial class ORDO_Import {
+    public partial class gti_ba_ah {
         
         /// <summary>
-        /// Contrôle ASPxSplitter1.
+        /// Contrôle ASPxLabel1.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxSplitter ASPxSplitter1;
+        protected global::DevExpress.Web.ASPxLabel ASPxLabel1;
         
         /// <summary>
-        /// Contrôle Text1.
+        /// Contrôle txt_log.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Text1;
+        protected global::DevExpress.Web.ASPxLabel txt_log;
         
         /// <summary>
-        /// Contrôle UP_XML.
+        /// Contrôle grid.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxUploadControl UP_XML;
+        protected global::DevExpress.Web.ASPxGridView grid;
         
         /// <summary>
-        /// Contrôle Param_RetourProc.
+        /// Contrôle PopUp.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputHidden Param_RetourProc;
+        protected global::DevExpress.Web.ASPxPopupControl PopUp;
         
         /// <summary>
-        /// Contrôle ASPxTextBox1.
+        /// Contrôle popValidation.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox1;
+        protected global::DevExpress.Web.PopupControlContentControl popValidation;
         
         /// <summary>
-        /// Contrôle RadNotification1.
+        /// Contrôle yesButton.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::Telerik.Web.UI.RadNotification RadNotification1;
+        protected global::DevExpress.Web.ASPxButton yesButton;
+        
+        /// <summary>
+        /// Contrôle noButton.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton noButton;
+        
+        /// <summary>
+        /// Contrôle DS_Grid.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Grid;
     }
 }

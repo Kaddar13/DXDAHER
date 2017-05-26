@@ -32,7 +32,8 @@
         </Panes>
     </dx:ASPxSplitter>
     <dx:ASPxButton runat="server" Text="Importer" OnClick="Import_Click" ></dx:ASPxButton>
-    <input id="Param_RetourProc" type="hidden"  runat="server" />
+    <input id="Param_RetourProc" type="hidden"  runat="server"/>
+    <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="600px"></dx:ASPxTextBox>
  <telerik:RadNotification ID="RadNotification1" runat="server" Position="Center" LoadContentOn="EveryShow" VisibleOnPageLoad="false" 
                              Width="330" Height="160" Animation="Fade" EnableRoundedCorners="true" EnableShadow="true" />
 

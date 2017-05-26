@@ -81,27 +81,56 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             ASPxComboBox cbo_Affectation = formedit.FindControl("cbo_mvtAffectation") as ASPxComboBox;
             ASPxMemo memo_commentaires = formedit.FindControl("memo_Commentaire") as ASPxMemo;
 
+            ASPxTextBox txt_expe_BL = formedit.FindControl("expe_BL") as ASPxTextBox;
+            ASPxComboBox cbo_expeFLux = formedit.FindControl("cbo_expeFLux") as ASPxComboBox;
+
 
             DS_Mouvement.InsertParameters["USER"].DefaultValue = User.Identity.Name;
             DS_Mouvement.InsertParameters["Statut"].DefaultValue = cbo_statut.Text + e.NewValues["Exclusion"];
             DS_Mouvement.InsertParameters["Affectation"].DefaultValue = cbo_Affectation.Text;
-            DS_Mouvement.InsertParameters["Commentaire"].DefaultValue = memo_commentaires.Text;
+            DS_Mouvement.InsertParameters["Commentaire"].DefaultValue = memo_commentaires.Text;           
             DS_Mouvement.InsertParameters["IDSPEEDUP"].DefaultValue = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
             DS_Mouvement.Insert();
 
-            using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand("sp_SU_Update", sqlConnection))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-
-                    cmd.Parameters.Add("@IDSPEEDUP", SqlDbType.VarChar).Value = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString);
+            string commandText = "DECLARE	@return_value int EXEC	@return_value = [dbo].[sp_SU_Update] @IDSPEEDUP= '" + grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString() + "'SELECT	'Return Value' = @return_value";
+            RunCommandAsynchronously(commandText, sqlConn);
 
 
-                    sqlConnection.Open();
-                    cmd.ExecuteNonQuery();
-                }
-            }
+
+            SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString);
+            sqlConnection1.Open();
+            SqlCommand sqlComm2 = new SqlCommand();
+            sqlComm2 = sqlConnection1.CreateCommand();
+            //sqlComm2.Parameters.Add("@ExepBL", SqlDbType.Text);
+            ////sqlComm2.Parameters.Add("@ExpeFlux", SqlDbType.Text);
+            //sqlComm2.Parameters.Add("@IDSPEEDUP", SqlDbType.Int);
+
+            sqlComm2.Parameters.AddWithValue("@ExepBL",txt_expe_BL.Text);
+            sqlComm2.Parameters.AddWithValue("@ExpeFlux", cbo_expeFLux.Value);
+            sqlComm2.Parameters.AddWithValue("@IDSPEEDUP", grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString());
+
+            sqlComm2.CommandText = @" UPDATE [T_SPEEDUP] 
+                SET 
+                [Expedition_Flux]= @ExpeFlux,
+                [Expedition_BL]= @ExepBL
+                WHERE [IDSPEEDUP] = @IDSPEEDUP";
+            sqlComm2.ExecuteNonQuery();
+
+
+            //using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString))
+            //{
+            //    using (SqlCommand cmd = new SqlCommand("sp_SU_Update", sqlConnection))
+            //    {
+            //        cmd.CommandType = CommandType.StoredProcedure;
+
+            //        cmd.Parameters.Add("@IDSPEEDUP", SqlDbType.VarChar).Value = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
+
+
+            //        sqlConnection.Open();
+            //        cmd.ExecuteNonQuery();
+            //    }
+            //}
 
 
 
@@ -160,8 +189,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
               
             }
         }
-
-       
+               
         protected void cbo_mvtStatut_Callback(object sender, CallbackEventArgsBase e)
         {
             ASPxPageControl pageedit = grid.FindEditFormTemplateControl("pageEdit") as ASPxPageControl;
@@ -171,17 +199,14 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             cbo_statut.DataSource = ds_Statut.Select(DataSourceSelectArguments.Empty);
             cbo_statut.DataBind();
         }
-
- 
-
+        
         protected void grid_StartRowEditing(object sender, DevExpress.Web.Data.ASPxStartRowEditingEventArgs e)
         {
 
             string Identifiant = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
             grid.SettingsText.PopupEditFormCaption = "Saisie des Mouvements SpeedUp N° " + Identifiant;
         }
-
-
+        
         protected string GetDXCurrentLanguageValue()
         {
             return Request.Cookies["DXCurrentLanguage"] == null ? "" : Request.Cookies["DXCurrentLanguage"].Value;
@@ -195,6 +220,50 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 Culture = GetDXCurrentLanguageValue();
                 //for DevExpress localizable strings 
                 UICulture = GetDXCurrentLanguageValue();
+            }
+        }
+
+        private static void RunCommandAsynchronously(string commandText, SqlConnection connectionString)
+        {
+            // Given command text and connection string, asynchronously execute
+            // the specified command against the connection. For this example,
+            // the code displays an indicator as it is working, verifying the 
+            // asynchronous behavior. 
+            using (SqlConnection connection = connectionString)
+            {
+                try
+                {
+                    int count = 0;
+                    SqlCommand command = new SqlCommand(commandText, connection);
+                    connection.Open();
+
+                    IAsyncResult result = command.BeginExecuteNonQuery();
+                    while (!result.IsCompleted)
+                    {
+
+                        Console.WriteLine("Waiting ({0}", count++);
+                        // Wait for 1/10 second, so the counter
+                        // does not consume all available resources 
+                        // on the main thread.
+                        System.Threading.Thread.Sleep(100);
+                    }
+                    Console.WriteLine("Command complete. Affected {0} rows.",
+                        command.EndExecuteNonQuery(result));
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine("Error ({0}): {1}", ex.Number, ex.Message);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine("Error: {0}", ex.Message);
+                }
+                catch (Exception ex)
+                {
+                    // You might want to pass these errors
+                    // back out to the caller.
+                    Console.WriteLine("Error: {0}", ex.Message);
+                }
             }
         }
 

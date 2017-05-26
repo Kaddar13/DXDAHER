@@ -201,7 +201,6 @@
     <Content Include="Content\themes\base\tabs.css" />
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="img\directory.png" />
     <Content Include="img\file.png" />
     <Content Include="img\France-icon.png" />
@@ -299,12 +298,16 @@
     <Content Include="SecurePage\Industrie\Ordo_Tools\Pilotage\ORDO_MAGASIN_PILOTAGE.aspx" />
     <Content Include="SecurePage\Industrie\Ordo_Tools\Pilotage\ORDO_MP_PILOTAGE.aspx" />
     <Content Include="SecurePage\Industrie\Ordo_Tools\default.aspx" />
+    <Content Include="SecurePage\Industrie\Shuttle\Shuttle_Gestion.aspx" />
     <Content Include="SecurePage\Industrie\SLA_GUICHET\SLA_GUICHET_GESTION.aspx" />
     <Content Include="SecurePage\Industrie\SPEEDUP\SU_RECHERCHE_AVANCEE.aspx" />
     <Content Include="SecurePage\Rechange\B1\B1_GestionQuincaillerie.aspx" />
     <Content Include="SecurePage\Rechange\B1\B1_Import.aspx" />
     <Content Include="SecurePage\Rechange\default.aspx" />
     <Content Include="SecurePage\Rechange\ECRANPROD\Parametrage\default.aspx" />
+    <Content Include="SecurePage\Rechange\GTI\gti_comm_ba_ah.aspx" />
+    <Content Include="SecurePage\Rechange\GTI\gti_pilot_ba_ah.aspx" />
+    <Content Include="SecurePage\Rechange\GTI\index.aspx" />
     <Content Include="SecurePage\Rechange\VBSP\News.png" />
     <Content Include="SecurePage\Rechange\VBSP\VBSP_DEPART.aspx" />
     <Content Include="SecurePage\Rechange\VBSP\VBSP_DON_ARTICLE.aspx" />
@@ -446,6 +449,13 @@
     <Compile Include="SecurePage\Industrie\Helibras\jj_pokayoke_import.aspx.designer.cs">
       <DependentUpon>jj_pokayoke_import.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SecurePage\Industrie\Shuttle\Shuttle_Gestion.aspx.cs">
+      <DependentUpon>Shuttle_Gestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\Industrie\Shuttle\Shuttle_Gestion.aspx.designer.cs">
+      <DependentUpon>Shuttle_Gestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SecurePage\Industrie\SLA_GUICHET\SLA_GUICHET_GESTION.aspx.cs">
       <DependentUpon>SLA_GUICHET_GESTION.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -459,6 +469,28 @@
     </Compile>
     <Compile Include="SecurePage\Industrie\SPEEDUP\SU_RECHERCHE_AVANCEE.aspx.designer.cs">
       <DependentUpon>SU_RECHERCHE_AVANCEE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\gestRoll.cs" />
+    <Compile Include="SecurePage\Rechange\GTI\gti_comm_ba_ah.aspx.cs">
+      <DependentUpon>gti_comm_ba_ah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\gti_comm_ba_ah.aspx.designer.cs">
+      <DependentUpon>gti_comm_ba_ah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\gti_pilot_ba_ah.aspx.cs">
+      <DependentUpon>gti_pilot_ba_ah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\gti_pilot_ba_ah.aspx.designer.cs">
+      <DependentUpon>gti_pilot_ba_ah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\Rechange\GTI\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="SecurePage\Rechange\VBSP\VBSP_Popup_DON.aspx.cs">
       <DependentUpon>VBSP_Popup_DON.aspx</DependentUpon>
