@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
-  <siteMapNode url="~/Default.aspx" title="Daher CMS Version Beta">
+  <siteMapNode url="~/Default.aspx" title="Portail Daher">
     <siteMapNode url="~/ToolBox/" title="ToolBox">
       <siteMapNode url="~/ToolBox/SPEEDUP/" title="Speed Up">
         <siteMapNode url="~/ToolBox/SPEEDUP/SU_NEW.aspx?" title="Creation Speed Up" />
-      </siteMapNode>
-	        <siteMapNode url="~/ToolBox/SPEEDUP/?" title="Guichet">
-        <siteMapNode url="~/ToolBox/SPEEDUP/GUICHET_NEW.aspx?" title="Creation demande Guichet" />
+        <siteMapNode url="~/ToolBox/SPEEDUP/SU_CONSULTATION.aspx?IDSPEEDUP=5215" title="Consultation Speed Up" />
       </siteMapNode>
       <siteMapNode url="~/ToolBox/Etiquette/" title="Etiquette">
         <siteMapNode url="~/ToolBox/Etiquette/Import_CSV.aspx" title="Import CSV" />
@@ -15,40 +13,68 @@
       </siteMapNode>
       <siteMapNode url="~/ToolBox/GenCAB.aspx" title="Generateur de code barre" />
       <siteMapNode url="~/ToolBox/EASA_POKAYOKE.aspx" title="POKA YOKE" />
-      <siteMapNode url="~/ToolBox/Mar_Indus_Expes_Recette_APP.aspx" title="Expe recette" />
-	  <siteMapNode url="~/ToolBox/Mar_Indus_Expes_OT_out.aspx" title="Expe OT exclusion non trackable" />
-      <siteMapNode url="http://xfls-daher002/OIB" title="OIB" roles="*" />
-      <siteMapNode url="~/ToolBox/IndicateurDivision.aspx" title="Indicateur Division" />
-      <siteMapNode url="~/ToolBox/AOG/" title="AOG">
-        <siteMapNode url="~/ToolBox/AOG/REC_AOG_INDICATEUR.aspx" title="Indicateur AOG" />
-        <siteMapNode url="http://xfls-daher002:81/" title="AOG Rescue" roles="*" />
-      </siteMapNode>
-      <siteMapNode url="~/ToolBox/VBSP/VBSP_Import.aspx?id" title="VBSP">
-        <siteMapNode url="~/ToolBox/VBSP/VBSP_Import.aspx" title="Import XL" />
-        <!-- <siteMapNode url="~/ToolBox/VBSP/VBSP_NEW_ARTICLE.aspx" title="Data VBSP" /> -->
-        <siteMapNode url="~/ToolBox/VBSP/VBSP_DEPART.aspx" title="Scan Depart" />
-      </siteMapNode>
       <siteMapNode url="~/ToolBox/DashboardPublic/DB_ViewerPublic.aspx" title="Dashboard Public" />
-      <siteMapNode url="~/ToolBox/LLP/" title="LLP">
-        <siteMapNode url="~/ToolBox/LLP/KPI02" title="KPI02">
+      <siteMapNode url="~/ToolBox/LLP/KPI02/LLP_DON_EXCLU_KPI02_Transport.aspx?" title="LLP">
+        <siteMapNode url="~/ToolBox/LLP/KPI02/KPI02/LLP_DON_EXCLU_KPI02_Transport.aspx?id=1" title="KPI02">
           <siteMapNode url="~/ToolBox/LLP/KPI02/LLP_DON_EXCLU_KPI02_Transport.aspx" title="Exclusion for KPI 02 by transport" />
           <siteMapNode url="~/ToolBox/LLP/KPI02/LLP_DON_EXCLU_KPI02_Booking.aspx" title="Exclusion for KPI 02 by booking" />
         </siteMapNode>
-        <siteMapNode url="~/ToolBox/LLP/KPI05" title="KPI05">
+        <siteMapNode url="~/ToolBox/LLP/KPI05/LLP_DON_EXCLU_KPI05_TANummer.aspx?id=1" title="KPI05">
           <siteMapNode url="~/ToolBox/LLP/KPI05/LLP_DON_EXCLU_KPI05_TANummer.aspx" title="Exclusion for KPI 05 by TA Nummer" />
         </siteMapNode>
-        <siteMapNode url="~/ToolBox/LLP/KPI06-09" title="KPI06-09">
+        <siteMapNode url="~/ToolBox/LLP/KPI06-09/LLP_DON_EXCLU_KPI06-9_StorageUnit.aspx?id=1" title="KPI06-09">
           <siteMapNode url="~/ToolBox/LLP/KPI006-09/LLP_DON_EXCLU_KPI06-9_StorageUnit.aspx" title="Exclusion for KPI 06/09 by Storage Unit" />
         </siteMapNode>
-        <siteMapNode url="~/ToolBox/LLP/KPI08" title="KPI08">
+        <siteMapNode url="~/ToolBox/LLP/KPI08/LLP_DON_EXCLU_KPI08_TRnummer.aspx?id=1" title="KPI08">
           <siteMapNode url="~/ToolBox/LLP/KPI08/LLP_DON_EXCLU_KPI08_TRnummer.aspx" title="Exclusion for KPI 08 by TR Nummer" />
         </siteMapNode>
-        <siteMapNode url="~/ToolBox/LLP/KPI10" title="KPI10">
+        <siteMapNode url="~/ToolBox/LLP/KPI10/LLP_DON_EXCLU_KPI10_Transport.aspx?id=1" title="KPI10">
           <siteMapNode url="~/ToolBox/LLP/KPI10/LLP_DON_EXCLU_KPI10_Transport.aspx" title="Exclusion for KPI 10 by transport" />
           <siteMapNode url="~/ToolBox/LLP/KPI10/LLP_DON_EXCLU_KPI10_Delivery.aspx" title="Exclusion for KPI 10 by delivery" />
         </siteMapNode>
-        <siteMapNode url="~/ToolBox/LLP/Mar_Recep" title="Mar_recep">
+        <siteMapNode url="~/ToolBox/LLP/Mar_Recep/LLP_MAR_EXCLU_RECEP_Booking.aspx?id=1" title="Mar_recep">
           <siteMapNode url="~/ToolBox/LLP/Mar_Recep/LLP_MAR_EXCLU_RECEP_Booking.aspx" title="Exclusion for KPI INBOUND MAR by Booking" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/PADS/" title="Affichage">
+        <siteMapNode url="~/pads/WCS/" title="WCS">
+          <siteMapNode url="~/pads/WCS/FLORIDES/WCS_FL.aspx" title="WCS FLORIDES" />
+          <siteMapNode url="~/pads/WCS/TREILLE/WCS_LT.aspx" title="WCS LA TREILLE" />
+        </siteMapNode>
+        <siteMapNode url="~/pads/AOG/" title="AOG">
+          <siteMapNode url="~/pads/AOG/AOG.aspx" title="AOG" />
+        </siteMapNode>
+        <siteMapNode url="~/pads/Report/SpeedUp" title="SpeedUp">
+          <siteMapNode url="~/pads/Report/SpeedUp/florides/pads_su_florides.aspx" title="Pilotage SpeedUp par Localisation" />
+        </siteMapNode>
+        <siteMapNode url="~/pads/Report/Ordo" title="WIKOS">
+          <siteMapNode url="~/pads/Report/Ordo/Ordo_MP_Dashboard-CONF-NON-POINTE.aspx" title="Conf Non Pointe" />
+          <siteMapNode url="~/pads/Report/Ordo/Ordo_MP_DashboardPADS.aspx" title="Global" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/ToolBox/Industrie/default.aspx" title="Industrie">
+        <siteMapNode url="~/ToolBox/Industrie/MPXP/default.aspx" title="MPXP">
+          <siteMapNode url="~/ToolBox/Industrie/MPXP/MPXP_Traite.aspx" title="MPXP Traite" />
+        </siteMapNode>
+        <siteMapNode url="~/ToolBox/Mar_Indus_Expes_OT_out.aspx" title="Expe OT exclusion non trackable" />
+        <siteMapNode url="~/ToolBox/Mar_Indus_Expes_Recette_APP.aspx" title="Expe recette" />
+        <siteMapNode url="~/ToolBox/SPEEDUP/?" title="Guichet">
+          <siteMapNode url="~/ToolBox/SPEEDUP/GUICHET_NEW.aspx?" title="Creation demande Guichet" />
+        </siteMapNode>
+        <siteMapNode url="~/ToolBox/SPEEDUP/1" title="Guichet SLA">
+          <siteMapNode url="~/ToolBox/SPEEDUP/GUICHETSLA_NEW.aspx?" title="Creation demande Guichet SLA" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="Rechange">
+        <siteMapNode url="~/ToolBox/AOG/" title="AOG">
+          <siteMapNode url="~/ToolBox/AOG/REC_AOG_INDICATEUR.aspx" title="Indicateur AOG" />
+          <siteMapNode url="http://xfls-daher002:81/" title="AOG Rescue" roles="*" />
+        </siteMapNode>
+        <siteMapNode url="~/ToolBox/IndicateurDivision.aspx" title="Indicateur Division" />
+        <siteMapNode url="http://xfls-daher002/OIB" title="OIB" roles="*" />
+        <siteMapNode url="~/ToolBox/VBSP/VBSP_Import.aspx?id" title="VBSP">
+          <siteMapNode url="~/ToolBox/VBSP/VBSP_Import.aspx" title="Import XL" />
+          <siteMapNode url="~/ToolBox/VBSP/VBSP_DEPART.aspx" title="Scan Depart" />
         </siteMapNode>
       </siteMapNode>
     </siteMapNode>
@@ -59,10 +85,19 @@
         <siteMapNode url="~/SecurePage/Admin/Role/RoleBasedAuthorization.aspx" title="Edit User" />
         <siteMapNode url="~/SecurePage/Admin/Role/UsersAndRoles.aspx" title="Users And Roles " />
       </siteMapNode>
-      <siteMapNode url="~/SecurePage/Industrie/GestionMatricule.aspx" title="Gestion Matricule" />
+      <siteMapNode url="~/SecurePage/Admin/Industrie/" title="Industrie">
+        <siteMapNode url="~/SecurePage/Industrie/GestionMatricule.aspx" title="Gestion Matricule" />
+        <siteMapNode url="~/SecurePage/Admin/Industrie/DemandeLogistic/SpeedUp/SU_Admin_Mvt.aspx" title="SpeedUp Mouvement" />
+      </siteMapNode>
     </siteMapNode>
     <siteMapNode url="~/SecurePage/Dashboard/" title="Dashboard">
       <siteMapNode url="~/SecurePage/Dashboard/DASHBOARDVIEWER.aspx" title="Dashboard Viewer" />
+      <siteMapNode url="/pads/AOG" title="Donauwörth WIP">
+        <siteMapNode url="~/pads/AOG/AOG_Don_KPI02.aspx" title="KPI 02" />
+        <siteMapNode url="~/pads/AOG/AOG_Don_KPI06_09.aspx" title="KPI 06 und 09" />
+        <siteMapNode url="~/pads/AOG/AOG_Don.aspx" title="KPI 10" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Dashboard/Requestor/ORDO_REQUESTOR_LIST.aspx" title="Requeteur" />
     </siteMapNode>
     <siteMapNode url="~/SecurePage/Industrie/" title="Industrie">
       <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/default.aspx" title="WIKOS">
@@ -93,25 +128,49 @@
         <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_REQUESTOR_LIST.aspx" title="Requeteur" />
         <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/ORDO_PLANIF_RECHER.aspx" title="Recherche" />
       </siteMapNode>
+      <siteMapNode url="~/SecurePage/Industrie/DemandeLogistic/SpeedUp" title="Administration">
+        <siteMapNode url="~/SecurePage/Industrie/DemandeLogistic/SpeedUp/su_regul.aspx" title="Regul SpeedUp" />
+      </siteMapNode>
       <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/" title="Speed Up">
         <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx" title="Gestion Speed Up">
-		<siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=%" title="Gestion SU Generale" />
-          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnMagasin" title="Gestion SU Magasin" />
-          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnReception" title="Gestion SU Reception" />
-          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnEntreesurdossier" title="Gestion SU Dossier" />
-          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnGarededistribution" title="Gestion SU Distribution" />
-          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=EnExpedition" title="Gestion SU Expedition" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=%" title="Gestion Generale" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Guichet MACS" title="Gestion Guichet MACS" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Magasin" title="Gestion Magasin" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Reception" title="Gestion Reception" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Entree sur dossier" title="Gestion Dossier" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Distribution" title="Gestion Distribution" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Expeditions R7" title="Gestion Expedition R7" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Expeditions Florides" title="Gestion Expedition Florides" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Market Place" title="Gestion Market Place" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Externe" title="Gestion Externe" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=LLP Control Tower" title="Gestion LLP Contrl Tower" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Magasin&amp;SU_Magasin=6ES" title="Gestion 6ES" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Magasin&amp;SU_Magasin=6LM" title="Gestion 6LM" />
+          <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Gestion.aspx?SU_Affectation=Transporteur" title="Transporteur" />
         </siteMapNode>
+        <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Recherche.aspx" title="Recheche Avancée" />
         <siteMapNode url="~/SecurePage/Industrie/SPEEDUP/SU_Import.aspx" title="Import Dagedim" />
       </siteMapNode>
-	  <siteMapNode url="~/SecurePage/Industrie/GUICHET/" title="Guichet">
-        <siteMapNode url="~/SecurePage/Industrie/GUICHET/GUICHET_Gestion.aspx?id=GUICHET" title="Gestion Guichet"/>	
-    <siteMapNode url="~/SecurePage/Industrie/GUICHET/GUICHET_Gestion.aspx?id=MAGASIN" title="Gestion Magasin"/>	
+      <siteMapNode url="~/SecurePage/Industrie/GUICHET/" title="Guichet">
+        <siteMapNode url="~/SecurePage/Industrie/GUICHET/GUICHET_Gestion.aspx?id=GUICHET" title="Gestion Guichet" />
+        <siteMapNode url="~/SecurePage/Industrie/GUICHET/GUICHET_Gestion.aspx?id=MAGASIN" title="Gestion Magasin" />
       </siteMapNode>
-	  
-	  
-	  
-	  
+      <siteMapNode url="~/SecurePage/Industrie/Shuttle/" title="Shuttle">
+        <siteMapNode url="~/SecurePage/Industrie/Shuttle/Shuttle_Gestion.aspx" title="Gestion Shuttle" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Industrie/speedup_HDHR/" title="SpeedUp Hors Daher">
+        <siteMapNode url="~/SecurePage/Industrie/speedup_HDHR/SU_GestionHDHR.aspx" title="Gestion Speed Up Hors Daher" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Industrie/SLA_GUICHET/" title="Guichet_SLA">
+        <siteMapNode url="~/SecurePage/Industrie/SLA_GUICHET/SLA_GUICHET_Gestion.aspx" title="Gestion SLA" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Industrie/Helibras/" title="Helibras">
+        <siteMapNode url="~/SecurePage/Industrie/Helibras/JJ_pokayoke.aspx" title="Double Control" />
+        <siteMapNode url="~/SecurePage/Industrie/Helibras/jj_pokayoke_import.aspx" title="Import SAP" />
+      </siteMapNode>
+      <siteMapNode url="~" title="Gestion des Amonts">
+        <siteMapNode url="~/SecurePage/Industrie/GestionAmont/Gestion_AmontBL.aspx?type=BL" title="Amont BL" />
+      </siteMapNode>
     </siteMapNode>
     <siteMapNode url="~/SecurePage/Rechange/" title="Rechange">
       <siteMapNode url="~/SecurePage/Rechange/ECRANPROD/" title="Prod Flux Sortant">
@@ -125,14 +184,29 @@
         <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_NEW_ARTICLE.aspx" title="New Part Number" />
         <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_Gallery.aspx" title="Gallery" />
         <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_Material.aspx" title="Edit Material" />
+        <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_MOP.aspx" title="Edit MOP" />
+        <siteMapNode url="~/SecurePage/Industrie/Ordo_Tools/Gestion/ORDO_REQUESTOR_LIST.aspx?" title="Requeteur" />
         <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_ImageEditor.aspx" title="Image Editor" />
+      </siteMapNode>
+      <siteMapNode url="~/SecurePage/Rechange/VBSP_CONSULT/VBSP_NEW_ARTICLE.aspx?id" title="VBSP CONSULT">
+        <siteMapNode url="~/SecurePage/Rechange/VBSP_CONSULT/VBSP_NEW_ARTICLE.aspx" title="VBSP CONSULTATION" />
       </siteMapNode>
       <siteMapNode url="~/SecurePage/Rechange/Volumetrie/default.aspx" title="Volumetrie">
         <siteMapNode url="~/SecurePage/Rechange/Volumetrie/Synthese_MagVolumetrie.aspx" title="Gestion de la volumetrie" />
       </siteMapNode>
-	        <siteMapNode url="~/SecurePage/Rechange/B1/default.aspx" title="B1">
+      <siteMapNode url="~/SecurePage/Rechange/B1/default.aspx" title="B1">
         <siteMapNode url="~/SecurePage/Rechange/B1/B1_GestionQuincaillerie.aspx" title="Gestion Quincaillerie" />
-		<siteMapNode url="~/SecurePage/Rechange/B1/B1_Import.aspx" title="Import Quincaillerie" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/SecurePage/Donauworth/" title="Donauworth">
+      <siteMapNode url="~/SecurePage/Donauworth/Rechange/VBSP/VBSP_DON_ARTICLE.aspx?id" title="VBSP">
+        <siteMapNode url="~/SecurePage/Donauworth/Rechange/VBSP/VBSP_DON_ARTICLE.aspx" title="New Part Number" />
+        <siteMapNode url="~/SecurePage/Rechange/VBSP/VBSP_MOP.aspx?id" title="Edit MOP" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/SecurePage/LLP/default.aspx" title="LLP">
+      <siteMapNode url="~/SecurePage/LLP/Qualite/default.aspx" title="Qualite">
+        <siteMapNode url="~/SecurePage/LLP/Qualite/Qualite_commnunication.aspx" title="Gestion NC" />
       </siteMapNode>
     </siteMapNode>
   </siteMapNode>

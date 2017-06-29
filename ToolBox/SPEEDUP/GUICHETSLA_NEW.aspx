@@ -20,6 +20,14 @@
                         <dx:LayoutGroup Caption="Informations du demandeur :">
                             <Items>
 							<%--Sigle--%>
+                                <dx:LayoutItem Caption="Appareil">
+                                    <LayoutItemNestedControlCollection>
+                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                            <dx:ASPxTextBox ID="txt_appareil" runat="server">
+                                            </dx:ASPxTextBox>
+                                        </dx:LayoutItemNestedControlContainer>
+                                    </LayoutItemNestedControlCollection>
+                                </dx:LayoutItem>
                                 <dx:LayoutItem Caption="EOTP :" RowSpan="2" Visible="True">
                                     <LayoutItemNestedControlCollection>
                                         <dx:LayoutItemNestedControlContainer>
@@ -240,28 +248,11 @@
                                             </LayoutItemNestedControlCollection>
                                         </dx:LayoutItem>
 
-                                        <dx:LayoutItem Caption="Piece jointe (OT) :" RequiredMarkDisplayMode="Required">
+                                        <dx:LayoutItem Caption="Piece jointe (OT) :" >
                                             <LayoutItemNestedControlCollection>
                                                 <dx:LayoutItemNestedControlContainer runat="server">
-                                                 <asp:FileUpload ID="FileUpload1" runat="server" />
-
-
-                                                   <%--  <dx:ASPxUploadControl runat="server" ID="upload" ClientInstanceName="DocumentsUploadControl" Width="100%" 
-                                                ShowProgressPanel="True" ShowTextBox="True" BrowseButton-Text="Add documents" FileUploadMode="OnPageLoad"
-                                                OnFileUploadComplete="DocumentsUploadControl_FileUploadComplete" ShowUploadButton="True">
-
-<BrowseButton Text="Add documents"></BrowseButton>
-
-                                                <AdvancedModeSettings
-                                                    EnableMultiSelect="False" EnableDragAndDrop="true" ExternalDropZoneID="dropZone">
-                                                </AdvancedModeSettings>
-                                                <ValidationSettings
-                                                    AllowedFileExtensions=".msg"
-                                                    MaxFileSize="4194304">
-                                                </ValidationSettings>
-                                                           <ClientSideEvents FileUploadComplete="onUploadControlFileUploadComplete" />                                                         
-                                            </dx:ASPxUploadControl>--%>
-
+                                                 <asp:FileUpload ID="FileUpload1" runat="server" />                                               
+                                  
                                                     
 
                                                 </dx:LayoutItemNestedControlContainer>
@@ -313,7 +304,8 @@
            ,[Qte4]
            ,[Reference5]
            ,[Qte5]
-         ,[File]      
+         ,[File] 
+            ,[Appareil]     
          ) 
          VALUES (
             @Type_Demande,
@@ -333,7 +325,8 @@
            ,@Qte4
            ,@Reference5
            ,@Qte5
-            ,@Txt_File          
+            ,@Txt_File  
+            ,@Txt_appareil        
              )
         SET @QuoteID = Scope_Identity();"
             OldValuesParameterFormatString="original_{0}"
@@ -351,6 +344,7 @@
                 <asp:Parameter Name="SU_Telephone" Type="String" />
                 <asp:Parameter Name="Num_Resa" Type="String" />
                 <asp:Parameter Name="Txt_File" Type="String" />
+                 <asp:Parameter Name="Txt_appareil" Type="String" />
                 <asp:Parameter Name="QuoteID" Direction="Output" Type="Int32" />
                  <asp:Parameter Name="Reference2" Type="String" />
                 <asp:Parameter Name="Reference3" Type="String" />

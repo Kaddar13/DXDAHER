@@ -11,14 +11,5 @@ namespace DX_DAHERCMS {
     
     
     public partial class Default1 {
-        
-        /// <summary>
-        /// Contrôle RadTileList1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::Telerik.Web.UI.RadTileList RadTileList1;
     }
 }

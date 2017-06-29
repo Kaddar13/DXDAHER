@@ -31,6 +31,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxFormLayout formLayout;
         
         /// <summary>
+        /// Contrôle txt_appareil.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_appareil;
+        
+        /// <summary>
         /// Contrôle txt_sigle.
         /// </summary>
         /// <remarks>

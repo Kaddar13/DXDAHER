@@ -19,13 +19,14 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             lbl_user.Text = Environment.UserName;
 
         }
+
         protected void updateButton_Click(object sender, EventArgs e)
         {
             try
             {
                 #region Insertion de la SpeedUp
                 SqlDataSource1.InsertParameters["SU_Destinataire"].DefaultValue = txt_su_destinataire.Text;
-                SqlDataSource1.InsertParameters["SU_EOTP"].DefaultValue = txt_SU_EOTP.Text;
+                SqlDataSource1.InsertParameters["SU_EOTP"].DefaultValue = txt_SU_EOTP.Value.ToString();
                 SqlDataSource1.InsertParameters["SU_Localisation"].DefaultValue = HiddenField1.Value;
                 SqlDataSource1.InsertParameters["SU_Affectation"].DefaultValue = HiddenField1.Value;
                 SqlDataSource1.InsertParameters["SU_Site"].DefaultValue = txt_SiteDepart.Text;
@@ -52,11 +53,12 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 SqlDataSource1.InsertParameters["Distribtuion_GareDepart"].DefaultValue = txt_distribution_garedepart.Text;
 
                 SqlDataSource1.InsertParameters["Distribution_Poids"].DefaultValue = txt_distribution_poids.Text.Replace(".", ",");
-                SqlDataSource1.InsertParameters["Distribution_Longeur"].DefaultValue = Spin_Longueur.Value.ToString();
+
+                SqlDataSource1.InsertParameters["Distribution_Longeur"].DefaultValue = SpinLongueur.Text;
                     //txt_distribution_longueur.Text.Replace(".", ",");
-                SqlDataSource1.InsertParameters["Distribution_Largeur"].DefaultValue = SpinLargeur.Value.ToString(); 
+                SqlDataSource1.InsertParameters["Distribution_Largeur"].DefaultValue = SpinLargeur.Text; 
                 //txt_distribution_largeur.Text.Replace(".", ",");
-                SqlDataSource1.InsertParameters["Distribution_Hauteur"].DefaultValue = SpinHauteur.Value.ToString();
+                SqlDataSource1.InsertParameters["Distribution_Hauteur"].DefaultValue = SpinHauteur.Text;
                     //txt_distribution_Hauteur.Text.Replace(".", ",");
 
 
@@ -72,9 +74,10 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 SqlDataSource1.InsertParameters["Dossier_Demandeur"].DefaultValue = txt_dossier_demandeur.Text;
                 SqlDataSource1.InsertParameters["Dossier_OF"].DefaultValue = txt_dossier_OF.Text;
 
+       
                 SqlDataSource1.InsertParameters["DocLibre"].DefaultValue = txt_doclibre.Text + txt_doclibre2.Text;
                 SqlDataSource1.InsertParameters["OT"].DefaultValue = txt_ot.Text + txt_ot2.Text;
-                SqlDataSource1.InsertParameters["OT_Poste"].DefaultValue = txt_ot_poste.Text + txt_otposte2.Text;
+                SqlDataSource1.InsertParameters["OT_Poste"].DefaultValue = (txt_ot_poste.Text + ';' + txt_ot_poste2.Text + ';' + txt_ot_poste3.Text + ';' + txt_ot_poste4.Text + ';' + txt_ot_poste5.Text) + (txt_otposte1.Text + ';' + txt_otposte2.Text + ';' + txt_otposte3.Text + ';' + txt_otposte4.Text + ';' + txt_otposte5.Text);
                 SqlDataSource1.InsertParameters["Quantite"].DefaultValue = txt_quantite.Text;
                 SqlDataSource1.InsertParameters["Designation"].DefaultValue = txt_designation.Text;
                 SqlDataSource1.InsertParameters["Reference"].DefaultValue = txt_reference.Text + txt_reference2.Text + txt_reference3.Text;
@@ -115,11 +118,13 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             set { ViewState["StartLeft"] = value; }
             get { return ViewState["StartLeft"] != null ? (int)ViewState["StartLeft"] : 650; }
         }
+
         int StartTop
         {
             set { ViewState["StartTop"] = value; }
             get { return ViewState["StartTop"] != null ? (int)ViewState["StartTop"] : 270; }
         }
+
         protected void SqlDataSource1_Inserted(object sender, SqlDataSourceStatusEventArgs e)
         {
             string sID = e.Command.Parameters["@QuoteID"].Value.ToString();
@@ -163,10 +168,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                    
         }
 
-        protected void Unnamed_Click(object sender, EventArgs e)
-        {
-            
-        }
+     
         private static void RunCommandAsynchronously(string commandText, SqlConnection connectionString)
         {
             // Given command text and connection string, asynchronously execute

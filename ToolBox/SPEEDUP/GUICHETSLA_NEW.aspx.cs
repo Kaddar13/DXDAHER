@@ -37,7 +37,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
                 SqlDataSource1.InsertParameters["Qte4"].DefaultValue = txt_ref4Qte.Text;
                 SqlDataSource1.InsertParameters["Reference5"].DefaultValue = txt_ref5.Text;
                 SqlDataSource1.InsertParameters["Qte5"].DefaultValue = txt_ref5Qte.Text;
-           
+                SqlDataSource1.InsertParameters["Txt_appareil"].DefaultValue = txt_appareil.Text;
 
 
                 if (  string.IsNullOrEmpty(FileUpload1.FileName) == true){

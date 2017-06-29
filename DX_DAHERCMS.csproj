@@ -209,12 +209,14 @@
     <Content Include="img\login.png" />
     <Content Include="img\logout.png" />
     <Content Include="img\speedup.png" />
-    <Content Include="img\Tiles\easyvista.jpg" />
+    <Content Include="img\Tiles\easyvista.png" />
+    <Content Include="img\Tiles\GMAO.png" />
     <Content Include="img\Tiles\notilus.png" />
     <Content Include="img\Tiles\sharepoint.png" />
-    <Content Include="img\Tiles\talentsoft.jpeg" />
+    <Content Include="img\Tiles\talentsoft.png" />
     <Content Include="img\UK-icon.png" />
     <Content Include="Index_SpeedUp.aspx" />
+    <Content Include="master.css" />
     <Content Include="metro_speedup.css" />
     <Content Include="PADS\Image\ContreReception\0_LLP.bmp" />
     <Content Include="PADS\Image\ContreReception\1_Volume_Activite.bmp" />
@@ -277,6 +279,7 @@
     <Content Include="img\unlink.png" />
     <Content Include="img\EC175.png" />
     <Content Include="SecurePage\Industrie\DemandeLogistic\SpeedUp\SU_Regul.aspx" />
+    <Content Include="SecurePage\Industrie\GestionAmont\Gestion_AmontBL.aspx" />
     <Content Include="SecurePage\Industrie\GUICHET\GUICHET_Gestion.aspx" />
     <Content Include="SecurePage\Industrie\Helibras\jj_pokayoke_import.aspx" />
     <Content Include="SecurePage\Industrie\Ordo_Tools\Gestion\default.aspx" />
@@ -298,6 +301,7 @@
     <Content Include="SecurePage\Industrie\Ordo_Tools\Pilotage\ORDO_MAGASIN_PILOTAGE.aspx" />
     <Content Include="SecurePage\Industrie\Ordo_Tools\Pilotage\ORDO_MP_PILOTAGE.aspx" />
     <Content Include="SecurePage\Industrie\Ordo_Tools\default.aspx" />
+    <Content Include="SecurePage\LLP\Qualite\Qualite_commnunication.aspx" />
     <Content Include="SecurePage\Industrie\Shuttle\Shuttle_Gestion.aspx" />
     <Content Include="SecurePage\Industrie\SLA_GUICHET\SLA_GUICHET_GESTION.aspx" />
     <Content Include="SecurePage\Industrie\SPEEDUP\SU_RECHERCHE_AVANCEE.aspx" />
@@ -353,6 +357,7 @@
     <Content Include="SecurePage\Rechange\ECRANPROD\Parametrage\REC_ECRAN_PROD_MVTD.aspx" />
     <Content Include="Site.css" />
     <Content Include="ToolBox\Etiquette\Import_CSV.aspx" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -363,6 +368,7 @@
     <Content Include="ToolBox\IndicateurDivision.aspx" />
     <Content Include="ToolBox\Industrie\Expedition\Kit\Kit_DoubleControl.aspx" />
     <Content Include="SecurePage\Industrie\Helibras\JJ_pokayoke.aspx" />
+    <Content Include="ToolBox\Industrie\MPXP\MPXP_Traite.aspx" />
     <Content Include="ToolBox\LLP\LLP_DON_EXCLU.aspx" />
     <Content Include="SecurePage\Industrie\SPEEDUP\SU_Gestion.aspx" />
     <Content Include="SecurePage\Industrie\SPEEDUP\SU_IMPORT.aspx" />
@@ -442,12 +448,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PortailModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SecurePage\Industrie\GestionAmont\Gestion_AmontBL.aspx.cs">
+      <DependentUpon>Gestion_AmontBL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\Industrie\GestionAmont\Gestion_AmontBL.aspx.designer.cs">
+      <DependentUpon>Gestion_AmontBL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SecurePage\Industrie\Helibras\jj_pokayoke_import.aspx.cs">
       <DependentUpon>jj_pokayoke_import.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="SecurePage\Industrie\Helibras\jj_pokayoke_import.aspx.designer.cs">
       <DependentUpon>jj_pokayoke_import.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SecurePage\LLP\Qualite\Qualite_commnunication.aspx.cs">
+      <DependentUpon>Qualite_commnunication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SecurePage\LLP\Qualite\Qualite_commnunication.aspx.designer.cs">
+      <DependentUpon>Qualite_commnunication.aspx</DependentUpon>
     </Compile>
     <Compile Include="SecurePage\Industrie\Shuttle\Shuttle_Gestion.aspx.cs">
       <DependentUpon>Shuttle_Gestion.aspx</DependentUpon>
@@ -499,6 +519,13 @@
     <Compile Include="SecurePage\Rechange\VBSP\VBSP_Popup_DON.aspx.designer.cs">
       <DependentUpon>VBSP_Popup_DON.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ToolBox\Industrie\MPXP\MPXP_Traite.aspx.cs">
+      <DependentUpon>MPXP_Traite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToolBox\Industrie\MPXP\MPXP_Traite.aspx.designer.cs">
+      <DependentUpon>MPXP_Traite.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ToolBox\SPEEDUP\GUICHETSLA_NEW.aspx.cs">
       <DependentUpon>GUICHETSLA_NEW.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -514,6 +541,13 @@
     </Compile>
     <Compile Include="VBSP_TB_MOP.cs">
       <DependentUpon>PortailModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\ChartUtils.cs" />
     <Content Include="App_Code\MarkerKindUtils.cs" />
@@ -1256,6 +1290,7 @@
     <Folder Include="PADS\Report\Magasin\" />
     <Folder Include="SecurePage\Industrie\Expedition\" />
     <Folder Include="ToolBox\DashboardPublic\DashbXML\Industrie\" />
+    <Folder Include="ToolBox\SPEEDUP\App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -1290,7 +1325,6 @@
     <EmbeddedResource Include="SecurePage\Industrie\SPEEDUP\SU_Report.resx">
       <DependentUpon>SU_Report.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="ToolBox\SPEEDUP\App_LocalResources\SU_NEW.aspx.resx" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

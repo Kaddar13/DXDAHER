@@ -15,7 +15,8 @@
             <dx:SplitterPane ShowCollapseBackwardButton="True" Name="ListXML" AutoWidth="true" >
                 <ContentCollection>
                     <dx:SplitterContentControl>
-                            <dx:ASPxTreeView ID="ASPxTreeView1" runat="server"  OnVirtualModeCreateChildren="treeView_VirtualModeCreateChildren" OnNodeClick="ASPxTreeView1_NodeClick" Theme="Moderno" AllowSelectNode="True" AutoPostBack="True" NodeLinkMode="TextOnly" /> 
+                            <dx:ASPxTreeView ID="ASPxTreeView1" runat="server"  
+                                OnVirtualModeCreateChildren="treeView_VirtualModeCreateChildren" OnNodeClick="ASPxTreeView1_NodeClick" Theme="Moderno" AllowSelectNode="True" AutoPostBack="false" NodeLinkMode="TextOnly" /> 
                     </dx:SplitterContentControl>                        
                 </ContentCollection>
                       

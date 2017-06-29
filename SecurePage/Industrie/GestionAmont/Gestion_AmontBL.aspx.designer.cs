@@ -7,10 +7,28 @@
 // </généré automatiquement>
 //------------------------------------------------------------------------------
 
-namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle {
+namespace DX_DAHERCMS.SecurePage.Industrie.GestionAmont {
     
     
-    public partial class Shuttle_Gestion {
+    public partial class Gestion_AmontBL {
+        
+        /// <summary>
+        /// Contrôle ASPxLabel1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxLabel ASPxLabel1;
+        
+        /// <summary>
+        /// Contrôle IdReport.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox IdReport;
         
         /// <summary>
         /// Contrôle grid.
@@ -22,13 +40,49 @@ namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle {
         protected global::DevExpress.Web.ASPxGridView grid;
         
         /// <summary>
-        /// Contrôle DS_Grid.
+        /// Contrôle ASPxPopupControl2.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Grid;
+        protected global::DevExpress.Web.ASPxPopupControl ASPxPopupControl2;
+        
+        /// <summary>
+        /// Contrôle ASPxWebDocumentViewer1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.XtraReports.Web.ASPxWebDocumentViewer ASPxWebDocumentViewer1;
+        
+        /// <summary>
+        /// Contrôle SqlDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        
+        /// <summary>
+        /// Contrôle DS_Mouvement.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Mouvement;
+        
+        /// <summary>
+        /// Contrôle DS_Blocage.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Blocage;
         
         /// <summary>
         /// Contrôle DS_Detail.
@@ -38,68 +92,5 @@ namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource DS_Detail;
-        
-        /// <summary>
-        /// Contrôle DS_Transporteur.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Transporteur;
-        
-        /// <summary>
-        /// Contrôle DS_Type.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Type;
-        
-        /// <summary>
-        /// Contrôle DS_Metre.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Metre;
-        
-        /// <summary>
-        /// Contrôle Ds_Arrivee.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Ds_Arrivee;
-        
-        /// <summary>
-        /// Contrôle DS_Depart.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Depart;
-        
-        /// <summary>
-        /// Contrôle DS_Vente.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Vente;
-        
-        /// <summary>
-        /// Contrôle DS_Achat.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource DS_Achat;
     }
 }

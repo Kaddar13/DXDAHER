@@ -37,7 +37,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txt_SU_EOTP;
+        protected global::DevExpress.Web.ASPxComboBox txt_SU_EOTP;
         
         /// <summary>
         /// Contrôle txt_AOG.
@@ -163,7 +163,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_reception_fournisseur;
+        protected global::DevExpress.Web.ASPxTextBox txt_reception_fournisseur;
         
         /// <summary>
         /// Contrôle txt_reception_transporteur.
@@ -190,7 +190,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_reception_br;
+        protected global::DevExpress.Web.ASPxTextBox txt_reception_br;
         
         /// <summary>
         /// Contrôle txt_reception_zleci.
@@ -199,7 +199,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_reception_zleci;
+        protected global::DevExpress.Web.ASPxTextBox txt_reception_zleci;
         
         /// <summary>
         /// Contrôle txt_reception_origine.
@@ -217,7 +217,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_reception_commande;
+        protected global::DevExpress.Web.ASPxTextBox txt_reception_commande;
         
         /// <summary>
         /// Contrôle txt_reception_postecommande.
@@ -226,7 +226,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_reception_postecommande;
+        protected global::DevExpress.Web.ASPxTextBox txt_reception_postecommande;
         
         /// <summary>
         /// Contrôle txt_reference3.
@@ -244,7 +244,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_quantite2;
+        protected global::DevExpress.Web.ASPxTextBox txt_quantite2;
         
         /// <summary>
         /// Contrôle txt_autre_litige.
@@ -262,7 +262,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_autre_commentaire;
+        protected global::DevExpress.Web.ASPxTextBox txt_autre_commentaire;
         
         /// <summary>
         /// Contrôle txt_autre_pvl.
@@ -310,22 +310,13 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_distribution_poids;
         
         /// <summary>
-        /// Contrôle Spin_Longueur.
+        /// Contrôle SpinLongueur.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxSpinEdit Spin_Longueur;
-        
-        /// <summary>
-        /// Contrôle txt_distribution_longueur.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txt_distribution_longueur;
+        protected global::DevExpress.Web.ASPxComboBox SpinLongueur;
         
         /// <summary>
         /// Contrôle SpinLargeur.
@@ -334,16 +325,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxSpinEdit SpinLargeur;
-        
-        /// <summary>
-        /// Contrôle txt_distribution_largeur.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txt_distribution_largeur;
+        protected global::DevExpress.Web.ASPxComboBox SpinLargeur;
         
         /// <summary>
         /// Contrôle SpinHauteur.
@@ -352,16 +334,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxSpinEdit SpinHauteur;
-        
-        /// <summary>
-        /// Contrôle txt_distribution_Hauteur.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txt_distribution_Hauteur;
+        protected global::DevExpress.Web.ASPxComboBox SpinHauteur;
         
         /// <summary>
         /// Contrôle txt_autre_litige2.
@@ -379,7 +352,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox txt_stock_mag;
+        protected global::DevExpress.Web.ASPxComboBox txt_stock_mag;
         
         /// <summary>
         /// Contrôle txt_trpDedieeMag.
@@ -409,6 +382,42 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_ot_poste;
         
         /// <summary>
+        /// Contrôle txt_ot_poste2.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_ot_poste2;
+        
+        /// <summary>
+        /// Contrôle txt_ot_poste3.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_ot_poste3;
+        
+        /// <summary>
+        /// Contrôle txt_ot_poste4.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_ot_poste4;
+        
+        /// <summary>
+        /// Contrôle txt_ot_poste5.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_ot_poste5;
+        
+        /// <summary>
         /// Contrôle txt_reference.
         /// </summary>
         /// <remarks>
@@ -424,7 +433,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_dossier_demandeur;
+        protected global::DevExpress.Web.ASPxTextBox txt_dossier_demandeur;
         
         /// <summary>
         /// Contrôle txt_dossier_OF.
@@ -433,7 +442,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_dossier_OF;
+        protected global::DevExpress.Web.ASPxTextBox txt_dossier_OF;
         
         /// <summary>
         /// Contrôle ASPxTextBox1.
@@ -454,6 +463,15 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_ot2;
         
         /// <summary>
+        /// Contrôle txt_otposte1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_otposte1;
+        
+        /// <summary>
         /// Contrôle txt_otposte2.
         /// </summary>
         /// <remarks>
@@ -463,13 +481,40 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         protected global::DevExpress.Web.ASPxTextBox txt_otposte2;
         
         /// <summary>
+        /// Contrôle txt_otposte3.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_otposte3;
+        
+        /// <summary>
+        /// Contrôle txt_otposte4.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_otposte4;
+        
+        /// <summary>
+        /// Contrôle txt_otposte5.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_otposte5;
+        
+        /// <summary>
         /// Contrôle txt_expedition_appareil.
         /// </summary>
         /// <remarks>
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_expedition_appareil;
+        protected global::DevExpress.Web.ASPxTextBox txt_expedition_appareil;
         
         /// <summary>
         /// Contrôle txt_expedition_be.
@@ -478,7 +523,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_expedition_be;
+        protected global::DevExpress.Web.ASPxTextBox txt_expedition_be;
         
         /// <summary>
         /// Contrôle txt_expedition_fal.
@@ -487,7 +532,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_expedition_fal;
+        protected global::DevExpress.Web.ASPxTextBox txt_expedition_fal;
         
         /// <summary>
         /// Contrôle txt_doclibre.
@@ -496,7 +541,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_doclibre;
+        protected global::DevExpress.Web.ASPxTextBox txt_doclibre;
         
         /// <summary>
         /// Contrôle txt_reference2.
@@ -514,7 +559,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_quantite;
+        protected global::DevExpress.Web.ASPxTextBox txt_quantite;
         
         /// <summary>
         /// Contrôle txt_designation.
@@ -523,7 +568,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Champ généré automatiquement.
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_designation;
+        protected global::DevExpress.Web.ASPxTextBox txt_designation;
         
         /// <summary>
         /// Contrôle updateButton.
@@ -596,5 +641,23 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource DS_Mouvement;
+        
+        /// <summary>
+        /// Contrôle DS_Magasin.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_Magasin;
+        
+        /// <summary>
+        /// Contrôle DS_EOTP.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource DS_EOTP;
     }
 }

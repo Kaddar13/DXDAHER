@@ -464,7 +464,8 @@
             SU_EOTP, 
             SU_Telephone, 
             Autre_PVL, 
-            Stock_Mag, Num_Resa, Reference, OT, Type_Demande, SU_Commentaire, Exclusion, Exlusion_Commentaires, Guichet_Depose, Guichet_RemiseClient, Guichet_Distri, [File], OT2, OT3, OT4, OT5, Reference2, Reference3, Qte2, Qte3, Reference4, Qte4, Reference5, Qte5, Quantite,Guichet_ExclusionMagasin FROM T_GUICHET WHERE (Type_Demande = N'GUICHET')"
+            Stock_Mag, Num_Resa, Reference, OT, Type_Demande, SU_Commentaire, Exclusion, Exlusion_Commentaires, Guichet_Depose, Guichet_RemiseClient, Guichet_Distri, [File], OT2, OT3, OT4, OT5, Reference2, Reference3, Qte2, Qte3, Reference4, Qte4, Reference5, Qte5, Quantite,Guichet_ExclusionMagasin 
+            FROM T_GUICHET WHERE (Type_Demande = N'GUICHET')"
             UpdateCommand="UPDATE T_GUICHET 
             SET 
             [OT]=@OT,

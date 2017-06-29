@@ -50,8 +50,22 @@ namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle
          {
              ASPxComboBox myCombo3 = (ASPxComboBox)e.Editor;
              myCombo3.Callback += new CallbackEventHandlerBase(cmbTransporteur_OnCallback);
+             
+         }
+         else if (e.Column.FieldName == "Vente")
+         {
+             ASPxComboBox myCombo3 = (ASPxComboBox)e.Editor;
+             myCombo3.Callback += new CallbackEventHandlerBase(cmbMetre_OnCallback);
+
+         }
+         else if (e.Column.FieldName == "Achat")
+         {
+             ASPxComboBox myCombo3 = (ASPxComboBox)e.Editor;
+             myCombo3.Callback += new CallbackEventHandlerBase(cmbMetre_OnCallback);
+
          }
 
+        
 
 
     if (!(sender as ASPxGridView).IsEditing || e.Column.FieldName != "Depart" || e.Column.FieldName != "Arrivee" || e.Column.FieldName != "Type"||e.Column.FieldName != "Transporteur") return;
@@ -86,12 +100,29 @@ namespace DX_DAHERCMS.SecurePage.Industrie.Shuttle
             cb.DataBind();
 
         }
+
         void cmbTransporteur_OnCallback(object source, CallbackEventArgsBase e)
         {
             ASPxComboBox cb = (ASPxComboBox)source;
-            //Session["param_type"] = e.Parameter;
+            Session["param_trpt"] = e.Parameter;
             cb.DataBind();
+            
+            
+        }
 
+        void cmbMetre_OnCallback(object source, CallbackEventArgsBase e)
+        {
+            ASPxComboBox cb = (ASPxComboBox)source;
+            Session["param_metre"] = e.Parameter;
+            cb.DataBind();
+            cb.SelectedIndex = 1;
+
+
+        }
+
+        protected void grid_InitNewRow(object sender, DevExpress.Web.Data.ASPxDataInitNewRowEventArgs e)
+        {
+            e.NewValues["CT_Taux_Cible"] = "75";
         }
        
     }

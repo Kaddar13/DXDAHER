@@ -83,7 +83,7 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
 
             ASPxTextBox txt_expe_BL = formedit.FindControl("expe_BL") as ASPxTextBox;
             ASPxComboBox cbo_expeFLux = formedit.FindControl("cbo_expeFLux") as ASPxComboBox;
-
+            ASPxComboBox cbo_magasin = formedit.FindControl("cbo_magasin") as ASPxComboBox;
 
             DS_Mouvement.InsertParameters["USER"].DefaultValue = User.Identity.Name;
             DS_Mouvement.InsertParameters["Statut"].DefaultValue = cbo_statut.Text + e.NewValues["Exclusion"];
@@ -98,40 +98,24 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
 
 
 
+            
+
             SqlConnection sqlConnection1 = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString);
             sqlConnection1.Open();
             SqlCommand sqlComm2 = new SqlCommand();
             sqlComm2 = sqlConnection1.CreateCommand();
-            //sqlComm2.Parameters.Add("@ExepBL", SqlDbType.Text);
-            ////sqlComm2.Parameters.Add("@ExpeFlux", SqlDbType.Text);
-            //sqlComm2.Parameters.Add("@IDSPEEDUP", SqlDbType.Int);
-
-            sqlComm2.Parameters.AddWithValue("@ExepBL",txt_expe_BL.Text);
-            sqlComm2.Parameters.AddWithValue("@ExpeFlux", cbo_expeFLux.Value);
+            sqlComm2.Parameters.AddWithValue("@ExepBL", txt_expe_BL.Text);
+            sqlComm2.Parameters.AddWithValue("@ExpeFlux", cbo_expeFLux.Text);
+            sqlComm2.Parameters.AddWithValue("@Stock_Mag", cbo_magasin.Text);
             sqlComm2.Parameters.AddWithValue("@IDSPEEDUP", grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString());
-
             sqlComm2.CommandText = @" UPDATE [T_SPEEDUP] 
-                SET 
-                [Expedition_Flux]= @ExpeFlux,
-                [Expedition_BL]= @ExepBL
-                WHERE [IDSPEEDUP] = @IDSPEEDUP";
+                            SET 
+                            [Stock_Mag] = @Stock_Mag,
+                            [Expedition_Flux]= @ExpeFlux,
+                            [Expedition_BL]= @ExepBL
+                            WHERE [IDSPEEDUP] = @IDSPEEDUP";
             sqlComm2.ExecuteNonQuery();
-
-
-            //using (var sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["Dashboard_ConnectionString"].ConnectionString))
-            //{
-            //    using (SqlCommand cmd = new SqlCommand("sp_SU_Update", sqlConnection))
-            //    {
-            //        cmd.CommandType = CommandType.StoredProcedure;
-
-            //        cmd.Parameters.Add("@IDSPEEDUP", SqlDbType.VarChar).Value = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
-
-
-            //        sqlConnection.Open();
-            //        cmd.ExecuteNonQuery();
-            //    }
-            //}
-
+            sqlConnection1.Close();
 
 
 
@@ -198,6 +182,9 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
             SqlDataSource ds_Statut = formedit.FindControl("DS_Statut") as SqlDataSource;
             cbo_statut.DataSource = ds_Statut.Select(DataSourceSelectArguments.Empty);
             cbo_statut.DataBind();
+
+           
+            
         }
         
         protected void grid_StartRowEditing(object sender, DevExpress.Web.Data.ASPxStartRowEditingEventArgs e)
@@ -205,6 +192,9 @@ namespace DX_DAHERCMS.ToolBox.SPEEDUP
 
             string Identifiant = grid.GetRowValues(grid.FocusedRowIndex, "IDSPEEDUP").ToString();
             grid.SettingsText.PopupEditFormCaption = "Saisie des Mouvements SpeedUp N° " + Identifiant;
+
+    
+
         }
         
         protected string GetDXCurrentLanguageValue()

@@ -13,6 +13,15 @@ namespace DX_DAHERCMS {
     public partial class Site {
         
         /// <summary>
+        /// Contrôle Body.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Body;
+        
+        /// <summary>
         /// Contrôle form1.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,33 @@ namespace DX_DAHERCMS {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        
+        /// <summary>
+        /// Contrôle HeaderPane.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxPanel HeaderPane;
+        
+        /// <summary>
+        /// Contrôle HeadLoginView.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LoginView HeadLoginView;
+        
+        /// <summary>
+        /// Contrôle HeaderMenu.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxMenu HeaderMenu;
         
         /// <summary>
         /// Contrôle SiteMapPath1.
@@ -31,33 +67,6 @@ namespace DX_DAHERCMS {
         protected global::System.Web.UI.WebControls.SiteMapPath SiteMapPath1;
         
         /// <summary>
-        /// Contrôle LoginStatus1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
-        
-        /// <summary>
-        /// Contrôle ASPxMenu1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxMenu ASPxMenu1;
-        
-        /// <summary>
-        /// Contrôle ASPxSiteMapDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Champ généré automatiquement.
-        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
-        /// </remarks>
-        protected global::DevExpress.Web.ASPxSiteMapDataSource ASPxSiteMapDataSource1;
-        
-        /// <summary>
         /// Contrôle RadScriptManager1.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace DX_DAHERCMS {
         protected global::Telerik.Web.UI.RadScriptManager RadScriptManager1;
         
         /// <summary>
+        /// Contrôle MainPane.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxPanel MainPane;
+        
+        /// <summary>
         /// Contrôle ContentPlaceHolder1.
         /// </summary>
         /// <remarks>
@@ -74,5 +92,14 @@ namespace DX_DAHERCMS {
         /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        
+        /// <summary>
+        /// Contrôle ASPxSiteMapDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Champ généré automatiquement.
+        /// Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxSiteMapDataSource ASPxSiteMapDataSource1;
     }
 }
