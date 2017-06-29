@@ -24,14 +24,14 @@
 
                 formLayout.GetItemByName("SU_Destinataire").SetVisible(true);
                 formLayout.GetItemByName("Autres").SetVisible(false);
-
+                formLayout.GetItemByName("Su_TrpDediee").SetVisible(true);
                 cb_panel.PerformCallback(2);
 
             }
             else {
                 formLayout.GetItemByName("SU_Destinataire").SetVisible(false);
                 formLayout.GetItemByName("Autres").SetVisible(true);
-
+                formLayout.GetItemByName("Su_TrpDediee").SetVisible(false);
                 cb_panel.PerformCallback(1);
 
             }
@@ -77,7 +77,7 @@
             var mag = s.GetText();
             var str = mag.replace(/\s/g, '');
 
-            if (str.toUpperCase() == '6LM' || str.toUpperCase() == '6ES') {
+            if (str.toUpperCase() == '6LM' || str.toUpperCase() == '6ES' || str.toUpperCase() == 'FL22') {
                 formLayout.GetItemByName("Su_TrpDedieeMag").SetVisible(true);
             } else {
                 formLayout.GetItemByName("Su_TrpDedieeMag").SetVisible(false);
@@ -85,34 +85,37 @@
 
         }
 
-    </script>
 
+       
+
+    </script>
+    
     <div>
-        <dx:ASPxButton runat="server" OnClick="Unnamed_Click" Text="En"></dx:ASPxButton>
+        
     </div>
 
     <dx:ASPxGlobalEvents runat="server" ClientSideEvents-ValidationCompleted="OnValidationComplete" />
 
-    <dx:ASPxLabel runat="server" Text="Speed Up : 8,91€ / demande" Font-Bold="True" ForeColor="Black" meta:resourcekey="ASPxLabelResource1"></dx:ASPxLabel>
+    <dx:ASPxLabel runat="server" Text="Speed Up : 8,91€ / demande" Font-Bold="True" ForeColor="Black" ></dx:ASPxLabel>
 
-    <dx:ASPxFormLayout ID="formLayout" runat="server" ClientInstanceName="formLayout" Width="540px" meta:resourcekey="formLayoutResource1">
+    <dx:ASPxFormLayout ID="formLayout" runat="server" ClientInstanceName="formLayout" >
         <Items>
-            <dx:LayoutGroup Caption="Creation Speed Up" CellStyle-Font-Size="Larger" ColCount="1" HorizontalAlign="Center" Width="540px" meta:resourcekey="LayoutGroupResource1">
-                <CellStyle Font-Size="Larger"></CellStyle>
+            <dx:LayoutGroup Caption="Creation Speed Up" ColCount="1" HorizontalAlign="Center" >
+               
                 <Items>
-                    <dx:LayoutGroup ShowCaption="false" GroupBoxDecoration="none" meta:resourcekey="LayoutGroupResource2">
+                    <dx:LayoutGroup ShowCaption="false" GroupBoxDecoration="none" >
                         <Items>
-
-                            <dx:LayoutItem Caption="Type Speed Up" meta:resourcekey="LayoutItemResource1">
+                            <%--Type--%>
+                            <dx:LayoutItem Caption="Type Speed Up" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
 
                                         <dx:ASPxRadioButtonList ID="Rbl_SU_Type" runat="server" ClientInstanceName="Rbl_Type"
-                                            ClientSideEvents-SelectedIndexChanged="OnTypeChanged" ValueType="System.String" meta:resourcekey="Rbl_SU_TypeResource1">
+                                            ClientSideEvents-SelectedIndexChanged="OnTypeChanged" ValueType="System.String" >
                                             <ClientSideEvents Init="UpdateRadioButtonListDecoration" />
                                             <Items>
-                                                <dx:ListEditItem Text="SpeedUp Interne (In-Situ)" Value="Interne" meta:resourcekey="ListEditItemResource1" />
-                                                <dx:ListEditItem Text="SpeedUp Externe (inter-site et fournisseur externe)" Value="Externe" meta:resourcekey="ListEditItemResource2" />
+                                                <dx:ListEditItem Text="SpeedUp Interne (In-Situ et envoie aux fournisseurs externes)" Value="Interne"  />
+                                                <dx:ListEditItem Text="SpeedUp Externe (inter-site)" Value="Externe"  />
 
                                             </Items>
                                             <ValidationSettings SetFocusOnError="True">
@@ -122,73 +125,80 @@
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-                            <dx:LayoutItem Caption="Ilot/Section" meta:resourcekey="LayoutItemResource2">
+                            <%--Eotp--%>
+                            <dx:LayoutItem Caption="Imputation" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource2">
-                                        <dx:ASPxTextBox ID="txt_SU_EOTP" runat="server" Width="170px" meta:resourcekey="txt_SU_EOTPResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxComboBox ID="txt_SU_EOTP" runat="server" ValueType="System.String" DataSourceID="DS_EOTP" TextField="PROGRAMME" ValueField="EOTP">
+                                                <ValidationSettings SetFocusOnError="True">
+                                                <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
+                                            </ValidationSettings>
+                                        </dx:ASPxComboBox>
+                                        
+                      <%--                  <dx:ASPxTextBox ID="txt_SU_EOTP" runat="server" Width="170px" >
 										<MaskSettings Mask="<'X0'>>aaa" ErrorText="Format obligatoire X0+3 caractères alphanumériques." />
                                             <ValidationSettings SetFocusOnError="True">
 <RegularExpression ValidationExpression="\w{5}" ErrorText="Format obligatoire X0+3 caractères alphanumériques."/>
                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                             </ValidationSettings>
-                                        </dx:ASPxTextBox>
+                                        </dx:ASPxTextBox>--%>
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-                                                        <dx:LayoutItem Caption="N° AOG" meta:resourcekey="LayoutItemResource2">
+                            <%--AOG--%>
+                            <dx:LayoutItem Caption="N° AOG"  ClientVisible="false">
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource2">
-                                        <dx:ASPxTextBox ID="txt_AOG" runat="server" Width="170px" meta:resourcekey="txt_SU_EOTPResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxTextBox ID="txt_AOG" runat="server" Width="170px" >
                                                                                     </dx:ASPxTextBox>
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-                            <dx:LayoutItem Caption="Telephone du demandeur :" meta:resourcekey="LayoutItemResource3">
+                            <%--Telephone--%>
+                            <dx:LayoutItem Caption="Telephone du demandeur :" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource3">
-                                        <dx:ASPxTextBox ID="txt_telephone" runat="server" Width="170px" meta:resourcekey="txt_telephoneResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxTextBox ID="txt_telephone" runat="server" Width="170px" >
                                             <ValidationSettings ErrorDisplayMode="Text" Display="Dynamic" ErrorTextPosition="Bottom" SetFocusOnError="true">
-
+                                            </ValidationSettings>
+                                        </dx:ASPxTextBox>
+                                    </dx:LayoutItemNestedControlContainer>
+                                </LayoutItemNestedControlCollection>
+                            </dx:LayoutItem>
+                            <%--Email--%>
+                            <dx:LayoutItem Caption="Email du demandeur :" >
+                                <LayoutItemNestedControlCollection>
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxTextBox ID="txt_demandeur" runat="server" Width="170px" >
+                                            <ValidationSettings ErrorDisplayMode="Text" Display="Dynamic" ErrorTextPosition="Bottom" SetFocusOnError="true">
+                                                <RegularExpression ErrorText="Invalid e-mail" ValidationExpression="\w+([-+.']\w+)*@airbus.com" />
                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                             </ValidationSettings>
                                         </dx:ASPxTextBox>
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-                            <dx:LayoutItem Caption="Email du demandeur :" meta:resourcekey="LayoutItemResource4">
+                            <%--Commentaire--%>
+                            <dx:LayoutItem Caption="Commentaire :" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource4">
-                                        <dx:ASPxTextBox ID="txt_demandeur" runat="server" Width="170px" meta:resourcekey="txt_demandeurResource1">
-                                            <ValidationSettings ErrorDisplayMode="Text" Display="Dynamic" ErrorTextPosition="Bottom" SetFocusOnError="true">
-                                                <RegularExpression ErrorText="Invalid e-mail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
-                                                <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
-                                            </ValidationSettings>
-                                        </dx:ASPxTextBox>
-                                    </dx:LayoutItemNestedControlContainer>
-                                </LayoutItemNestedControlCollection>
-                            </dx:LayoutItem>
-                            <dx:LayoutItem Caption="Commentaire :" meta:resourcekey="LayoutItemResource5">
-                                <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource5">
-                                        <dx:ASPxMemo ID="txt_commentaire" runat="server" Width="170px" meta:resourcekey="txt_commentaireResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxMemo ID="txt_commentaire" runat="server" Width="170px" >
                                             <ValidationSettings ErrorDisplayMode="Text" Display="Dynamic" ErrorTextPosition="Bottom" SetFocusOnError="true">
                                             </ValidationSettings>
                                         </dx:ASPxMemo>
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-
-
-                            <dx:LayoutItem Caption="Site" meta:resourcekey="LayoutItemResource6">
+                            <%--SiteDepart--%>
+                            <dx:LayoutItem Caption="Site" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource6">
-                                        <dx:ASPxComboBox ID="txt_SiteDepart" runat="server" ValueType="System.String" meta:resourcekey="txt_SiteDepartResource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxComboBox ID="txt_SiteDepart" runat="server" ValueType="System.String" >
                                             <Items>
-                                                <dx:ListEditItem Text="MAR" Value="MAR" meta:resourcekey="ListEditItemResource3" />
-						<dx:ListEditItem Text="FLO" Value="FLO" />
-                                                <dx:ListEditItem Text="DON" Value="DON" meta:resourcekey="ListEditItemResource4" />
-                                                <dx:ListEditItem Text="ALB" Value="ALB" meta:resourcekey="ListEditItemResource5" />
-                                                <dx:ListEditItem Text="LCN" Value="LCN" meta:resourcekey="ListEditItemResource6" />
+                                                <dx:ListEditItem Text="MAR" Value="MAR"  />												
+                                                <dx:ListEditItem Text="DON" Value="DON"  />
+                                                <dx:ListEditItem Text="ALB" Value="ALB"  />
+                                                <dx:ListEditItem Text="PLB" Value="PLB"  />
                                             </Items>
                                             <ClearButton Visibility="Auto"></ClearButton>
                                             <ValidationSettings SetFocusOnError="True">
@@ -198,16 +208,18 @@
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-
-                            <dx:LayoutItem Name="SU_Destinataire" ClientVisible="false" Caption="Destinataire" meta:resourcekey="LayoutItemResource7">
+                            <%--Destinataire--%>
+                            <dx:LayoutItem Name="SU_Destinataire" ClientVisible="false" Caption="Destinataire" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource7">
-                                        <dx:ASPxComboBox ID="txt_su_destinataire" runat="server" ValueType="System.String" meta:resourcekey="txt_su_destinataireResource1" ClientSideEvents-SelectedIndexChanged="OnDestinataireChanged">
-<ClientSideEvents SelectedIndexChanged="OnDestinataireChanged"></ClientSideEvents>
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxComboBox ID="txt_su_destinataire" runat="server" ValueType="System.String"  >
+
                                             <Items>
-                                                <dx:ListEditItem Text="DON" Value="DON" meta:resourcekey="ListEditItemResource7" />
-                                                <dx:ListEditItem Text="ALB" Value="ALB" meta:resourcekey="ListEditItemResource7" />
-                                                <dx:ListEditItem Text="Externe" Value="Externe" meta:resourcekey="ListEditItemResource8" />
+                                                <dx:ListEditItem Text="DON" Value="DON"  />
+                                                <dx:ListEditItem Text="ALB" Value="ALB"  />
+                                                
+												<dx:ListEditItem Text="MAR" Value="MAR"  />
+												<dx:ListEditItem Text="PLB" Value="PLB"  />
                                             </Items>
                                             <ClearButton Visibility="Auto"></ClearButton>
                                             <ValidationSettings SetFocusOnError="True">
@@ -217,8 +229,8 @@
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-
-                            <dx:LayoutItem Name="Su_TrpDediee" ClientVisible="false" Caption="Transport Dediée">
+                            <%--TrpDediee--%>
+                            <dx:LayoutItem Name="Su_TrpDediee" Caption="Transport Dediée" ClientVisible="false">
                                 <LayoutItemNestedControlCollection>
                                     <dx:LayoutItemNestedControlContainer runat="server">
                                         <dx:ASPxComboBox ID="txt_trpDediee" runat="server">
@@ -236,13 +248,14 @@
 
 
                             </dx:LayoutItem>
-                            <dx:LayoutItem Name="SU_Localisation" ClientVisible="false" Caption="Localisation" meta:resourcekey="LayoutItemResource8">
+                            <%--Localisation--%>
+                            <dx:LayoutItem Name="SU_Localisation" ClientVisible="false" Caption="Localisation" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource8">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
                                         <asp:HiddenField ID="HiddenField1" runat="server" />
-                                        <dx:ASPxCallbackPanel ID="ASPxCallbackPanel1" ClientInstanceName="cb_panel" runat="server" Width="200px" OnCallback="ASPxCallbackPanel1_Callback" meta:resourcekey="ASPxCallbackPanel1Resource1">
+                                        <dx:ASPxCallbackPanel ID="ASPxCallbackPanel1" ClientInstanceName="cb_panel" runat="server" Width="200px" OnCallback="ASPxCallbackPanel1_Callback" >
                                             <PanelCollection>
-                                                <dx:PanelContent meta:resourcekey="PanelContentResource1">
+                                                <dx:PanelContent >
                                                     <dx:ASPxRadioButtonList ID="txt_SU_Localisation" runat="server"
                                                         AllowNull="False" ClientInstanceName="radioButtonList"
                                                         ClientSideEvents-Init="UpdateRadioButtonListDecoration"
@@ -250,7 +263,7 @@
                                                         SelectedIndex="0"
                                                         DataSourceID="SqlDataSource2"
                                                         TextField="LOCALISATION"
-                                                        ValueField="LOCALISATION" meta:resourcekey="txt_SU_LocalisationResource1" Width="314px">
+                                                        ValueField="LOCALISATION"  Width="314px">
                                                         <ClientSideEvents SelectedIndexChanged="OnContactMethodChanged" Init="UpdateRadioButtonListDecoration"></ClientSideEvents>
                                                          <ValidationSettings SetFocusOnError="True">
                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
@@ -268,15 +281,16 @@
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
                             </dx:LayoutItem>
-                            <dx:LayoutItem ClientVisible="false" meta:resourcekey="LayoutItemResource9">
+                            <%--SiteDepart - Externe--%>
+                            <dx:LayoutItem ClientVisible="false" >
                                 <LayoutItemNestedControlCollection>
-                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource9">
-                                        <dx:ASPxComboBox ID="txt_SiteDepart2" runat="server" ValueType="System.String" meta:resourcekey="txt_SiteDepart2Resource1">
+                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                        <dx:ASPxComboBox ID="txt_SiteDepart2" runat="server" ValueType="System.String" >
                                             <Items>
-                                                <dx:ListEditItem Text="MAR" Value="MAR" meta:resourcekey="ListEditItemResource9" />
-                                                <dx:ListEditItem Text="DON" Value="DON" meta:resourcekey="ListEditItemResource10" />
-                                                <dx:ListEditItem Text="ALB" Value="ALB" meta:resourcekey="ListEditItemResource11" />
-                                                <dx:ListEditItem Text="LCN" Value="LCN" meta:resourcekey="ListEditItemResource12" />
+                                                <dx:ListEditItem Text="MAR" Value="MAR"  />
+                                                <dx:ListEditItem Text="DON" Value="DON"  />
+                                                <dx:ListEditItem Text="ALB" Value="ALB"  />
+                                                <dx:ListEditItem Text="LCN" Value="LCN"  />
                                             </Items>
                                             <ClearButton Visibility="Auto"></ClearButton>
                                         </dx:ASPxComboBox>
@@ -288,17 +302,17 @@
 
                         </Items>
                     </dx:LayoutGroup>
-                    <dx:TabbedLayoutGroup Name="tabbedGroupPageControl" ClientInstanceName="tabbedGroupPageControl" ShowGroupDecoration="false" ClientVisible="false" meta:resourcekey="TabbedLayoutGroupResource1">
+                    <dx:TabbedLayoutGroup Name="tabbedGroupPageControl" ClientInstanceName="tabbedGroupPageControl" ShowGroupDecoration="false" ClientVisible="false" >
                         <Items>
-
-                            <dx:LayoutGroup Caption="Reception Fournisseur" GroupBoxDecoration="Headingline" ShowCaption="True" ColCount="2" meta:resourcekey="LayoutGroupResource3">
+                            <%--Reception--%>
+                            <dx:LayoutGroup Caption="Reception Fournisseur" GroupBoxDecoration="Headingline" ShowCaption="True" ColCount="2" >
                                 <Items>
-                                    <dx:LayoutGroup Caption="Données Transport" meta:resourcekey="LayoutGroupResource4">
+                                    <dx:LayoutGroup Caption="Données Transport" >
                                         <Items>
-                                            <dx:LayoutItem Caption="Numéro de Tracking :" meta:resourcekey="LayoutItemResource10">
+                                            <dx:LayoutItem Caption="Numéro de Tracking :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource10">
-                                                        <dx:ASPxTextBox ID="txt_reception_track" runat="server" meta:resourcekey="txt_reception_trackResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxTextBox ID="txt_reception_track" runat="server" >
                                                             <ValidationSettings SetFocusOnError="True">
                                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                             </ValidationSettings>
@@ -306,26 +320,28 @@
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                                                                    <dx:LayoutItem Caption="N° de BL:" meta:resourcekey="LayoutItemResource10">
+                                                                                    <dx:LayoutItem Caption="N° de BL:" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource10">
-                                                        <dx:ASPxTextBox ID="txt_BL1" runat="server" meta:resourcekey="txt_reception_trackResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxTextBox ID="txt_BL1" runat="server" >
                                                            
                                                         </dx:ASPxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Fournisseur :" meta:resourcekey="LayoutItemResource11">
+                                            <dx:LayoutItem Caption="Fournisseur :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource11">
-                                                        <asp:TextBox ID="txt_reception_fournisseur" runat="server" meta:resourcekey="txt_reception_fournisseurResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_reception_fournisseur" runat="server">
+
+                                                        </dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Transporteur :" meta:resourcekey="LayoutItemResource12">
+                                            <dx:LayoutItem Caption="Transporteur :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource12">
-                                                        <dx:ASPxTextBox ID="txt_reception_transporteur" runat="server" meta:resourcekey="txt_reception_transporteurResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxTextBox ID="txt_reception_transporteur" runat="server" >
                                                             <ValidationSettings SetFocusOnError="True">
                                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                             </ValidationSettings>
@@ -333,10 +349,10 @@
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Date de Livraison" meta:resourcekey="LayoutItemResource13">
+                                            <dx:LayoutItem Caption="Date de Livraison" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource13">
-                                                        <dx:ASPxDateEdit ID="txt_reception_datelivraion" runat="server" meta:resourcekey="txt_reception_datelivraionResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxDateEdit ID="txt_reception_datelivraion" runat="server" >
                                                             <TimeSectionProperties>
                                                                 <TimeEditProperties>
                                                                     
@@ -352,28 +368,28 @@
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Numéro BR :" meta:resourcekey="LayoutItemResource14">
+                                            <dx:LayoutItem Caption="Numéro BR :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource14">
-                                                        <asp:TextBox ID="txt_reception_br" runat="server" meta:resourcekey="txt_reception_brResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_reception_br" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="ZLECI :" meta:resourcekey="LayoutItemResource15">
+                                            <dx:LayoutItem Caption="ZLECI :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource15">
-                                                        <asp:TextBox ID="txt_reception_zleci" runat="server" meta:resourcekey="txt_reception_zleciResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_reception_zleci" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Origine :" meta:resourcekey="LayoutItemResource16">
+                                            <dx:LayoutItem Caption="Origine :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource16">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
                                                         <%--<asp:TextBox ID="txt_reception_origine" runat="server"></asp:TextBox>--%>
-                                                        <dx:ASPxComboBox ID="txt_reception_origine" runat="server" meta:resourcekey="txt_reception_origineResource1">
+                                                        <dx:ASPxComboBox ID="txt_reception_origine" runat="server" >
                                                             <Items>
-                                                                <dx:ListEditItem Text="France" Value="France" meta:resourcekey="ListEditItemResource13" />
-                                                                <dx:ListEditItem Text="International" Value="International" meta:resourcekey="ListEditItemResource14" />
+                                                                <dx:ListEditItem Text="France" Value="France"  />
+                                                                <dx:ListEditItem Text="International" Value="International"  />
                                                             </Items>
 
                                                             <ClearButton Visibility="Auto"></ClearButton>
@@ -384,26 +400,26 @@
 
                                         </Items>
                                     </dx:LayoutGroup>
-                                    <dx:LayoutGroup Caption="Données matériel" meta:resourcekey="LayoutGroupResource5">
+                                    <dx:LayoutGroup Caption="Données matériel" >
                                         <Items>
-                                            <dx:LayoutItem Caption="Numéro commande :" meta:resourcekey="LayoutItemResource17">
+                                            <dx:LayoutItem Caption="Numéro commande :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource17">
-                                                        <asp:TextBox ID="txt_reception_commande" runat="server" meta:resourcekey="txt_reception_commandeResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_reception_commande" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Poste commande :" meta:resourcekey="LayoutItemResource18">
+                                            <dx:LayoutItem Caption="Poste commande :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource18">
-                                                        <asp:TextBox ID="txt_reception_postecommande" runat="server" meta:resourcekey="txt_reception_postecommandeResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >                                                      
+                                                        <dx:AspxTextBox ID="txt_reception_postecommande" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Reference :" meta:resourcekey="LayoutItemResource19">
+                                            <dx:LayoutItem Caption="Reference :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource19">
-                                                        <dx:ASPxTextBox ID="txt_reference3" runat="server" meta:resourcekey="txt_reference3Resource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxTextBox ID="txt_reference3" runat="server" >
                                                             <ValidationSettings SetFocusOnError="True">
                                                                 <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                             </ValidationSettings>
@@ -411,45 +427,45 @@
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Quantité :" meta:resourcekey="LayoutItemResource20">
+                                            <dx:LayoutItem Caption="Quantité :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource20">
-                                                        <asp:TextBox ID="txt_quantite2" runat="server" meta:resourcekey="txt_quantite2Resource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_quantite2" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
                                         </Items>
 
                                     </dx:LayoutGroup>
-                                    <dx:LayoutGroup Caption="Autres renseignements" Name="Autres" ClientVisible="false" meta:resourcekey="LayoutGroupResource6">
+                                    <dx:LayoutGroup Caption="Autres renseignements" Name="Autres" ClientVisible="false" >
                                         <Items>
-                                            <dx:LayoutItem Caption="Je souhaite venir chercher le matériel au guichet R7:" meta:resourcekey="LayoutItemResource21">
+                                            <dx:LayoutItem Caption="Je souhaite venir chercher le matériel au guichet R7:" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource21">
-                                                        <dx:ASPxComboBox ID="txt_autre_litige" runat="server" meta:resourcekey="txt_autre_litigeResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxComboBox ID="txt_autre_litige" runat="server" >
                                                             <Items>
-                                                                <dx:ListEditItem Text="OUI" Value="OUI" meta:resourcekey="ListEditItemResource15" />
-                                                                <dx:ListEditItem Text="NON" Value="NON" meta:resourcekey="ListEditItemResource16" />
+                                                                <dx:ListEditItem Text="OUI" Value="OUI"  />
+                                                                <dx:ListEditItem Text="NON" Value="NON"  />
                                                             </Items>
                                                             <ClearButton Visibility="Auto"></ClearButton>
                                                         </dx:ASPxComboBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Commentaires :" meta:resourcekey="LayoutItemResource22">
+                                            <dx:LayoutItem Caption="Commentaires :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource22">
-                                                        <asp:TextBox ID="txt_autre_commentaire" runat="server" meta:resourcekey="txt_autre_commentaireResource1"></asp:TextBox>
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:AspxTextBox ID="txt_autre_commentaire" runat="server" ></dx:AspxTextBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                            <dx:LayoutItem Caption="Livraison sous PVL :" meta:resourcekey="LayoutItemResource23">
+                                            <dx:LayoutItem Caption="Livraison sous PVL :" >
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource23">
-                                                        <dx:ASPxComboBox ID="txt_autre_pvl" runat="server" meta:resourcekey="txt_autre_pvlResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxComboBox ID="txt_autre_pvl" runat="server" >
                                                             <Items>
-                                                                <dx:ListEditItem Text="OUI" Value="OUI" meta:resourcekey="ListEditItemResource17" />
-                                                                <dx:ListEditItem Text="NON" Value="NON" meta:resourcekey="ListEditItemResource18" />
+                                                                <dx:ListEditItem Text="OUI" Value="OUI"  />
+                                                                <dx:ListEditItem Text="NON" Value="NON"  />
                                                             </Items>
 
                                                             <ClearButton Visibility="Auto"></ClearButton>
@@ -461,13 +477,13 @@
                                     </dx:LayoutGroup>
                                 </Items>
                             </dx:LayoutGroup>
-
-                            <dx:LayoutGroup Caption="Distribution inter-usine" GroupBoxDecoration="Headingline" ShowCaption="True" meta:resourcekey="LayoutGroupResource7">
+                            <%--Ditribution--%>
+                            <dx:LayoutGroup Caption="Distribution inter-usine" GroupBoxDecoration="Headingline" ShowCaption="True" >
                                 <Items>
-                                    <dx:LayoutItem Caption="Gare départ" meta:resourcekey="LayoutItemResource24">
+                                    <dx:LayoutItem Caption="Gare départ" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource24">
-                                                <dx:ASPxTextBox ID="txt_distribution_garedepart" runat="server" meta:resourcekey="txt_distribution_garedepartResource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_distribution_garedepart" runat="server" >
                                                     <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
@@ -475,10 +491,10 @@
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Gare arrivée :" meta:resourcekey="LayoutItemResource25">
+                                    <dx:LayoutItem Caption="Gare arrivée :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource25">
-                                                <dx:ASPxTextBox ID="txt_distribution_garearrivee" runat="server" meta:resourcekey="txt_distribution_garearriveeResource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_distribution_garearrivee" runat="server" >
                                                     <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
@@ -487,10 +503,10 @@
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
 
-                                    <dx:LayoutItem Caption="N° Doc Libre / Liste de colisage :" meta:resourcekey="LayoutItemResource26">
+                                    <dx:LayoutItem Caption="N° Doc Libre / Liste de colisage :"  ClientVisible="false">
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource26">
-                                                <dx:ASPxTextBox ID="txt_doclibre2" runat="server" meta:resourcekey="txt_doclibre2Resource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_doclibre2" runat="server" >
                                                     
                                                 </dx:ASPxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
@@ -511,37 +527,35 @@
                                     <dx:LayoutItem Caption="Longueur (mm):" >
                                         <LayoutItemNestedControlCollection>
                                             <dx:LayoutItemNestedControlContainer runat="server" >
-                                                <dx:ASPxSpinEdit ID="Spin_Longueur" runat="server" NumberType="Integer"
-                                                        MinValue="1" MaxValue="2000">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />                                                   
-                                                    </ValidationSettings>
-                                                                                                     </dx:ASPxSpinEdit>
-
-                                                <dx:ASPxTextBox ID="txt_distribution_longueur" runat="server" Visible="false">
-												<ValidationSettings SetFocusOnError="True">
+                                                <dx:ASPxComboBox runat="server" ID="SpinLongueur">
+                                                    <Items>
+                                                        <dx:ListEditItem Text="Inf à 2000" Value="Inf à 2000"/>
+                                                        <dx:ListEditItem Text="Sup à 2000" Value="Sup à 2000"/>
+                                                    </Items>
+                                                    <ValidationSettings SetFocusOnError="True" EnableCustomValidation="True" 
+                                                        RegularExpression-ValidationExpression="Inf à 2000" RegularExpression-ErrorText="Attention">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                    
                                                     </ValidationSettings>
-
-                                                </dx:ASPxTextBox>
+                                                </dx:ASPxComboBox>                                             
+                                               
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
                                     <dx:LayoutItem Caption="Largeur (mm):" >
                                         <LayoutItemNestedControlCollection>
                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                <dx:ASPxSpinEdit ID="SpinLargeur" runat="server" NumberType="Integer"
-                                                        MinValue="1" MaxValue="2400">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />                                                   
-                                                    </ValidationSettings>
-                                                                                                     </dx:ASPxSpinEdit>
-                                                <dx:ASPxTextBox ID="txt_distribution_largeur" runat="server" Visible="false">
-												<ValidationSettings SetFocusOnError="True">
+                                                 <dx:ASPxComboBox runat="server" ID="SpinLargeur">
+                                                    <Items>
+                                                        <dx:ListEditItem Text="Inf à 2400" Value="Inf à 2400"/>
+                                                        <dx:ListEditItem Text="Sup à 2400" Value="Sup à 2400"/>
+                                                    </Items>
+                                                    <ValidationSettings SetFocusOnError="True" EnableCustomValidation="True" 
+                                                        RegularExpression-ValidationExpression="Inf à 2400" RegularExpression-ErrorText="Attention">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
+                                                   
                                                     </ValidationSettings>
-                                                </dx:ASPxTextBox>
+                                                </dx:ASPxComboBox>           
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
@@ -549,52 +563,51 @@
                                     <dx:LayoutItem Caption="Hauteur (mm):">
                                         <LayoutItemNestedControlCollection>
                                             <dx:LayoutItemNestedControlContainer runat="server">
-                                                <dx:ASPxSpinEdit ID="SpinHauteur" runat="server" NumberType="Integer"
-                                                        MinValue="1" MaxValue="2400">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />                                                   
-                                                    </ValidationSettings>
-                                                                                                     </dx:ASPxSpinEdit>
-                                                <dx:ASPxTextBox ID="txt_distribution_Hauteur" runat="server" Visible="false">
-												<ValidationSettings SetFocusOnError="True">
+                                                 <dx:ASPxComboBox runat="server" ID="SpinHauteur">
+                                                    <Items>
+                                                        <dx:ListEditItem Text="Inf à 2400" Value="Inf à 2400"/>
+                                                        <dx:ListEditItem Text="Sup à 2400" Value="Sup à 2400"/>
+                                                    </Items>
+                                                    <ValidationSettings SetFocusOnError="True" EnableCustomValidation="True" 
+                                                        RegularExpression-ValidationExpression="Inf à 2400" RegularExpression-ErrorText="Attention">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
+                                                   
                                                     </ValidationSettings>
-                                                </dx:ASPxTextBox>
+                                                </dx:ASPxComboBox>           
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
                                 </Items>
                             </dx:LayoutGroup>
-                       
-                            <dx:LayoutGroup Caption="Stock" GroupBoxDecoration="Headingline" ShowCaption="True" meta:resourcekey="LayoutGroupResource8">
+                             <%--Magasin--%>
+                            <dx:LayoutGroup Caption="Stock" GroupBoxDecoration="Headingline" ShowCaption="True">
                                 <Items>
-								<dx:LayoutItem Caption="Je souhaite venir chercher le matériel au guichet R7:" meta:resourcekey="LayoutItemResource21" Visible="false">
+								<dx:LayoutItem Caption="Je souhaite venir chercher le matériel au guichet R7:"  Visible="false">
                                                 <LayoutItemNestedControlCollection>
-                                                    <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource21">
-                                                        <dx:ASPxComboBox ID="txt_autre_litige2" runat="server" meta:resourcekey="txt_autre_litigeResource1">
+                                                    <dx:LayoutItemNestedControlContainer runat="server" >
+                                                        <dx:ASPxComboBox ID="txt_autre_litige2" runat="server" >
                                                             <Items>
-                                                                <dx:ListEditItem Text="OUI" Value="OUI" meta:resourcekey="ListEditItemResource15" />
-                                                                <dx:ListEditItem Text="NON" Value="NON" meta:resourcekey="ListEditItemResource16" />
+                                                                <dx:ListEditItem Text="OUI" Value="OUI"  />
+                                                                <dx:ListEditItem Text="NON" Value="NON"  />
                                                             </Items>
                                                             <ClearButton Visibility="Auto"></ClearButton>
                                                         </dx:ASPxComboBox>
                                                     </dx:LayoutItemNestedControlContainer>
                                                 </LayoutItemNestedControlCollection>
                                             </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Numéro de Magasin :" meta:resourcekey="LayoutItemResource27">
+                                <dx:LayoutItem Caption="Numéro de Magasin :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource27">
-                                                <dx:ASPxTextBox ID="txt_stock_mag" runat="server" ClientInstanceName="txt_stockMag" meta:resourcekey="txt_stock_magResource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                               <dx:ASPxComboBox ID="txt_stock_mag" runat="server" ClientInstanceName="txt_stockMag" DataSourceID="DS_Magasin" ValueField="Id_Magasin" TextField="Id_Magasin">
                                                     <ClientSideEvents TextChanged="OnMagChanged" />
 												   <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
-												</dx:ASPxTextBox>
+												</dx:ASPxComboBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-
-                              <dx:LayoutItem Name="Su_TrpDedieeMag" ClientVisible="false" Caption="Transport Dediée">
+                                <dx:LayoutItem Name="Su_TrpDedieeMag" ClientVisible="false" Caption="Transport Dediée">
                                 <LayoutItemNestedControlCollection>
                                     <dx:LayoutItemNestedControlContainer runat="server">
                                         <dx:ASPxComboBox ID="txt_trpDedieeMag" runat="server">
@@ -609,16 +622,11 @@
                                         </dx:ASPxComboBox> 
                                     </dx:LayoutItemNestedControlContainer>
                                 </LayoutItemNestedControlCollection>
-
-
                             </dx:LayoutItem>
-
-
-
-                                    <dx:LayoutItem Caption="OT / Resa / OF :" meta:resourcekey="LayoutItemResource28">
+                                <dx:LayoutItem Caption="OT / Resa / OF :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource28">
-                                                <dx:ASPxTextBox ID="txt_ot" runat="server" meta:resourcekey="txt_otResource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_ot" runat="server" >
                                                     <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
@@ -626,56 +634,76 @@
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Poste" meta:resourcekey="LayoutItemResource29">
+                                    <dx:LayoutItem Caption="Poste" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource29">
-                                                <dx:ASPxTextBox ID="txt_ot_poste" runat="server" meta:resourcekey="txt_ot_posteResource1">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
-                                                    </ValidationSettings>
-                                                </dx:ASPxTextBox>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >  
+                                                <div style="background-color:aliceblue">                                       
+                                                        <div style="float:left">
+                                                            Poste 1 
+                                                            <dx:ASPxTextBox ID="txt_ot_poste" runat="server" Width="60px">
+                                                                 <ValidationSettings SetFocusOnError="True"  ErrorDisplayMode="ImageWithTooltip">
+                                                                    <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
+                                                                </ValidationSettings>
+                                                            </dx:ASPxTextBox>    
+                                                        </div>
+                                                        <div style="float:left;margin-right:30px">
+                                                            Poste 2
+                                                             <dx:ASPxTextBox ID="txt_ot_poste2" runat="server" Width="60px"/>                                                   
+                                                               
+                                                        </div>
+                                                        <div style="float:left;margin-right:30px">
+                                                            Poste 3
+                                                             <dx:ASPxTextBox ID="txt_ot_poste3" runat="server" Width="60px"/>                                                  
+                                                        </div>                                             
+                                                        <div style="float:left;margin-right:30px">
+                                                         Poste 4
+                                                            <dx:ASPxTextBox ID="txt_ot_poste4" runat="server" Width="60px"/> 
+                                                     </div>                                                   
+                                                 <div style="float:left;margin-right:30px">
+                                                         Poste 5
+                                                            <dx:ASPxTextBox ID="txt_ot_poste5" runat="server" Width="60px"/> 
+                                                     </div>   
+                                                 </div>                                                 
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Reference :" meta:resourcekey="LayoutItemResource30">
+                                    <dx:LayoutItem Caption="Reference :"  ClientVisible="false">
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource30">
-                                                <dx:ASPxTextBox ID="txt_reference" runat="server" meta:resourcekey="txt_referenceResource1">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
-                                                    </ValidationSettings>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_reference" runat="server" >
+                                                   
                                                 </dx:ASPxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
                                 </Items>
                             </dx:LayoutGroup>
-                          
-                            <dx:LayoutGroup Caption="Entrees sur dossier" GroupBoxDecoration="Headingline" ShowCaption="True" meta:resourcekey="LayoutGroupResource9">
+                          <%--Entree Sur Dossier--%>
+                            <dx:LayoutGroup Caption="Entrees sur dossier" GroupBoxDecoration="Headingline" ShowCaption="True" >
                                 <Items>
-                                    <dx:LayoutItem Caption="Demandeur :" meta:resourcekey="LayoutItemResource31">
+                                    <dx:LayoutItem Caption="Demandeur :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource31">
-                                                <asp:TextBox ID="txt_dossier_demandeur" runat="server" meta:resourcekey="txt_dossier_demandeurResource1"></asp:TextBox>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_dossier_demandeur" runat="server" ></dx:AspxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Numéro OF :" meta:resourcekey="LayoutItemResource32">
+                                    <dx:LayoutItem Caption="Numéro OF :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource32">
-                                                <asp:TextBox ID="txt_dossier_OF" runat="server" meta:resourcekey="txt_dossier_OFResource1"></asp:TextBox>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_dossier_OF" runat="server" ></dx:AspxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
                                 </Items>
                             </dx:LayoutGroup>
-
+                            <%--GuichetMACS--%>
                             <dx:LayoutGroup Caption="Guichet MACS : Pour ce SpeedUp le périmetre de la prestation commence après la sortie marchandise de la division MACS." GroupBoxDecoration="Headingline" ShowCaption="True">
                                 <Items>
-                                    <dx:LayoutItem Caption="N° Livraison :" meta:resourcekey="LayoutItemResource31">
+                                    <dx:LayoutItem Caption="N° Livraison :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource31">
-                                                <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" meta:resourcekey="txt_referenceResource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" >
                                                     <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
@@ -686,13 +714,13 @@
                                     
                                 </Items>
                             </dx:LayoutGroup>
-
-                            <dx:LayoutGroup Caption="Expedition" GroupBoxDecoration="Headingline" ShowCaption="True" meta:resourcekey="LayoutGroupResource10">
+                            <%--Expedition--%>
+                            <dx:LayoutGroup Caption="Expedition" GroupBoxDecoration="Headingline" ShowCaption="True" >
                                 <Items>
-                                    <dx:LayoutItem Caption="OT / Resa :" meta:resourcekey="LayoutItemResource33">
+                                    <dx:LayoutItem Caption="OT / Resa / FTD :" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource33">
-                                                <dx:ASPxTextBox ID="txt_ot2" runat="server" meta:resourcekey="txt_ot2Resource1">
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_ot2" runat="server" >
                                                     <ValidationSettings SetFocusOnError="True">
                                                         <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
                                                     </ValidationSettings>
@@ -700,91 +728,115 @@
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Poste" meta:resourcekey="LayoutItemResource34">
+                                    <dx:LayoutItem Caption="Poste" >
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource34">
-                                                <dx:ASPxTextBox ID="txt_otposte2" runat="server" meta:resourcekey="txt_otposte2Resource1">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
-                                                    </ValidationSettings>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                
+
+                                                 <div style="background-color:aliceblue">                                       
+                                                        <div style="float:left">
+                                                            Poste 1 
+                                                            <dx:ASPxTextBox ID="txt_otposte1" runat="server" Width="60px">
+                                                                 <ValidationSettings SetFocusOnError="True"  ErrorDisplayMode="ImageWithTooltip">
+                                                                    <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
+                                                                </ValidationSettings>
+                                                            </dx:ASPxTextBox>    
+                                                        </div>
+                                                        <div style="float:left;margin-right:30px">
+                                                            Poste 2
+                                                             <dx:ASPxTextBox ID="txt_otposte2" runat="server" Width="60px"/>                                                   
+                                                               
+                                                        </div>
+                                                        <div style="float:left;margin-right:30px">
+                                                            Poste 3
+                                                             <dx:ASPxTextBox ID="txt_otposte3" runat="server" Width="60px"/>                                                  
+                                                        </div>                                             
+                                                        <div style="float:left;margin-right:30px">
+                                                         Poste 4
+                                                            <dx:ASPxTextBox ID="txt_otposte4" runat="server" Width="60px"/> 
+                                                     </div>                                                   
+                                                 <div style="float:left;margin-right:30px">
+                                                         Poste 5
+                                                            <dx:ASPxTextBox ID="txt_otposte5" runat="server" Width="60px"/> 
+                                                     </div>   
+                                                 </div>
+             
+
+
+
+
+
+
+                                            </dx:LayoutItemNestedControlContainer>
+                                        </LayoutItemNestedControlCollection>
+                                    </dx:LayoutItem>
+                                    <dx:LayoutItem Caption="Appareil :"  ClientVisible="false">
+                                        <LayoutItemNestedControlCollection>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_expedition_appareil" runat="server" ></dx:AspxTextBox>
+                                            </dx:LayoutItemNestedControlContainer>
+                                        </LayoutItemNestedControlCollection>
+                                    </dx:LayoutItem>
+                                    <dx:LayoutItem Caption="BE :"  ClientVisible="false">
+                                        <LayoutItemNestedControlCollection>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_expedition_be" runat="server" ></dx:AspxTextBox>
+                                            </dx:LayoutItemNestedControlContainer>
+                                        </LayoutItemNestedControlCollection>
+                                    </dx:LayoutItem>
+                                    <dx:LayoutItem Caption="FAL :"  ClientVisible="false">
+                                        <LayoutItemNestedControlCollection>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_expedition_fal" runat="server" ></dx:AspxTextBox>
+                                            </dx:LayoutItemNestedControlContainer>
+                                        </LayoutItemNestedControlCollection>
+                                    </dx:LayoutItem>
+                                    <dx:LayoutItem Caption="Doc libre :"  ClientVisible="false">
+                                        <LayoutItemNestedControlCollection>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_doclibre" runat="server" ></dx:AspxTextBox>
+                                            </dx:LayoutItemNestedControlContainer>
+                                        </LayoutItemNestedControlCollection>
+                                    </dx:LayoutItem>
+                                    <dx:LayoutItem Caption="Reference :"  ClientVisible="false">
+                                        <LayoutItemNestedControlCollection>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:ASPxTextBox ID="txt_reference2" runat="server" >
+                                                    
                                                 </dx:ASPxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Appareil :" meta:resourcekey="LayoutItemResource35">
+                                    <dx:LayoutItem Caption="Quantite :"  ClientVisible="false">
                                         <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource35">
-                                                <asp:TextBox ID="txt_expedition_appareil" runat="server" meta:resourcekey="txt_expedition_appareilResource1"></asp:TextBox>
-                                            </dx:LayoutItemNestedControlContainer>
-                                        </LayoutItemNestedControlCollection>
-                                    </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="BE :" meta:resourcekey="LayoutItemResource36">
-                                        <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource36">
-                                                <asp:TextBox ID="txt_expedition_be" runat="server" meta:resourcekey="txt_expedition_beResource1"></asp:TextBox>
-                                            </dx:LayoutItemNestedControlContainer>
-                                        </LayoutItemNestedControlCollection>
-                                    </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="FAL :" meta:resourcekey="LayoutItemResource37">
-                                        <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource37">
-                                                <asp:TextBox ID="txt_expedition_fal" runat="server" meta:resourcekey="txt_expedition_falResource1"></asp:TextBox>
-                                            </dx:LayoutItemNestedControlContainer>
-                                        </LayoutItemNestedControlCollection>
-                                    </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Doc libre :" meta:resourcekey="LayoutItemResource38">
-                                        <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource38">
-                                                <asp:TextBox ID="txt_doclibre" runat="server" meta:resourcekey="txt_doclibreResource1"></asp:TextBox>
-                                            </dx:LayoutItemNestedControlContainer>
-                                        </LayoutItemNestedControlCollection>
-                                    </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Reference :" meta:resourcekey="LayoutItemResource39">
-                                        <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource39">
-                                                <dx:ASPxTextBox ID="txt_reference2" runat="server" meta:resourcekey="txt_reference2Resource1">
-                                                    <ValidationSettings SetFocusOnError="True">
-                                                        <RequiredField IsRequired="True" ErrorText="Champs Obligatoire !" />
-                                                    </ValidationSettings>
-                                                </dx:ASPxTextBox>
-                                            </dx:LayoutItemNestedControlContainer>
-                                        </LayoutItemNestedControlCollection>
-                                    </dx:LayoutItem>
-                                    <dx:LayoutItem Caption="Quantite :" meta:resourcekey="LayoutItemResource40">
-                                        <LayoutItemNestedControlCollection>
-                                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource40">
-                                                <asp:TextBox ID="txt_quantite" runat="server" meta:resourcekey="txt_quantiteResource1"></asp:TextBox>
+                                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                                <dx:AspxTextBox ID="txt_quantite" runat="server" ></dx:AspxTextBox>
                                             </dx:LayoutItemNestedControlContainer>
                                         </LayoutItemNestedControlCollection>
                                     </dx:LayoutItem>
                                 </Items>
                             </dx:LayoutGroup>
-
-                           
                         </Items>
                     </dx:TabbedLayoutGroup>
                 </Items>
             </dx:LayoutGroup>
 
-            <dx:LayoutGroup ClientVisible="false" meta:resourcekey="LayoutGroupResource11">
+            <dx:LayoutGroup ClientVisible="false" >
                 <Items>
-                    <dx:LayoutItem meta:resourcekey="LayoutItemResource41">
+                    <dx:LayoutItem >
                         <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server" meta:resourcekey="LayoutItemNestedControlContainerResource41">
-                                <asp:TextBox ID="txt_designation" runat="server" meta:resourcekey="txt_designationResource1"></asp:TextBox>
+                            <dx:LayoutItemNestedControlContainer runat="server" >
+                                <dx:AspxTextBox ID="txt_designation" runat="server" ></dx:AspxTextBox>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
                     </dx:LayoutItem>
-
-
-
                 </Items>
             </dx:LayoutGroup>
 
-            <dx:LayoutItem ShowCaption="False" HorizontalAlign="Right" Width="150" meta:resourcekey="LayoutItemResource42">
+            <dx:LayoutItem ShowCaption="False" HorizontalAlign="Right" Width="150" >
                 <LayoutItemNestedControlCollection>
-                    <dx:LayoutItemNestedControlContainer runat="server" SupportsDisabledAttribute="True" meta:resourcekey="LayoutItemNestedControlContainerResource42">
-                        <dx:ASPxButton ID="updateButton" runat="server" Text="Insert Speed Up" OnClick="updateButton_Click" Width="150" meta:resourcekey="updateButtonResource1" />
+                    <dx:LayoutItemNestedControlContainer runat="server" SupportsDisabledAttribute="True" >
+                        <dx:ASPxButton ID="updateButton" runat="server" Text="Creation Speed Up" OnClick="updateButton_Click" Width="150"  />
                     </dx:LayoutItemNestedControlContainer>
                 </LayoutItemNestedControlCollection>
             </dx:LayoutItem>
@@ -792,12 +844,13 @@
     </dx:ASPxFormLayout>
 
 
-    <dx:ASPxLabel runat="server" ID="errorMessageLabel" ForeColor="Red" EnableViewState="False" EncodeHtml="False" meta:resourcekey="errorMessageLabelResource1" />
-    <dx:ASPxLabel runat="server" ID="lbl_numspeed" ForeColor="Red" EnableViewState="False" EncodeHtml="False" meta:resourcekey="lbl_numspeedResource1" />
+    <dx:ASPxLabel runat="server" ID="errorMessageLabel" ForeColor="Red" EnableViewState="False" EncodeHtml="False"  />
 
-    <dx:ASPxLabel runat="server" ID="lbl_user" Visible="False" ForeColor="Red" meta:resourcekey="lbl_userResource1" />
+    <dx:ASPxLabel runat="server" ID="lbl_numspeed" ForeColor="Red" EnableViewState="False" EncodeHtml="False"  />
 
-    <dx:ASPxPopupControl ID="ASPxPopupControl1" runat="server" HeaderText="Speed-Up" ShowFooter="True" meta:resourcekey="ASPxPopupControl1Resource1"></dx:ASPxPopupControl>
+    <dx:ASPxLabel runat="server" ID="lbl_user" Visible="False" ForeColor="Red"  />
+
+    <dx:ASPxPopupControl ID="ASPxPopupControl1" runat="server" HeaderText="Speed-Up" ShowFooter="True" ></dx:ASPxPopupControl>
 
 
 
@@ -919,9 +972,9 @@
             <asp:Parameter Name="SU_Commentaire" Type="String" />
             <asp:Parameter Name="SU_Telephone" Type="String" />
             <asp:Parameter Name="Distribution_Poids" Type="Double" />
-            <asp:Parameter Name="Distribution_Longeur" Type="Double" />
-            <asp:Parameter Name="Distribution_Largeur" Type="Double" />
-            <asp:Parameter Name="Distribution_Hauteur" Type="Double" />
+            <asp:Parameter Name="Distribution_Longeur" Type="String" />
+            <asp:Parameter Name="Distribution_Largeur" Type="String" />
+            <asp:Parameter Name="Distribution_Hauteur" Type="String" />
             <asp:Parameter Name="QuoteID" Direction="Output" Type="Int32"/>
 			<asp:Parameter Name="Type_Demande" Type="String" DefaultValue="SpeedUp"/>
             <asp:Parameter Name="SU_TrpDediee" Type="String" />
@@ -1006,34 +1059,46 @@
     </asp:SqlDataSource>
 
 
- <asp:SqlDataSource ID="DS_Mouvement" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Dashboard_ConnectionString %>"
-        InsertCommand="INSERT INTO 
-        [T_SpeedUp_Mouvement] 
-        (
-        [Statut], 
-        [Affectation],
-        [IDSPEEDUP] 
-       ) 
-        VALUES 
-        (
-        @Statut, 
-        @Affectation,
-        @ID_SPEEDUP
+     <asp:SqlDataSource ID="DS_Mouvement" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Dashboard_ConnectionString %>"
+            InsertCommand="INSERT INTO 
+            [T_SpeedUp_Mouvement] 
+            (
+            [Statut], 
+            [Affectation],
+            [IDSPEEDUP] 
+           ) 
+            VALUES 
+            (
+            @Statut, 
+            @Affectation,
+            @ID_SPEEDUP
         
-        )"
-        OldValuesParameterFormatString="original_{0}">
+            )"
+            OldValuesParameterFormatString="original_{0}">
 
-        <InsertParameters>
-            <asp:Parameter Name="Date_Mouvement" Type="DateTime" />
-            <asp:Parameter Name="Statut" Type="String" />
-            <asp:Parameter Name="ID_SPEEDUP" Type="Int32" />
-            <asp:Parameter Name="Affectation" Type="String" />
-            <asp:Parameter Name="Commentaire" Type="String" />
-        </InsertParameters>
+            <InsertParameters>
+                <asp:Parameter Name="Date_Mouvement" Type="DateTime" />
+                <asp:Parameter Name="Statut" Type="String" />
+                <asp:Parameter Name="ID_SPEEDUP" Type="Int32" />
+                <asp:Parameter Name="Affectation" Type="String" />
+                <asp:Parameter Name="Commentaire" Type="String" />
+            </InsertParameters>
+
+        </asp:SqlDataSource>
+
+
+    <asp:SqlDataSource ID="DS_Magasin" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:Dashboard_ConnectionString %>"
+        SelectCommand="Select  [Id_Magasin] From [Dashboard].[dbo].[T_Ordo_PerimetreMagasin] ORDER BY [Id_Magasin]"
+        >
+        
 
     </asp:SqlDataSource>
 
 
+    <asp:SqlDataSource ID="DS_EOTP" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:Dashboard_ConnectionString %>" 
+        SelectCommand="SELECT [Programme], [EOTP] FROM [T_Speedup_EOTP]">
+    </asp:SqlDataSource>
 
 </asp:Content>
 
